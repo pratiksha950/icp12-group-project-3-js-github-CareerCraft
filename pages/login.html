@@ -18,6 +18,7 @@
         <img src="../login-img/open.png" alt="password-disabled-icon" class="toggle-img" id="toggle-icon"
           onclick="toggleImgView()">
       </div>
+       <div id="message-box"></div>
       <button type="submit" class="button" onclick="userLogin()"><a href="#"
           style="text-decoration: none; color:white;">Login Here</a></button>
     </form>
@@ -34,6 +35,7 @@
           id="create-password">
         <input type="password" placeholder="Confirm password" required class="user-input user-input-register"
           id="confirm-password">
+          <div id="message-box"></div>
         <div>
           <input type="checkbox" class="checkbox"> I accept all terms & conditions
           <button type="submit" class="button" onclick="addUserDetails()"><a href="#"
@@ -42,6 +44,7 @@
         <p class="para"> Already have an account? <a href="#" onclick="closeOverlay()" class="anchor">Login Now</a></p>
       </form>
     </div>
+    
 </body>
 <script src="../js/login.js"></script>
 

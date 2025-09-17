@@ -32,11 +32,12 @@ const addUserDetails = () => {
     const userConfirmPassword = document.getElementById("confirm-password").value.trim();
 
      if (!userName || !userEmail || !userCreatePassword || !userConfirmPassword) {
-        alert("All fields are required ❌");
+       
+        showMessage("All fields are required ", "error");
         return;
     }
     if (userCreatePassword !== userConfirmPassword) {
-        alert("Passwords do not match ❌");
+        showMessage("Passwords do not match ", "error");
         return;
     }
 
@@ -59,7 +60,21 @@ const userLogin = () => {
     if (loginEmail === storedUser.email && loginPassword === storedUser.confirmPassword) {
         window.location.href = "../index.html";
     } else {
-        alert("Invalid Email or Password");
+        showMessage("Invalid Email or Password ", "error");
     }
 }
+
+
+    function showMessage(message, type = "error") {
+    const box = document.getElementById("message-box");
+    box.textContent = message;
+    box.className = type; 
+    box.style.display = "block";
+
+ 
+    setTimeout(() => {
+        box.style.display = "none";
+    }, 3000);
+}
+
 
