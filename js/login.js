@@ -43,19 +43,20 @@ const addUserDetails = () => {
     const user = {
         name: userName,
         email: userEmail,
-        password: userCreatePassword
+        createPassword: userCreatePassword,
+        confirmPassword:userConfirmPassword
     };
     localStorage.setItem("user", JSON.stringify(user));
     window.location.href = "../index.html";
 }
 
 const userLogin = () => {
-    const loginEmail = document.getElementById("login-email");
-    const loginPassword = document.getElementById("password");
+    const loginEmail = document.getElementById("login-email").value.trim();
+    const loginPassword = document.getElementById("password").value.trim();
 
-    const storedEmail = localStorage.getItem("email");
-    const storedPassword = localStorage.getItem("confirmPassword");
-    if (loginEmail.value === storedEmail && loginPassword.value === storedPassword) {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+
+    if (loginEmail === storedUser.email && loginPassword === storedUser.confirmPassword) {
         window.location.href = "../index.html";
     } else {
         alert("Invalid Email or Password");
