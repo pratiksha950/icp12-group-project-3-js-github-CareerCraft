@@ -23,3 +23,19 @@ function openOverlay() {
 function closeOverlay() {
   document.getElementById("overlay").style.display = "none";
 }
+
+
+const userName = document.getElementById("name");
+const userEmail = document.getElementById("email");
+const userCreatePassword = document.getElementById("create-password");
+const userConfirmPassword = document.getElementById("confirm-password");
+
+const addUserDetails = ()=>{
+
+    localStorage.setItem("name",userName.value);
+    localStorage.setItem("email",userEmail.value);
+    localStorage.setItem("createPassword",userCreatePassword.value);
+    localStorage.setItem("confirmPassword",userConfirmPassword.value);
+}
+
+
