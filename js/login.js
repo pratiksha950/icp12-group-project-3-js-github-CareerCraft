@@ -26,15 +26,27 @@ function closeOverlay() {
 
 const addUserDetails = () => {
 
-    const userName = document.getElementById("name");
-    const userEmail = document.getElementById("email");
-    const userCreatePassword = document.getElementById("create-password");
-    const userConfirmPassword = document.getElementById("confirm-password");
+    const userName = document.getElementById("name").value.trim();
+    const userEmail = document.getElementById("email").value.trim();
+    const userCreatePassword = document.getElementById("create-password").value.trim();
+    const userConfirmPassword = document.getElementById("confirm-password").value.trim();
 
-    localStorage.setItem("name", userName.value);
-    localStorage.setItem("email", userEmail.value);
-    localStorage.setItem("createPassword", userCreatePassword.value);
-    localStorage.setItem("confirmPassword", userConfirmPassword.value);
+     if (!userName || !userEmail || !userCreatePassword || !userConfirmPassword) {
+        alert("All fields are required ❌");
+        return;
+    }
+    if (userCreatePassword !== userConfirmPassword) {
+        alert("Passwords do not match ❌");
+        return;
+    }
+
+    const user = {
+        name: userName,
+        email: userEmail,
+        password: userCreatePassword
+    };
+    localStorage.setItem("user", JSON.stringify(user));
+    window.location.href = "../index.html";
 }
 
 const userLogin = () => {
