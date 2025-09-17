@@ -118,6 +118,9 @@ body {
     color: transparent;
     -webkit-text-fill-color: transparent;
 }
+.content1 li{
+    list-style: none;
+}
 .content1 a:hover {
     color: orange;
 }
@@ -218,4 +221,22 @@ body {
 .sidebar a{
     width: 100%;
 }
+.menu-btn{
+    display: none;
+}
 
+@media (max-width:760px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+    display: contents;
+    }
+    .content3{
+        display: none;
+    }
+    .location{
+        display: none;
+    }
+
+}
