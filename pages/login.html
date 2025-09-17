@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="../css/login.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/login.css">
 </head>
+
 <body>
-    <div class="login-container">
-    <h2>Login</h2>
+  <div class="login-container">
+    <h2 class="container-heading">Login</h2>
     <form>
       <input type="text" placeholder="Username" required class="user-input">
       <div class="password-div" id="password-div" onclick="changeOutline()">
-      <input type="password" placeholder="Password" required class="input-div" id="password">
-      <img src="../login-img/open.png" alt="password-disabled-icon" class="toggle-img" id="toggle-icon" onclick="toggleImgView()">
+        <input type="password" placeholder="Password" required class="input-div" id="password">
+        <img src="../login-img/open.png" alt="password-disabled-icon" class="toggle-img" id="toggle-icon"
+          onclick="toggleImgView()">
       </div>
-      <button type="submit">Login</button>
+      <button type="submit" class="button">Login Here</button>
     </form>
-    <p>Don’t have an account? <a href="#">Register</a></p>
+    <p class="para">Don’t have an account? <a href="#" onclick="openOverlay()" class="anchor">Register</a></p>
+  </div>
+
+  <div id="overlay" class="overlay">
+    <div class="Register-container">
+      <h2 class="container-heading">Register Here</h2>
+      <form>
+        <input type="text" placeholder="Enter your name" required class="user-input user-input-register">
+        <input type="email" placeholder="Enter your email" required class="user-input user-input-register">
+        <input type="password" placeholder="Create password" required class="user-input user-input-register">
+        <input type="password" placeholder="Confirm password" required class="user-input user-input-register">
+        <div>
+        <input type="checkbox" class="checkbox"> I accept all terms & conditions
+        <button type="submit" class="button">Register now</button>
+        </div>
+        <p class="para"> Already have an account? <a href="#" onclick="closeOverlay()" class="anchor">Login Now</a></p>
+      </form>
   </div>
 </body>
 <script src="../js/login.js"></script>
+
 </html>

@@ -10,22 +10,23 @@ body {
 
 .login-container {
     background: #fff;
-    padding: 30px;
+    padding: 25px 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
 }
 
-.login-container h2 {
-    margin-bottom: 20px;
+.container-heading {
+    margin-bottom: 10px;
     color: #333;
+    margin-top: 5px;
 }
 
 .user-input {
     width: 92%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 15px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
     font-size: 14px;
@@ -39,12 +40,6 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     
 }
-
-.password-div:{
-    outline: auto;
-    border: 1px solid black;
-}
-
 .input-div {
     outline: none;
     border: none;
@@ -58,7 +53,7 @@ body {
     cursor: pointer;
 }
 
-.login-container button {
+.button {
     width: 100%;
     padding: 10px;
     background: #2575fc;
@@ -70,16 +65,48 @@ body {
     margin-top: 10px;
 }
 
-.login-container button:hover {
+.button:hover {
     background: #1a5ed1;
 }
 
-.login-container p {
+.para {
     margin-top: 15px;
     font-size: 14px;
 }
 
-.login-container a {
+.anchor {
     color: #2575fc;
     text-decoration: none;
+}
+
+.overlay {
+    display: none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6); 
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.Register-container {
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-input-register{
+    margin: 8px 0px;
+}
+.checkbox{
+    margin-left: -65px;
+    padding: 20px;
 }
