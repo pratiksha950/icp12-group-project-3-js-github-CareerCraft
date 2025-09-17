@@ -22,14 +22,30 @@ body {
     color: #333;
 }
 
-.login-container input {
-    width: 100%;
+.user-input{
+    width: 92%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 8px;
-    outline: none;
     font-size: 14px;
+}
+.password-div{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.input-div{
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+}
+.toggle-img{
+    height: 30px;
+    padding: 2px 8px;
+    cursor: pointer;
 }
 
 .login-container button {
