@@ -4,8 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="./Images/logo.png" >
+        </div>
+
+        <div class="location">
+           
+            <div class="location-logo"><img src="./Images/map.png" height="20px" width="20px"></div>
+            <div class="location-info">deliver to <h1>413715</h1></div>
+            <button class="digital-box1"><img class="down-arrow" src="./Images/down-arrow.png" height="10px" width="20px"> </button>
+        </div>
+
+        <div class="nav-search">
+        <select class="search-select"> <option>All</option></select>  
+        <input placeholder="Search Amazon" class="search-input">
+        <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+
+
+
+
+        <div  class="content1">
+                <a href="#">About Us</a>
+                <a href="#">Career Guidance</a>
+                <a href="#">E-Learning</a>
+                <a href="#">Scholarships</a>
+                <a href="#">Login</a>
+                <a href="#">Cart</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+
+
+         <div class="mobile-menu" id="mobileMenu">
+         <a href="#">Home</a>
+         <a href="#">About</a>
+         <a href="#">Services</a>
+         <a href="#">Contact</a>
+         </div>
+        </div>
+
+         
+           
+    </header><hr>
     
+
+    <script src="./index.js"></script>
 </body>
 </html>
