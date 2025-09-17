@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+}
+.heading-container {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.scholarship-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    background-color:#d8e0f6;
+}
+.scholarship-img-container img{
+    height: 55px;
+}
+.text-container {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+}
+.text-container h1 {
+    font-size: 40px;
+font-weight: bold;
+
+}
+.text-container span {
+    color:#2563EB;
+}
+.text-container p {
+    font-size: 21px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 80%;
+    padding:0px 10px;
+}
+@media (max-width: 600px) {
+   
+    .text-container p {
+      padding: 0px;
+        max-width: 100%;
+    }
+}
