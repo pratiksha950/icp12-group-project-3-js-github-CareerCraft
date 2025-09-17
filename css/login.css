@@ -22,7 +22,7 @@ body {
     color: #333;
 }
 
-.user-input{
+.user-input {
     width: 92%;
     padding: 10px;
     margin: 10px 0;
@@ -30,19 +30,29 @@ body {
     border-radius: 8px;
     font-size: 14px;
 }
-.password-div{
+
+.password-div {
     border: 1px solid #ccc;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    
 }
-.input-div{
+
+.password-div:{
+    outline: auto;
+    border: 1px solid black;
+}
+
+.input-div {
     outline: none;
     border: none;
     font-size: 14px;
     padding: 10px;
 }
-.toggle-img{
+
+.toggle-img {
     height: 30px;
     padding: 2px 8px;
     cursor: pointer;

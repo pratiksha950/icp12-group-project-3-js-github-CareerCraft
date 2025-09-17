@@ -11,9 +11,9 @@
     <h2>Login</h2>
     <form>
       <input type="text" placeholder="Username" required class="user-input">
-      <div class="password-div">
-      <input type="password" placeholder="Password" required class="input-div">
-      <img src="../login-img/open.png" alt="password-disabled-icon" class="toggle-img">
+      <div class="password-div" id="password-div" onclick="changeOutline()">
+      <input type="password" placeholder="Password" required class="input-div" id="password">
+      <img src="../login-img/open.png" alt="password-disabled-icon" class="toggle-img" id="toggle-icon" onclick="toggleImgView()">
       </div>
       <button type="submit">Login</button>
     </form>
