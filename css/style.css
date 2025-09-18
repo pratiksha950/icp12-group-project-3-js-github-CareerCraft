@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -136,7 +137,10 @@ body {
     align-items: center;
 }
 .content3 {
-    margin-top: 70px;
+    position: fixed;
+    top: 75px;  
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     gap: 69px;
@@ -144,9 +148,7 @@ body {
     background: #f3f3f3;
     height: 35px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    position: fixed;
-    width: 100%;
-     z-index: 999;
+    z-index: 999;
 }
 .content3 a {
     text-decoration: none;
