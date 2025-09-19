@@ -96,7 +96,6 @@ font-weight: bold;
 .card span{
     font-size: 23px;
     font-weight: 700;
-    
 }
 .card1 span{
     color: #1E40AF;
@@ -135,4 +134,70 @@ font-weight: bold;
         width: 45%;
     }
     
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 40px;
+    padding:20px 40px;
+    background-color: white;
+    border-radius: 8px; ;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.search{
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 70%;
+    font-size: 16px;
+    outline: none;
+}
+.search:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+#categories {
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 10px;
+    width: 30%;
+    outline: none;
+}
+#categories:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+@media (max-width: 1020px) and (min-width: 601px) {
+    .search-container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px;
+        padding: 20px;
+    }
+    .search{
+        width: 100%;
+    }
+    #categories{
+        width: 100%;
+        margin-left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .search-container{
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+    .search{
+        width: 100%;
+    }
+    #categories{
+        width: 100%;
+        margin-left: 0;
+    }
+ 
 }
