@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
     <link rel="stylesheet" href="../css/contact.css">
 </head>
+
 <body>
     <header>
         <div class="nav-bar">
-        <div class="logo">
-            <img src="../images/logo.png" >
-        </div>
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
 
-        <div class="location">
-           
-            <div class="location-logo"><img src="../Images/map.png" height="20px" width="20px"></div>
-            <div class="location-info">deliver to <h1>413715</h1></div>
-            <button class="digital-box1"><img class="down-arrow" src="../Images/down-arrow.png" height="10px" width="20px"> </button>
-        </div>
+            <div class="location">
 
-        <div class="nav-search">
-        <select class="search-select"> <option>All</option></select>  
-        <input placeholder="Search Amazon" class="search-input">
-        <div class="search-icon">
-        <i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
+                <div class="location-logo"><img src="../Images/map.png" height="20px" width="20px"></div>
+                <div class="location-info">deliver to <h1>413715</h1>
+                </div>
+                <button class="digital-box1"><img class="down-arrow" src="../Images/down-arrow.png" height="10px"
+                        width="20px"> </button>
+            </div>
 
-        <div  class="content1">
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="content1">
                 <li class="hideOnMobile"><a href="#">Home</a></li>
                 <li class="hideOnMobile"><a href="#">About Us </a></li>
                 <li class="hideOnMobile"><a href="#">Contact</a></li>
                 <li class="hideOnMobile"><a href="#">Login</a></li>
                 <li class="hideOnMobile"><a href="#"> Cart</a></li>
-                <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png"
+                            height="20px" width="20px"></a></li>
+            </div>
+
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"><a>
+                <li>
+                <li><a href="#">login</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">E-learning</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">Career Guidance</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Cart</a></li>
+
+            </ul>
         </div>
 
-        <ul class="sidebar">
-        <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"><a><li>
-        <li><a href="#">login</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">E-learning</a></li>
-        <li><a href="#">Scholarships</a></li>
-        <li><a href="#">Career Guidance</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Cart</a></li>
-        
-        </ul>
-        </div> 
-       
-   
     </header>
+
+    <div class="heading-div">
+        <h1 class="heading-text">We're Here to Help</h1>
+        <p class="head-para">Have questions about your career path, courses, or scholarships? Our expert team is ready
+            to assist you.</p>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-left">
+            <img src="../images/contact-us/Contact-us.png" alt="Contact Us" class="contact-img">
+        </div>
+        <div class="contact-right">
+            <h3>Send Message</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+
+     
+
     <script src="../js/index.js"></script>
 </body>
+
 </html>
