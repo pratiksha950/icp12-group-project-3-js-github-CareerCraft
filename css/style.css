@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    /* min-height: 100vh; */
+    
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -217,16 +217,25 @@ body {
 .sidebar a{
     width: 100%;
 }
+
 .menu-btn{
     display: none;
+   
 }
 
-@media (max-width:760px){
+@media (max-width:740px){
+    .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+    width: 100%;
+    }    
     .hideOnMobile{
         display: none;
     }
     .menu-btn{
-    display: contents;
+    display: block;
     }
     .content3{
         display: none;
@@ -235,7 +244,7 @@ body {
         display: none;
     }
     .logo img {
-    height: 100px;
+    height: 80px;
     width: 130px;
     object-fit: contain;
     margin-left: 0px;
@@ -243,8 +252,67 @@ body {
     .search-select{
         display: none;
     }
+    .nav-search{
+        margin-right: 30%;
+
+    }
+    .nav-search {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    height: 25px;
+    border-radius: 4px;
+    border: none;
+    width: 23%; 
+    overflow: hidden;
+}
+    
 
 }
+@media (max-width:740px){
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000; /* bada rakho taaki sabse upar rahe */
+        width: 100%;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .content3{
+        display: none;
+    }
+    .location{
+        display: none;
+    }
+    .logo img {
+        height: 80px;
+        width: 130px;
+        object-fit: contain;
+        margin-left: 0px;
+    }
+    .search-select{
+        display: none;
+    }
+    .nav-search{
+        margin-right: 30%;
+    }
+    .nav-search {
+        display: flex;
+        align-items: center;
+        background-color: pink;
+        height: 25px;
+        border-radius: 4px;
+        border: none;
+        width: 23%; 
+        overflow: hidden;
+    }
+}
+
 
 /* image slider */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -414,14 +482,45 @@ body {
     }
 }
 @media (max-width: 600px) {
-    .img-slider .list .item .content{
-        padding-right: 0;
-        font-size: 12px;
+    .thumbnail {
+        bottom: 10px;
+        gap: 10px;
+        left: 50%; 
     }
-    .img-slider .list .item .title{
-        font-size: 30px;
+    .thumbnail .item {
+        width: 80px;
+        height: 120px;
     }
-    .SUBSCRIBE{
-        display: none;
+    .arrows {
+        top: 80%;
+        left: 10%;
+        width: 80%;
+        gap: 5px;
     }
+    .arrows button {
+        height: 50px;
+        width: 50px;
+        font-size: medium;
+    }
+    .img-slider .list .item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;   
+    border-radius: 0;
+    display: block;
+    height: 70vh;
+    }
+    .img-slider .list .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #858383; 
+    }
+    .img-slider{
+        height: 100%;
+        width: 100%;
+
+    }
+
 }
+ 

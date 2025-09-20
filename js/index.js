@@ -36,17 +36,17 @@ function showSlider(type) {
   if (type === "next") {
     listItem.appendChild(itemSlider[0]);
     thumbnail.appendChild(itemThumbnail[0]);
-    img-slider.classList.add("next");
+    imgSlider.classList.add("next");
   } else {
     listItem.prepend(itemSlider[itemSlider.length - 1]);
     thumbnail.prepend(itemThumbnail[itemThumbnail.length - 1]);
-    img-slider.classList.add("pre");
+    imgSlider.classList.add("pre");
   }
 
   clearTimeout(runTimeOut);
   runTimeOut = setTimeout(() => {
-    img-slider.classList.remove("next");
-    img-slider.classList.remove("pre");
+    imgSlider.classList.remove("next");
+    imgSlider.classList.remove("pre");
   }, timeRunning);
 
   clearTimeout(runAutoRun);
