@@ -68,17 +68,17 @@
         </div>
         <div class="categories-container">
             <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
-            <select name="categories" id="categories">
-                <option value="all">All Categories</option>
-                <option value="merit-based">Merit-Based</option>
-                <option value="need-based">Need-Based</option>
-                <option value="research">Research</option>
-                <option value="women">Women</option>
+            <select name="categories" id="categories" onchange="filterCards()">
+                <option value="All">All Categories</option>
+                <option value="Merit-Based">Merit-Based</option>
+                <option value="Need-Based">Need-Based</option>
+                <option value="Research">Research</option>
+                <option value="Women">Women</option>
             </select>
         </div>
     </div>
     <div class="scho-cards-container">
-        <div class="scho-card">
+        <div class="scho-card" data-category="Need-Based">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/hdfc.png" alt="bank">
@@ -123,7 +123,7 @@
             </div>
         </div>
 
-        <div class="scho-card merit-based">
+        <div class="scho-card " data-category="Merit-Based">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/she-scho.png" alt="bank">
@@ -168,7 +168,7 @@
             </div>
         </div>
 
-        <div class="scho-card">
+        <div class="scho-card" data-category="Merit-Based">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/tata-scho.png" alt="bank">
@@ -212,7 +212,7 @@
             </div>
         </div>
 
-        <div class="scho-card women-card">
+        <div class="scho-card" data-category="Women">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/group.png" alt="bank">
@@ -257,7 +257,7 @@
             </div>
         </div>
 
-        <div class="scho-card">
+        <div class="scho-card" data-category="Research">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/kishori-scho.png" alt="bank">
@@ -302,7 +302,7 @@
             </div>
         </div>
 
-        <div class="scho-card">
+        <div class="scho-card" data-category="Need-Based ">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/blue-scholarship.png" alt="bank">
@@ -346,7 +346,7 @@
             </div>
         </div>
 
-        <div class="scho-card">
+        <div class="scho-card" data-category="Merit-Based">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/merit-scho.png" alt="bank">
@@ -389,7 +389,7 @@
             </div>
         </div>
 
-    <div class="scho-card">
+    <div class="scho-card" data-category="Merit-Based">
             <div class="scho-header">
                 <div class="scho-img">
                     <img src="../images/scholarship-page-imgs/birla.png" alt="bank">
