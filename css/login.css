@@ -1,6 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background-image: url("../login-img/login-background-img.jpg"); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
     display: flex;
     justify-content: center;
     align-items: center;
