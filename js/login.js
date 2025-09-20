@@ -78,7 +78,7 @@ function showMessage(message, type = "error") {
 
     setTimeout(() => {
         box.style.display = "none";
-    }, 3000);
+    }, 2000);
 }
 
 
