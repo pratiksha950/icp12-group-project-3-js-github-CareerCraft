@@ -31,22 +31,26 @@ const addUserDetails = () => {
     const userCreatePassword = document.getElementById("create-password").value.trim();
     const userConfirmPassword = document.getElementById("confirm-password").value.trim();
 
-     if (!userName || !userEmail || !userCreatePassword || !userConfirmPassword) {
-       
-        showMessage("All fields are required ", "error");
-        return;
+    if (!userName || !userEmail || !userCreatePassword || !userConfirmPassword) {
+         alert("All fields are required");
+         return;
     }
     if (userCreatePassword !== userConfirmPassword) {
-        showMessage("Passwords do not match ", "error");
-        return;
+         alert("Passwords do not match ");
+         return;
     }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
 
     const user = {
         name: userName,
         email: userEmail,
         createPassword: userCreatePassword,
-        confirmPassword:userConfirmPassword
+        confirmPassword: userConfirmPassword
     };
+
+    users.push(user);
     localStorage.setItem("user", JSON.stringify(user));
     window.location.href = "../index.html";
 }
@@ -65,13 +69,13 @@ const userLogin = () => {
 }
 
 
-    function showMessage(message, type = "error") {
+function showMessage(message, type = "error") {
     const box = document.getElementById("message-box");
     box.textContent = message;
-    box.className = type; 
+    box.className = type;
     box.style.display = "block";
 
- 
+
     setTimeout(() => {
         box.style.display = "none";
     }, 3000);
