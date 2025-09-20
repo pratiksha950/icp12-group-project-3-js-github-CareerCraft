@@ -240,7 +240,6 @@ font-weight: bold;
     gap: 20px;
     padding: 20px 40px;
     width: 100%;
-
 }
 .scho-card{
     border-radius: 8px;
@@ -251,13 +250,15 @@ font-weight: bold;
     display: flex;
     flex-direction: column;
      gap: 15px;
-    max-width: 350px;
+    width: 350px;;
+    min-width: 280px;
     background-color: white;
     margin: 10px;
 }
 .scho-header{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 5px;
 }
 .scho-img{
@@ -285,17 +286,43 @@ font-weight: bold;
     color: #2563EB;
 }
 .scho-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 .scho-text span{
     color: gray;
     font-size: 15px;
     font-weight: 400;
 }
-.scho-categorie{
-    background-color: #dbeafe;
+.categorie-need{
     color: #047857;
+    background-color: #e6fef7;
+}
+.categorie-need:hover{
+    background-color:#b5fde8;
+}
+.categorie-merit{
+    color: #2563EB;
+    background-color: #e8eefd;
+}
+.categorie-merit:hover{
+    background-color:#b5d9fc;
+}
+.categorie-women{
+    color: #DB2777;
+    background-color:#ffe6ea;
+}
+.categorie-women:hover{
+    background-color:#ffb3c1;
+}
+.categorie-research{
+    color: #cc6600;
+    background-color: #fff4e5;
+}
+.categorie-research:hover{
+    background-color:#ffcc99;
+}
+.scho-categorie{
     padding: 5px 10px;
     border-radius: 6px;
     font-weight: 600;
@@ -399,9 +426,23 @@ font-weight: bold;
 .apply-btn:hover{
     background-color: #1E40AF;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1023px) and (min-width: 796px) {
     .scho-cards-container{
         justify-content: center;
         padding: 20px 10px;
+    }
+    .scho-card{
+        margin: 0px 30px;
+    }
+}
+@media (max-width: 796px) {
+    .scho-cards-container{
+        justify-content: center;
+        padding: 20px 10px;
+         
+    }
+    .scho-card{
+        width: 100%;
+        
     }
 }
