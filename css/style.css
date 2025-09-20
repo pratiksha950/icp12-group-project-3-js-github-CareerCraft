@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 body {
-    
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -276,6 +275,9 @@ body {
     overflow: hidden;
 
 } */
+ .img-slider{
+    display: inline;
+ }
 .img-slider .list .item{
     position: absolute;
     top: 0;
@@ -470,34 +472,73 @@ body {
       justify-content: center;
       background: #858383; 
     }
-    .img-slider{
-        height: 100%;
-        width: 100%;
-
-    }
 
 }
 .parag{
     height: 1000px;
     width: 100%;
     border: 2px solid black;
-    margin-top: 48%;
+    margin-top: 49%;
+    font-family: 'Times New Roman', Times, serif;
 }
 /* // scholership Numbers */
 .numbers{
     height: 100px;
     width: 100%;
-    border: 2px solid black;
+    border: 2px solid #a29c9c;
     border-radius: 15px;
     display: flex;
-    justify-content: space-around;
-    background-color: gainsboro;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
 }
 .num1{
     line-height: 40px;
+    font-size: 20px;
 }
 .num1 p{
     font-size: 30px;
     color:#3189FC;
     font-weight: bolder;
+}
+
+@media  (max-width: 1324px) {
+    .parag{
+        margin-top: 60%;
+    }
+}
+@media  (max-width: 640px) {
+    .parag{
+        margin-top: 150%;
+        width: 300px;
+    }
+    .item{
+        height: 80%;
+    }
+    .thumbnail{
+        margin-bottom: 40%;
+    }
+    .arrows{
+    position: absolute;
+    top: 410px;
+    }
+    .arrows button{
+    background-color: rgb(95, 89, 89);
+    }
+    .SC1{
+        display:none;
+    }
+    .SC4{
+        display:none;
+    }
+    .numbers{
+        width: 290px;
+        height: 100px;
+    }
+    .num1 p{
+    font-size: 24px;
+    color:#3189FC;
+    font-weight: bolder;
+    }
+
+
 }
