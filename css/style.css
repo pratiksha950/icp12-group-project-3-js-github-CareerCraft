@@ -167,7 +167,7 @@ body {
 /* hamburger */
 .sidebar{
     position: fixed;
-    top: 100%;
+    top: 20%;
     right: 0;
     height: 80vh;
     width: 200px;
@@ -219,63 +219,10 @@ body {
 
 .menu-btn{
     display: none;
-   
 }
-
-/* @media (max-width:740px){
-    .nav-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000; 
-        width: 100%;
-    }
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-btn{
-        display: block;
-    }
-    .content3{
-        display: none;
-    }
-    .location{
-        display: none;
-    }
-    .logo img {
-        height: 80px;
-        width: 130px;
-        object-fit: contain;
-        margin-left: 0px;
-    }
-    .search-select{
-        display: none;
-    }
-    .nav-search{
-        margin-right: 30%;
-    }
-    .nav-search {
-        display: flex;
-        align-items: center;
-        background-color: pink;
-        height: 25px;
-        border-radius: 4px;
-        border: none;
-        width: 23%; 
-        overflow: hidden;
-    }
-}
-
- */
 /* image slider */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/* .animal{
-    height:90vh;
-    width: 100vw;
-    overflow: hidden;
-
-} */
- .img-slider{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+.img-slider{
     display: inline;
  }
 .img-slider .list .item{
@@ -318,8 +265,8 @@ body {
     z-index: 200;
 }
 .arrows button{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius: 50px;
     background-color: #eee4;
     border: none;
@@ -518,11 +465,11 @@ body {
         margin-bottom: 40%;
     }
     .arrows{
-    position: absolute;
-    top: 410px;
+      position: absolute;
+      top: 410px;
     }
     .arrows button{
-    background-color: rgb(95, 89, 89);
+      background-color: rgb(95, 89, 89);
     }
     .SC1{
         display:none;
@@ -531,14 +478,49 @@ body {
         display:none;
     }
     .numbers{
-        width: 290px;
+        width: 300px;
         height: 100px;
     }
     .num1 p{
-    font-size: 24px;
-    color:#3189FC;
-    font-weight: bolder;
+        font-size: 24px;
+        color:#3189FC;
+        font-weight: bolder;
     }
-
-
+    .nav-bar{
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    .logo img{
+        height: 60px;
+        width: 90px;
+    }
+    .location{
+        display:none;
+    }
+    .hideOnMobile{
+       display:none;
+      
+    }
+    .menu-btn{
+        display: block;
+    }
+    .search-icon{
+        display: none;
+    }
+    .search-input{
+        width: 80px;
+    }
+    .search-select{
+         width: 20px;
+    }
+    .nav-search{
+        width: 100px;
+        border: none;
+    }
+    .content3{
+        display:none;
+    }
+    .list{
+        width: 300px;
+    }
 }
