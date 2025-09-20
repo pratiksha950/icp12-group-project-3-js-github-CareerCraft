@@ -399,4 +399,9 @@ font-weight: bold;
 .apply-btn:hover{
     background-color: #1E40AF;
 }
-
+@media (max-width: 1023px) {
+    .scho-cards-container{
+        justify-content: center;
+        padding: 20px 10px;
+    }
+}
