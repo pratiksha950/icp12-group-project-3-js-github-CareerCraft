@@ -10,8 +10,8 @@ function hideSidebar(){
 // image slider
 let nextBtn = document.querySelector(".next");
 let preBtn = document.querySelector(".pre");
-let animal = document.querySelector(".animal");
-let listItem = document.querySelector(".animal .list");
+let imgSlider = document.querySelector(".img-slider");
+let listItem = document.querySelector(".img-slider .list");
 let thumbnail = document.querySelector(".thumbnail");
 
 let timeRunning = 3000;
@@ -30,23 +30,23 @@ preBtn.onclick = function () {
 };
 
 function showSlider(type) {
-  let itemSlider = document.querySelectorAll(".animal .list .item");
+  let itemSlider = document.querySelectorAll(".img-slider .list .item");
   let itemThumbnail = document.querySelectorAll(".thumbnail .item");
 
   if (type === "next") {
     listItem.appendChild(itemSlider[0]);
     thumbnail.appendChild(itemThumbnail[0]);
-    animal.classList.add("next");
+    img-slider.classList.add("next");
   } else {
     listItem.prepend(itemSlider[itemSlider.length - 1]);
     thumbnail.prepend(itemThumbnail[itemThumbnail.length - 1]);
-    animal.classList.add("pre");
+    img-slider.classList.add("pre");
   }
 
   clearTimeout(runTimeOut);
   runTimeOut = setTimeout(() => {
-    animal.classList.remove("next");
-    animal.classList.remove("pre");
+    img-slider.classList.remove("next");
+    img-slider.classList.remove("pre");
   }, timeRunning);
 
   clearTimeout(runAutoRun);
