@@ -21,7 +21,6 @@ body {
     z-index: 1000;
     padding: 0 20px;
     background-color: #f3f3f3;
-    overflow: hidden;
 }
 .logo img {
     height: 100px;
@@ -224,9 +223,7 @@ body {
 /* image slider */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
 .img-slider{
-    overflow: hidden;
     display: inline;
-    width: 100%;
  }
 .img-slider .list .item{
     position: absolute;
@@ -234,7 +231,6 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
 }
 .thumbnail{
     position: absolute;
@@ -460,11 +456,13 @@ body {
 @media  (max-width: 640px) {
     .parag{
         margin-top: 150%;
-        width: 100%;
-        overflow: hidden;
+        width: 300px;
     }
     .item{
         height: 80%;
+        width: 100%;
+    }
+    .nav-bar{
         width: 100%;
     }
     .thumbnail{
@@ -484,7 +482,7 @@ body {
         display:none;
     }
     .numbers{
-        width:100%;
+        width: 300px;
         height: 100px;
     }
     .num1 p{
@@ -493,7 +491,7 @@ body {
         font-weight: bolder;
     }
     .nav-bar{
-        width: 100%;
+        width: 300px;
         flex-wrap: wrap;
     }
     .logo img{
@@ -526,13 +524,13 @@ body {
     .content3{
         display:none;
     }
-    .list{
+    .nav-bar{
         width: 100%;
     }
-    .nav-bar{
-    width: 100%;
-    flex-wrap: wrap;
-    overflow: hidden;
+    .parag{
+        width: 100%;
     }
-
+    .numbers{
+        width: 100%;
+    }
 }
