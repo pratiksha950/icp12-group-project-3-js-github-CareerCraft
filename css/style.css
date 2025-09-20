@@ -223,58 +223,12 @@ body {
    
 }
 
-@media (max-width:740px){
-    .nav-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index:1000;
-    width: 100%;
-    }    
-    .hideOnMobile{
-        display: none;
-    }
-    .menu-btn{
-    display: block;
-    }
-    .content3{
-        display: none;
-    }
-    .location{
-        display: none;
-    }
-    .logo img {
-    height: 80px;
-    width: 130px;
-    object-fit: contain;
-    margin-left: 0px;
-    }
-    .search-select{
-        display: none;
-    }
-    .nav-search{
-        margin-right: 30%;
-
-    }
-    .nav-search {
-    display: flex;
-    align-items: center;
-    background-color: pink;
-    height: 25px;
-    border-radius: 4px;
-    border: none;
-    width: 23%; 
-    overflow: hidden;
-}
-    
-
-}
-@media (max-width:740px){
+/* @media (max-width:740px){
     .nav-bar {
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 1000; /* bada rakho taaki sabse upar rahe */
+        z-index: 1000; 
         width: 100%;
     }
     .hideOnMobile{
@@ -313,7 +267,7 @@ body {
     }
 }
 
-
+ */
 /* image slider */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* .animal{
@@ -523,4 +477,27 @@ body {
     }
 
 }
- 
+.parag{
+    height: 1000px;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 48%;
+}
+/* // scholership Numbers */
+.numbers{
+    height: 100px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: gainsboro;
+}
+.num1{
+    line-height: 40px;
+}
+.num1 p{
+    font-size: 30px;
+    color:#3189FC;
+    font-weight: bolder;
+}

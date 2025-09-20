@@ -54,3 +54,24 @@ function showSlider(type) {
     nextBtn.click();
   }, timeAutoNext);
 }
+
+
+// scholership Numbers
+document.addEventListener("DOMContentLoaded",()=>{
+   const nums =document.querySelectorAll(".start");
+
+nums.forEach(num=>{
+    let target=+num.getAttribute("data-target");
+    let count=0;
+    
+let increment=Math.ceil(target/200);
+let interval=setInterval(() => {
+  count+=increment;
+  if(count>=target){
+    count=target;
+    clearInterval(interval);
+  }
+  num.innerText=count.toLocaleString()+"+";
+}, 80);
+});
+});
