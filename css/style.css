@@ -166,7 +166,7 @@ body {
     color: rgb(186, 91, 32);
 }
 /* hamburger */
-.sidebar{
+.sidebar {
     position: fixed;
     top: 0;
     right: 0;
@@ -180,7 +180,9 @@ body {
     justify-content: flex-start;
     backdrop-filter: blur(10px);
     display: none;
+   
 }
+
 .sidebar ul{
     width: 100%;
     list-style: none;
@@ -193,6 +195,7 @@ body {
 .sidebar li{
     height: 50px;
     list-style: none;
+    background-color: white; 
     
 }
 .sidebar a{
@@ -218,7 +221,6 @@ body {
 .sidebar a{
     width: 100%;
 }
-
 .menu-btn{
     display: none;
 }
@@ -457,7 +459,7 @@ body {
 }
 @media  (max-width: 640px) {
     .parag{
-        margin-top: 150%;
+        margin-top: 90%;
         width: 100%;
         max-width: 100%;  
     }
@@ -531,6 +533,7 @@ body {
     }
     .list .item{
         width: 100%;
+        height: 300px;
         
     }
     header{
@@ -551,6 +554,19 @@ body {
     .Opportunities h1{
     font-size: 28px !important;
     }
+    .img-slider .list .item img{
+        object-fit: contain;
+        max-width: 100%; 
+        width: 100%; 
+        height: 100%; 
+    }
+    .arrows {
+        top: 35%;
+        left: 33%;
+        width: 80%;
+        gap: 5px;
+    }
+
 }
 
 .OppImg{
