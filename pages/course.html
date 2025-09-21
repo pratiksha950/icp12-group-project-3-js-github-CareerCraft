@@ -17,7 +17,7 @@
 
         <div class="search">
             <img src="../images/scholarship-page-imgs/search.png" alt="">
-            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input">
+            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input" onkeyup="filterCard()">
         </div>
         <div class="level-container">
             <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
@@ -30,13 +30,12 @@
             </select>
         </div>
     </div>
-
     <div class="course-cards-container">
-        <div class="course-card">
+        <div class="course-card" data-level="Biginner">
             <div class="img-container">
                 <img src="../images/course-page-imgs/react.png" alt="react">
 
-                <span>biginner</span>
+                <span>Biginner</span>
                 <!-- <img src="../images/course-page-imgs/play.png" alt="play-icon" class="play-icon" height="20px"> -->
             </div>
             <div class="course-info">
@@ -63,6 +62,9 @@
 
         </div>
     </div>
+
+
+    <script src="../js/course.js"></script>
 </body>
 
 </html>

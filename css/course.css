@@ -183,10 +183,10 @@ body{
     left: 15px;
     top: 15px;
     font-size: 13px;
-    color: green;
+    color:  #12873d;
     padding: 5px 8px;
     border-radius: 8px;
-    background-color: rgb(221, 234, 221);
+    background-color:  #d2f9e0;
 }
 .course-info{
     display: flex;
