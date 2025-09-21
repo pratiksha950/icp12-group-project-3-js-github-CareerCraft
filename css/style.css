@@ -548,7 +548,9 @@ body {
     .img-slider .item img{
       object-fit: contain;
     }
-    
+    .Opportunities h1{
+    font-size: 28px !important;
+    }
 }
 
 .OppImg{
@@ -585,6 +587,8 @@ body {
     justify-content: center;
     align-self:center;
     margin-top: 20px;
+    margin-bottom: 10px;
+
 
 }
 .Opportunities1{
@@ -602,14 +606,79 @@ body {
     margin-bottom: 20px;
     transition: transform 0.9s ease, background 0.3s ease;
     background-color: white;
-    
-
 }
 .Opportunities1:hover{
     background-color: #2d78e1;
     color: white;
     transform: scale(1.1);
 }
-Opportunities1 img:hover{
-    color: white;
+.Partners{
+    height: 350px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    margin-top: 30px;
+     background-color: #efe4e4;
+
+}
+.Partners img{
+    height: 80%;
+    width: 100%;
+    border: none;
+}
+.Partners-img{
+    height: 350px;
+    width: 50%;
+    border: none;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.Partners-info{
+    height: auto;
+    width: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 90px;
+    padding-right: 90px;
+    gap: 4rem;
+
+}
+.center{
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    padding-left:  30%;
+    padding-top: 10px;
+    
+}
+.font{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
+
+}
+@media  (max-width: 640px) {
+    .Partners-img{
+    height: 350px;
+    width: 100%;
+    border: none;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    }
+    .Partners-info{
+    display: none;
+    }
+
 }
