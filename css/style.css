@@ -426,7 +426,7 @@ body {
 
 }
 .parag{
-    height: auto;
+    height: 3000px;
     width: 100%;
     border: 2px solid black;
     margin-top: 49%;
@@ -695,31 +695,40 @@ body {
     }
     .Partners-info{
     display: none;
-
+    }
+    .step-contain1{
+        width: 100%;
+    }
+    .step-contain1{
+    height: 400px;
+    width:200px;
+    overflow-x: hidden;
     }
 
 }
 .steps{
-    height: 400px;
+    height: 450px;
     width: 100%;
-    border: 2px solid black;
+    border:none;
     margin-top: 35px;
     background-color: #efe4e4;
-
+    flex-wrap: wrap;
 }
 .steps h1{
     align-items: center;
     justify-content: center;
 }
 .step-container{
-    height: 500px;
+    height: auto;
     width: 100%;
-    border: 2px solid black;
+    border: none;
     display: flex;
     flex-direction: row;
     margin-top: 30px;
     justify-content: space-evenly;
     border-radius: 15px;
+    flex-wrap: wrap;
+  
 }
 .step-contain1{
     height: 300px;
@@ -732,8 +741,14 @@ body {
     padding-right: 24px;
     justify-content: space-evenly;
     background-color: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.2);
+   margin-top: 20px;
 }
+.step-contain1:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
 .book-icon{
     margin-left: 80px;
     animation: look 1.5s infinite;
@@ -748,9 +763,31 @@ body {
 .steps h1{
     padding-left:29%;
     padding-top: 10px;
-     font-size: 30px;
-     font-weight: bolder;
+    font-size: 30px;
+    font-weight: bolder;
 }
 .step-contain1 p{
     font-size: 18px;
+}
+@media  (max-width: 640px) {
+    .steps{
+    height: 1160px;
+    width: 100%;
+    background-color: #efe4e4;
+    }
+    .font{
+        font-size: 30px;
+    }
+    .steps h1{
+        font-size: 25px;
+        line-height: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .Partners .center{
+        padding-left: 40px;
+        padding-right: 30px;
+
+    }
+
 }
