@@ -550,3 +550,66 @@ body {
     }
     
 }
+
+.OppImg{
+    height: 50px;
+    width: 50px;
+
+}
+.Opportunities {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.section3{
+    height: auto;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    background-color: #efe4e4;
+}
+.Opportunities h1{
+    font-size: 38px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    margin-top: 20px;
+
+}
+.Opportunities1{
+    height: 80px;
+    width: 300px;
+    border: 2px solid rgb(122, 116, 116);
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: transform 0.9s ease, background 0.3s ease;
+    background-color: white;
+    
+
+}
+.Opportunities1:hover{
+    background-color: #2d78e1;
+    color: white;
+    transform: scale(1.1);
+}
+Opportunities1 img:hover{
+    color: white;
+}
