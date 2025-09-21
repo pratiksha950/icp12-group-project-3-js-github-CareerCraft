@@ -5,3 +5,13 @@ cards.forEach(card=>{
     card.style.display=(value=== "All" || card.dataset.category=== value) ? "block" : "none";
 })
 }
+
+let searchScholarships = () => {
+    const searchInput = document.getElementById('search-input').value.toLowerCase();
+    const cards =document.querySelectorAll('.scho-card');
+    cards.forEach(card=>{
+        const title = card.querySelector('.scho-text').innerText.toLowerCase();
+        const description = card.querySelector('.scho-info p').innerText.toLowerCase();
+        card.style.display = (title.includes(searchInput) || description.includes(searchInput)) ? "block" : "none";
+    });
+}
