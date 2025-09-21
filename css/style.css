@@ -791,3 +791,50 @@ body {
     }
 
 }
+.footer{
+    height: 600px;
+    width: 100%;
+    border: 2px solid black;
+    margin-top: 40px;
+    color: #1714de;
+    font-weight: bolder;
+    font-size: 30px;
+   background-color: #f3f3f3;
+}
+.footerPart1{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.list1 li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 19px;
+  color: black;
+  font-weight: bolder;
+  line-height: 40px;
+}
+
+.list1 li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: black;  
+  transition: width 0.3s ease;
+}
+.list1 li a:hover::after {
+  width: 100%;
+}
+.list1{
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
