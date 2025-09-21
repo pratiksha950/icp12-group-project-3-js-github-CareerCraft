@@ -792,14 +792,16 @@ body {
         display: none;
     }
     .footerPart1{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+        display: none;
     }
     .footer{
         width: 100%;
         height: 1000px;
     }
+    .list1 li,.footerFont{
+        display: none;
+    }
+    
 }
 .footer{
     height: 600px;
@@ -889,12 +891,27 @@ body {
 .list2 li {
 list-style: none;
 font-size: 20px;
+align-items: center;
+justify-content: center;
+padding-left: 20px;
 }
 .list2 li a{
     text-decoration: none;
     color: black;
     font-size: 15px;
 }
-
-
+.list2 .adjust{
+    padding-left: 30%;
+}
+.list2 p{
+    font-size: 15px;
+}
+.footerPart2 .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footerPart2{
+    line-height: 30px;
+}
 
