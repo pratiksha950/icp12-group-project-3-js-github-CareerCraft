@@ -170,7 +170,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 50px;
     width: 200px;
     z-index: 99999;
     background-color: rgba(255,255,255,0.8);
@@ -679,6 +679,7 @@ body {
     }
     .Partners-info{
     display: none;
+
     }
 
 }
