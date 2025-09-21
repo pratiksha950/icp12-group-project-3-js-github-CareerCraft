@@ -481,6 +481,7 @@ font-weight: bold;
     }
     .scho-card{
         margin: 0px 30px;
+        width: 40%;
     }
 }
 @media (max-width: 796px) {
@@ -508,6 +509,8 @@ font-weight: bold;
 }
 .help-section h2{
     color: white;
+    text-align: center;
+    font-size:26px ;
 }
 .help-section p{
     width: 70%;
@@ -515,6 +518,7 @@ font-weight: bold;
     line-height: 1.5;
     font-weight: 100;
     color: whitesmoke;
+    font-size: 16px;
 }
 .help-section button{
     background-color: whitesmoke;
@@ -528,4 +532,19 @@ font-weight: bold;
     text-decoration: none;
     font-size: 16px;
     font-weight: 550;
+}
+@media (max-width:1023px) and (min-width:600px) {
+    .help-section p{
+       width: 80%;
+    }
+}
+@media (max-width:601px) {
+    .help-section{
+        padding: 40px 20px;
+        margin: 20px;
+        font-size:20px ;
+    }
+    .help-section p{
+       width: 90%;
+    }
 }
