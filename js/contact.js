@@ -1,21 +1,27 @@
 const contactCard = [
     {
-        imgUrl: "https://via.placeholder.com/120",
+        imgUrl: "../images/contact-us/m2.jpg",
         memberName: "Sarah Johnson",
         role: "Career Counselor",
         sector: "Technology & Engineering"
     },
     {
-        imgUrl: "https://via.placeholder.com/120",
+        imgUrl: "../images/contact-us/m1.jpg",
         memberName: "John Smith",
         role: "Mentor",
-        sector: "Computer Science"
+        sector: "Graduate programs & research"
     },
     {
-        imgUrl: "https://via.placeholder.com/120",
+        imgUrl: "../images/contact-us/m3.jpg",
         memberName: "Emily Davis",
         role: "Advisor",
-        sector: "Mechanical Engineering"
+        sector: "Course guidance & e-learning"
+    },
+    {
+        imgUrl: "../images/contact-us/m3.jpg",
+        memberName: "David Thompson",
+        role: "Scholarship Specialist",
+        sector: "Financial aid & scholarships"
     }
 ];
 
@@ -31,3 +37,5 @@ for (let i = 0; i < contactCard.length; i++) {
         </div>
     `;
 }
+
+
