@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    line-height:1.5;
+    background-color: white;
+}
+.hero-section h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.hero-section p{
+    font-size: 18px;
+    color:#666666;
+    width: 50%;
+    text-align: center;
+}
