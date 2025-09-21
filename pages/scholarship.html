@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship</title>
+    <link rel="stylesheet" href="../css/scholarship.css">
+</head>
+
+<body>
+    <div class="hero-section">
+        <div class="heading-container">
+            <div class="scholarship-img-container">
+                <img src="../images/scholarship-page-imgs/blue-scholarship.png" alt="scholarship" height="55px">
+            </div>
+            <div class="text-container">
+                <h1>
+                    Scholarship <span>Opportunities</span>
+                </h1>
+                <p>Discover funding opportunities to support your educational journey. From merit-based to need-based
+                    scholarships, find the perfect match for your academic goals.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card card1">
+                <div class="img-container">
+                    <img src="../images/scholarship-page-imgs/blue-book.png" alt="book" height="22px">
+                    <span class="text">8</span>
+                </div>
+                <div class="text">
+                    Total Scholarships
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="img-container">
+                    <img src="../images/scholarship-page-imgs/increase.png" alt="book" height="22px">
+                    <span class="text">₹60 Cr+</span>
+                </div>
+                <div class="text">
+                    Total Funding
+                </div>
+            </div>
+            <div class="card card3">
+                <div class="img-container">
+                    <img src="../images/scholarship-page-imgs/categoris.png" alt="categories" height="22px">
+                    <span class="text">4</span>
+                </div>
+                <div class="text">
+                    Categories
+                </div>
+            </div>
+            <div class="card card4">
+                <div class="img-container">
+                    <img src="../images/scholarship-page-imgs/orange-scholarship.png" alt="scholarship" height="25px">
+                    <span class="text">8</span>
+                </div>
+                <div class="text">
+                    Available Now
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="search-container">
+        <img src="" alt="">
+        <div class="search">
+            <img src="../images/scholarship-page-imgs/search.png" alt="">
+            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input"
+                onkeyup="searchScholarships()">
+        </div>
+        <div class="categories-container">
+            <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
+            <select name="categories" id="categories" onchange="filterCards()">
+                <option value="All">All Categories</option>
+                <option value="Merit-Based">Merit-Based</option>
+                <option value="Need-Based">Need-Based</option>
+                <option value="Research">Research</option>
+                <option value="Women">Women</option>
+            </select>
+        </div>
+    </div>
+    <div class="scho-cards-container">
+        <div class="scho-card" data-category="Need-Based">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/hdfc.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    HDFC Educational Crisis Scholarship<br>
+                    <span>HDFC Bank</span>
+                </div>
+                <div class="scho-categorie categorie-need">Need-Based</div>
+            </div>
+            <div class="scho-info">
+                <p>Supporting economically disadvantaged students to continue their education without financial
+                    burden
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> Up to ₹75,000/year</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> Till completion of course
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: March 31,
+                        2025 <span>(Expired)</span></li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>Complete tuition fee coverage + ₹1,000/month for books and stationery</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Family annual income below ₹25,000</li>
+                        <li>Currently enrolled in Class 6th to 12th</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.buddy4study.com/page/hdfc-bank-parivartans-ecss-programme" target="_blank"
+                    class="apply-btn">Apply
+                    Now<img src="../images/scholarship-page-imgs/send.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card " data-category="Merit-Based">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/she-scho.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    INSPIRE Scholarship (SHE)<br>
+                    <span>Department of Science & Technology.</span>
+                </div>
+                <div class="scho-categorie categorie-merit">Merit-Based</div>
+            </div>
+            <div class="scho-info">
+                <p>Inspiring excellence in natural sciences and encouraging research career.
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> ₹80,000/year</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> 5 years (Bachelor's + Master's)
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: July 31, 2025
+                        <span>(Expired)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>₹80,000/year + Research exposure + Summer internships</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Top 1% students in Class 12th board exams</li>
+                        <li>Pursuing Natural & Basic Sciences</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.buddy4study.com/scholarship/inspire-scholarship-for-higher-education-she"
+                    target="_blank" class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png"
+                        alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card" data-category="Merit-Based">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/tata-scho.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    Tata Trusts Scholarship<br>
+                    <span>Tata Trusts</span>
+                </div>
+                <div class="scho-categorie categorie-merit">Merit-Based</div>
+            </div>
+            <div class="scho-info">
+                <p>Empowering talented students to pursue higher education at world-class institutions.
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> Up to ₹25 lakh</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> Complete course duration
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: April 30, 2025
+                        <span>(Expired)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>Full tuition + Living expenses + Travel allowance</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Graduation from recognized Indian university</li>
+                        <li>Minimum 65% aggregate marks</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.buddy4study.com/page/the-tata-capital-pankh-scholarship-programme" target="_blank"
+                    class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card" data-category="Women">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/group.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    Google Women Techmakers Scholarship<br>
+                    <span>Google</span>
+                </div>
+                <div class="scho-categorie categorie-women">Women</div>
+            </div>
+            <div class="scho-info">
+                <p>Supporting economically disadvantaged students to continue their education without financial
+                    burden
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> ₹1,00,000</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> 1 year
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: December 15,
+                        2024 <span>(Expired)</span></li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>₹1,00,000 + Mentorship + Google events access</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Currently enrolled in Bachelor's/Master'</li>
+                        <li>
+                            Female students in computer science</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://collegedunia.com/scholarship/282-googles-women-techmakers-program" target="_blank"
+                    class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card" data-category="Research">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/kishori-scho.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    Kishore Vaigyanik Protsahan Yojana (KVPY)<br>
+                    <span>Department of Science & Technology</span>
+                </div>
+                <div class="scho-categorie categorie-research">Research</div>
+            </div>
+            <div class="scho-info">
+                <p>Supporting economically disadvantaged students to continue their education without financial
+                    burden.
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> ₹84,000/year + ₹28,000
+                        contingency</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> Till PhD completion
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: September 15,
+                        2024<span> (Expired)</span></li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>₹7,000/month (SA/SX) or ₹7,000/month (SB) + Annual contingency</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Class 11th, 12th, or 1st year UG students</li>
+                        <li>Strong performance in mathematics and science</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.indiascienceandtechnology.gov.in/nurturing-minds/scholarships/school/kishore-vaigyanik-protsahan-yojana-kvpy"
+                    target="_blank" class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png"
+                        alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card" data-category="Need-Based">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/blue-scholarship.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    Reliance Foundation Undergraduate Scholarship<br>
+                    <span>Reliance Foundation</span>
+                </div>
+                <div class="scho-categorie categorie-need">Need-Based</div>
+            </div>
+            <div class="scho-info">
+                <p>Transforming lives through quality education and holistic development.
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> ₹2,00,000/year</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> 4 years
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: June 30, 2025
+                        <span>(Expired)</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>₹2,00,000/year + Mentorship + Skill development</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Class 12th pass with minimum 60%</li>
+                        <li>Family income below ₹6 lakh/year</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.buddy4study.com/page/reliance-foundation-scholarships" target="_blank"
+                    class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card" data-category="Merit-Based">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/merit-scho.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    National Means-cum-Merit Scholarship<br>
+                    <span>Ministry of Education</span>
+                </div>
+                <div class="scho-categorie categorie-merit">Merit-Based</div>
+            </div>
+            <div class="scho-info">
+                <p>Preventing dropout and encouraging meritorious students from economically weaker sections.
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> ₹12,000/year</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> 4 years (Class 9-12)
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: October 31,
+                        2024 <span>(Expired)</span></li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>₹12,000/year for Classes 9th to 12th</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Studying in Class 9th</li>
+                        <li>Minimum 55% marks in Class 8th</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.buddy4study.com/article/nmms-scholarship-school-students" target="_blank"
+                    class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="scho-card" data-category="Merit-Based">
+            <div class="scho-header">
+                <div class="scho-img">
+                    <img src="../images/scholarship-page-imgs/birla.png" alt="bank">
+                </div>
+                <div class="scho-text">
+                    Aditya Birla Scholarship<br>
+                    <span>Aditya Birla Group</span>
+                </div>
+                <div class="scho-categorie categorie-merit">Merit-Based</div>
+            </div>
+            <div class="scho-info">
+                <p>Nurturing future leaders through financial support and leadership development.
+                </p>
+                <ul>
+                    <li><img src="../images/scholarship-page-imgs/dollar.png" alt="dollar"> ₹1,75,000/year</li>
+                    <li><img src="../images/scholarship-page-imgs/time.png" alt="time"> 2 years
+                    </li>
+                    <li><img src="../images/scholarship-page-imgs/calendar.png" alt="calendar"> Deadline: August 15,
+                        2024<span>(Expired)</span></li>
+                </ul>
+            </div>
+            <div class="benifits-con">
+                <h3>Benefits:</h3>
+
+                <div class="benifits">
+                    <p>₹1,75,000/year + Leadership development programs</p>
+                </div>
+            </div>
+            <div class="eligibility-con">
+                <h3>Key Eligibility:</h3>
+                <div class="eligibility">
+                    <ul>
+                        <li>Top engineering or management institutes</li>
+                        <li>Excellent academic record</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply-btn-con">
+                <a href="https://www.buddy4study.com/page/aditya-birla-capital-scholarship" target="blank"
+                    class="apply-btn">Apply Now<img src="../images/scholarship-page-imgs/send.png" alt=""></a>
+            </div>
+        </div>
+
+
+    </div>
+
+<div class="help-section">
+    <h2>Need Help Finding the Right Scholarship?</h2>
+   <p> Our career counselors can help you identify the best scholarship opportunities based on your academic profile and career goals.</p>
+    <button>
+        <a href="../pages/career.html">Get Personalized Guidance</a>
+    </button>
+</div>
+
+    <script src="../js/scholarship.js">
+
+    </script>
+
+</body>
+
+</html>
