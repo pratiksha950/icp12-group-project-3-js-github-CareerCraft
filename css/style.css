@@ -397,7 +397,6 @@ body {
     .img-slider .list .item img {
     width: 100%;
     height: auto;
-    /* object-fit: contain;    */
     border-radius: 0;
     display: block;
     height: 70vh;
@@ -408,12 +407,11 @@ body {
       justify-content: center;
       background: #858383; 
     }
-
 }
 .parag{
-    height: 3000px;
+    height: auto;
     width: 100%;
-    border: 2px solid black;
+    border: none;
     margin-top: 49%;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -702,8 +700,6 @@ body {
     width:200px;
     overflow-x: hidden;
     }
-    
-
 }
 .steps{
     height: fit-content;
