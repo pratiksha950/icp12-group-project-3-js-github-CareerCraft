@@ -269,6 +269,7 @@ body {
         display: block;
     }
 }
+
     </style>
 </head>
 <body>
@@ -279,18 +280,18 @@ body {
         </div>
 
 
-        <div class="nav-search">
-        <select class="search-select">
-        <option>All</option>
-        <option>Scolership</option>
-        <option>Career Guidance</option>
-        <option>E-learning</option>
-        </select>  
-        <input placeholder="Search Amazon" class="search-input">
-        <div class="search-icon">
-        <i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
-
+<div class="nav-search">
+    <select class="search-select">
+      <option>All</option>
+      <option>Scholarship</option>
+      <option>Career Guidance</option>
+      <option>E-learning</option>
+    </select>  
+    <input placeholder="Search for Career" class="search-input" id="searchBox">
+    <div class="search-icon">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+  </div>
         <div  class="content1">
         <li class="hideOnMobile"><a href="/index.html">Home</a></li>
         <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
@@ -336,8 +337,19 @@ function hideSidebar(){
     const sidebar=document.querySelector(".sidebar");
     sidebar.style.display="none";
 }
-
-
+ const placeholders = [
+    "Search for Scholarships",
+    "Search for Career Guidance",
+    "Search for E-learning",
+    "Search for Courses",
+    "Search for career-info"
+];
+let index = 0;
+const searchBox = document.getElementById("searchBox");
+    setInterval(() => {
+      searchBox.setAttribute("placeholder", placeholders[index]);
+      index = (index + 1) % placeholders.length;
+    }, 2000);
 </script>
 </body>
 </html>
