@@ -27,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 function filterCards() {
     const value=document.getElementById('categories').value;
 const cards= document.querySelectorAll('.scho-card');

@@ -278,36 +278,31 @@ body {
         <div class="logo">
             <img src="../images/logo.png">
         </div>
-
-
-<div class="nav-search">
-    <select class="search-select">
-      <option>All</option>
-      <option>Scholarship</option>
-      <option>Career Guidance</option>
-      <option>E-learning</option>
-    </select>  
-    <input placeholder="Search for Career" class="search-input" id="searchBox">
-    <div class="search-icon">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </div>
-  </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
         <div  class="content1">
         <li class="hideOnMobile"><a href="/index.html">Home</a></li>
         <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
         <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
         <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
-        
+
         <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
-
         </div>
-
-   
         </div>
             
    <div class="sidebar">
-     <ul>
-        <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a><li>
     <li><a href="/pages/login.html">Login</a></li>
     <li><a href="/index.html">Home</a></li>
     <li><a href="/pages/about.html">About Us</a></li>
@@ -316,18 +311,16 @@ body {
     <li><a href="/pages/career.html">Career Guidance</a></li>
     <li><a href="/pages/course.html">Courses</a></li>
     <li><a href="/pages/contact.html">Contact</a></li>
-    
-        </ul>
+    </ul>
    </div>
  </header><hr>
+ 
   <div  class="content3">
     <a href="/pages/course.html">Courses</a>   
     <a href="/pages/career.html">Career Guidance</a>
     <a href="/pages/learning.html">E-learning</a>
     <a href="/pages/scholarship.html">Scholarships</a>
         </div> 
-
-
 <script>
     function showSidebar(){
     const sidebar=document.querySelector(".sidebar");
