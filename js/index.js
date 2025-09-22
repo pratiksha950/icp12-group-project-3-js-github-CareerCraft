@@ -1,10 +1,23 @@
-function showSidebar(){
-    const sidebar=document.querySelector(".sidebar");
-    sidebar.style.display="flex";
+let path = location.pathname.includes("/pages/") ? "../pages/header.html" : "./pages/header.html";
+fetch(path)
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  })
+  .catch(err => console.error("Header load error:", err));
+
+  function showSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    if(sidebar){
+        sidebar.style.display = "flex";
+    }
 }
-function hideSidebar(){
-    const sidebar=document.querySelector(".sidebar");
-    sidebar.style.display="none";
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    if(sidebar){
+        sidebar.style.display = "none";
+    }
 }
 
 // image slider
