@@ -23,7 +23,7 @@
         <div class="level-container">
             <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
             <select name="categories" id="level" onchange="filterCards()">
-                <option value="All">All</option>
+                <option value="All">All Levels</option>
                 <option value="Beginner">Beginner</option>
                 <option value="Intermediate">Intermediate</option>
                 <option value="Advanced">Advanced</option>
@@ -32,9 +32,9 @@
         </div>
     </div>
     <div class="course-cards-container">
-        <div class="course-card" data-level="Beginner">
+        <div class="course-card" data-level="Beginner" >
             <div class="img-container">
-                <img src="../images/course-page-imgs/react.jpeg" alt="react">
+                <img src="../images/course-page-imgs/react.png" alt="react">
 
                 <span>Biginner</span>
 
@@ -57,14 +57,14 @@
                 </div>
                 <div class="btn-container">
                     <button class="demo-btn"><a href="">Demo</a></button>
-                    <button class="enroll-btn">
-                        <a href=""> Enroll</a>
+                    <button class="enroll-btn" data-id="React" onclick="setEnrolledState()">
+                     Enroll
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="course-card" data-level="Advanced">
+        <div class="course-card" data-level="Advanced" >
             <div class="img-container">
                 <img src="../images/course-page-imgs/advjs.jpeg" alt="react">
 
@@ -88,8 +88,8 @@
                 </div>
                 <div class="btn-container">
                     <button class="demo-btn"><a href="">Demo</a></button>
-                    <button class="enroll-btn">
-                        <a href=""> Enroll</a>
+                    <button class="enroll-btn" data-id="AdvJs" onclick="setEnrolledState()">
+                         Enroll
                     </button>
                 </div>
             </div>
@@ -97,7 +97,7 @@
 
         <div class="course-card" data-level="Intermediate">
             <div class="img-container">
-                <img src="../images/course-page-imgs/nodjs.jpeg" alt="nodejs">
+                <img src="../images/course-page-imgs/nodejs.jpeg" alt="nodejs">
 
                 <span>Intermediate</span>
             </div>
@@ -119,14 +119,14 @@
                 </div>
                 <div class="btn-container">
                     <button class="demo-btn"><a href="">Demo</a></button>
-                    <button class="enroll-btn">
-                        <a href=""> Enroll</a>
+                    <button class="enroll-btn" data-id="NodeJs" onclick="setEnrolledState()">
+                         Enroll
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="course-card" data-level="Beginner">
+        <div class="course-card" data-level="Beginner" >
             <div class="img-container">
                 <img src="../images/course-page-imgs/css.jpeg" alt="react">
 
@@ -150,14 +150,14 @@
                 </div>
                 <div class="btn-container">
                     <button class="demo-btn"><a href="">Demo</a></button>
-                    <button class="enroll-btn">
-                        <a href=""> Enroll</a>
+                    <button class="enroll-btn" data-id="Css" onclick="setEnrolledState()">
+                         Enroll
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="course-card" data-level="Intermediate">
+        <div class="course-card" data-level="Intermediate" >
             <div class="img-container">
                 <img src="../images/course-page-imgs/python.jpeg" alt="react">
 
@@ -181,14 +181,14 @@
                 </div>
                 <div class="btn-container">
                     <button class="demo-btn"><a href="">Demo</a></button>
-                    <button class="enroll-btn">
-                        <a href=""> Enroll</a>
+                    <button class="enroll-btn" data-id="Python" onclick="setEnrolledState()">
+                      Enroll
                     </button>
                 </div>
             </div>
         </div>
 
-        <div class="course-card" data-level="Beginner">
+        <div class="course-card" data-level="Beginner" >
             <div class="img-container">
                 <img src="../images/course-page-imgs/ui-ux.jpeg" alt="react">
 
@@ -212,8 +212,8 @@
                 </div>
                 <div class="btn-container">
                     <button class="demo-btn"><a href="">Demo</a></button>
-                    <button class="enroll-btn">
-                        <a href=""> Enroll</a>
+                    <button class="enroll-btn" data-id="Ui-Ux" ">
+                         Enroll
                     </button>
                 </div>
             </div>
