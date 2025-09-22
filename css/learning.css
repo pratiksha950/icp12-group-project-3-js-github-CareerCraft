@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #333;
+  }
+
+  /* Navbar */
+  .navbar {
+    background: #2c3e50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 40px 20px;
+    background:#84bbe0;
+    color:black;
+   
+  }
+  .header h1 {
+    margin: 0 0 10px;
+  }
+  .header p {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  /* Courses grid */
+  .course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  .course-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .course-card:hover {
+    transform: translateY(-6px);
+  }
+
+  .course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .course-card h3 {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    color: #2c3e50;
+  }
+
+  .course-card p {
+    font-size: 14px;
+    color: #555;
+    min-height: 40px;
+  }
+
+  .btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .btn:hover {
+    background: #2980b9;
+  }
+
+  /* Dialog */
+  dialog {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    width: 420px;
+    max-width: 90%;
+  }
+
+  dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+  }
+
+  .close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .course-detail {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+
+  .course-detail p {
+    margin: 8px 0;
+  }
+
+  .enroll-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 18px;
+    background: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .enroll-btn:hover {
+    background: #219150;
+  }
+
+  /* Footer */
+  .footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }

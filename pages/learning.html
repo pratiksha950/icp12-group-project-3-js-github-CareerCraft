@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Learning Platform</title>
+  <link rel="stylesheet" href="../css/learning.css">
+  
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    📚 E-Learning Platform
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Welcome to Our E-Learning Platform</h1>
+    <p>Explore top courses and boost your skills</p>
+  </div>
+
+  <!-- 8 Course Cards -->
+  <div class="course-container">
+    <div class="course-card">
+      <img src="../images/html_17990178.png" alt="HTML & CSS">
+      <h3>HTML & CSS Basics</h3>
+      <p>Learn how to build static web pages with HTML and CSS.</p>
+      <button class="btn" onclick="openDialog('HTML & CSS Basics')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/js-png.png" alt="JavaScript">
+      <h3>JavaScript Essentials</h3>
+      <p>Make your websites interactive with JavaScript.</p>
+      <button class="btn" onclick="openDialog('JavaScript Essentials')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/py-png.png" alt="Python">
+      <h3>Python for Beginners</h3>
+      <p>Start coding with one of the most popular languages.</p>
+      <button class="btn" onclick="openDialog('Python for Beginners')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/react-png.png" alt="React">
+      <h3>React Fundamentals</h3>
+      <p>Learn to build dynamic single-page applications.</p>
+      <button class="btn" onclick="openDialog('React Fundamentals')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/medical-research_2756778.png" alt="Data Science">
+      <h3>Data Science with Python</h3>
+      <p>Analyze and visualize data effectively with Python.</p>
+      <button class="btn" onclick="openDialog('Data Science with Python')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/sql_17544218.png" alt="SQL">
+      <h3>SQL & Databases</h3>
+      <p>Work with relational databases using SQL.</p>
+      <button class="btn" onclick="openDialog('SQL & Databases')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/digital-asset-management_18410995.png" alt="Machine Learning">
+      <h3>Machine Learning</h3>
+      <p>Understand ML concepts and build predictive models.</p>
+      <button class="btn" onclick="openDialog('Machine Learning')">View Details</button>
+    </div>
+
+    <div class="course-card">
+      <img src="../images/security-png.png" alt="Cyber Security">
+      <h3>Cyber Security</h3>
+      <p>Learn how to protect systems and networks from attacks.</p>
+      <button class="btn" onclick="openDialog('Cyber Security')">View Details</button>
+    </div>
+  </div>
+
+  <!-- Dialog Box -->
+  <dialog id="courseDialog">
+    <button class="close-btn" onclick="closeDialog()">X</button>
+    <h2 id="courseTitle"></h2>
+    <div id="courseDetails" class="course-detail"></div>
+    <button class="enroll-btn" onclick="enrollCourse()">Enroll Now</button>
+  </dialog>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 E-Learning Platform | All Rights Reserved
+  </div>
+
+  <script src="../js/learning.js"></script>
+
+</body>
+</html>
