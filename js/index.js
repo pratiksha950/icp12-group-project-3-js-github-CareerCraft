@@ -1,11 +1,10 @@
-function showSidebar(){
-    const sidebar=document.querySelector(".sidebar");
-    sidebar.style.display="flex";
-}
-function hideSidebar(){
-    const sidebar=document.querySelector(".sidebar");
-    sidebar.style.display="none";
-}
+let path = location.pathname.includes("/pages/") ? "../pages/header.html" : "./pages/header.html";
+fetch(path)
+  .then(res => res.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  })
+  .catch(err => console.error("Header load error:", err));
 
 // image slider
 let nextBtn = document.querySelector(".next");

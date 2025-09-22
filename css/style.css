@@ -52,6 +52,14 @@ body {
     font-size: 10px;
     margin: 0;
 }
+.overlay{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 100%;
+    width: 100%;
+}
 .down-arrow {
     height: 10px;
     width: 10px;
@@ -502,9 +510,6 @@ body {
         height: 60px;
         width: 90px;
     }
-    .location{
-        display:none;
-    }
     .hideOnMobile{
        display:none;
       
@@ -567,6 +572,19 @@ body {
         gap: 5px;
     }
 
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .search-select{
+        display: none;
+    }
+    .hideOnMobile{
+       display:none;
+      
+    }
+    .menu-btn{
+        display: block;
+    }
+    
 }
 
 .OppImg{
