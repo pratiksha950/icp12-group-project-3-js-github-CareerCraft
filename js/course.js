@@ -97,6 +97,17 @@ const hideDemo=()=>{
     hideDemoContent.style.display="none";
 }
 
+const addHeadingToDemo=()=>{
+    let getHeading=document.querySelectorAll(".course-info h2");
+    const setHeading=document.querySelector(".demo-heading h2");
+    
+    getHeading.forEach(heading=>{
+        setHeading.innerText=`Demo : ${heading.innerText}`;
+    })
+    
+}
+
+
 
 
 

@@ -170,6 +170,9 @@ body{
     .course-card{
         width: 100%;
     }
+    .course-cards-container{
+        padding: 20px;
+    }
     
 }
 .img-container{
