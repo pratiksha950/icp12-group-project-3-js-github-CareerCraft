@@ -37,3 +37,16 @@ for (let i = 0; i < contactCard.length; i++) {
         </div>
     `;
 }
+
+function toggleTheme() {
+    const themeIcon = document.getElementById("theme-icon");
+
+    document.body.classList.toggle("dark");
+    document.body.classList.toggle("light");
+
+    if (document.body.classList.contains("dark")) {
+        themeIcon.src = "../images/contact-us/sun.png";  
+    } else {
+        themeIcon.src = "../images/contact-us/moon.png"; 
+    }
+}

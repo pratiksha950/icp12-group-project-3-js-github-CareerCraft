@@ -673,3 +673,65 @@ body {
         margin-top: -30px;
     }
 }
+
+.theme-toggle {
+    position: fixed;
+    top: 85px;   /* just below header */
+    right: 20px; /* right side */
+    z-index: 2000;
+    cursor: pointer;
+}
+
+.theme-toggle img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.theme-toggle img:hover {
+    transform: rotate(20deg) scale(1.1);
+}
+
+body.light {
+    background: #ffffff;
+    color: #000000;
+}
+
+body.dark {
+    background: #121212;
+    color: #ffffff;
+}
+
+body.dark .nav-bar {
+    background-color: #FFF;
+}
+
+body.dark .contact-right {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+body.dark .contact-card {
+    background: #2c2c2c;
+    border-color: #555;
+    border: 1px solid #e4dddd;
+}
+
+body.dark .contact-card img {
+    border: 1px solid #fff;
+}
+
+body.dark .contact-card h4 {
+    color: #fff;
+}
+
+body.dark .contact-card p {
+    color: #fff;
+}
+
+body.dark .footer {
+    background: #111;
+    color: #ddd;
+}
+
