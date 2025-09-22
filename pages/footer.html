@@ -88,6 +88,8 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     line-height: 30px;
+    display: flex;
+    
 }
 .list2 {
     height: 300px;
@@ -132,6 +134,11 @@
 }
 .footerPart2 .contact-info {
     font-size: 20px;
+}
+.footerPart2 .section1{
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 
 .footer hr {
@@ -200,10 +207,15 @@
       padding-right: 20px;
     }
 }
+.row li a img {
+  transition: transform 0.3s ease; 
+}
 
-
+.row li a img:hover {
+  transform: scale(1.2);
+}
     </style>
-
+<body>
   <footer>
     <div class="footer">
 
@@ -295,15 +307,11 @@
               by linking them with the suitable scholarship programmes tailored to their needs.
             </p>
             <div class="row">
-              <li><a href="https://www.youtube.com/"><img src="../images/youtube.png" height="40" width="40"></a></li>
-              <li><a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png" height="40" width="40"></a></li>
-              <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" height="40" width="40"></a></li>
-              <li><a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.png" height="40" width="40"></a></li>
-              <li><a href="https://www.instagram.com/"><img src="../images/insta.png" height="40" width="40"></a></li>
-              <!-- <li><a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA"><img src="../images/map (1).png" height="40" width="40"></a></li>
-              <li><a href="https://www.instagram.com/"><img src="../images/communication.png" height="40" width="40"></a></li>
-
-              <li><a href="https://www.instagram.com/"><img src="../images/mobile.png" height="40" width="40"></a></li> -->
+              <li><a href="https://www.youtube.com/"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/"><img src="../images/insta.png" height="35" width="35"></a></li>
             </div>
           </ul>
         </div>
