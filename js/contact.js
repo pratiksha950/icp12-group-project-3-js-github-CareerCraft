@@ -37,5 +37,3 @@ for (let i = 0; i < contactCard.length; i++) {
         </div>
     `;
 }
-
-
