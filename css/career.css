@@ -1,0 +1,23 @@
+/* Hero Section (Slider) */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 300%; /* 3 images */
+      height: 100%;
+      transition: transform 1s ease-in-out;
+    
+    }
+
+    .slide {
+      
+      min-width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-position: center;
+    }
+    
