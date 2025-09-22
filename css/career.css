@@ -1,0 +1,231 @@
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    /* Hero Section (Slider) */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 70vh;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 300%; /* 3 images */
+      height: 100%;
+      transition: transform 1s ease-in-out;
+    
+    }
+
+    .slide {
+      
+      min-width: 100%;
+      height: 100%;
+      background-size: contain;
+      background-position: center;
+    }
+
+    /* Text overlay */
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      padding: 20px 30px;
+      border-radius: 10px;
+    }
+    .hero-text h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .hero-text p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+    }
+
+    /* Navigation buttons */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0,0,0,0.5);
+      color: #fff;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 50%;
+    }
+    .prev {
+      left: 20px;
+    }
+    .next {
+      right: 20px;
+    }
+
+    /* Cards Section */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+    .card p {
+      margin: 0 15px 20px;
+      font-size: 1rem;
+      text-align: center;
+ 
+      font-weight: 500;
+      
+      color: #555;
+     
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    
+    .read {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      margin: 0 70px 15px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    /* Quiz Card Style - match with other cards */
+.cards .card img {
+    height: 150px; /* slightly bigger if needed */
+    object-fit: contain;
+}
+
+.cards .card h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 15px 0 10px;
+}
+
+.cards .card p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin: 0 15px 15px;
+}
+
+.cards .card .readquiz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 70px 15px;
+    padding: 10px 20px;
+    background: #007BFF; /* green for quiz to differentiate */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cards .card .readquiz:hover {
+    background: #007BFF;
+}
+    .read:hover {
+      background: #0056b3;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+      .hero-text p {
+        font-size: 1rem;
+      }
+    }
+
+    /* Additional Styles for Cards Section Pages */
+    .cards-section {
+      max-width: 1200px;
+      margin: 50px auto;    
+      padding: 0 20px;
+      text-align: center;
+    }
+    .cards-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #007bff;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 15px;
+    }
+    .card-content h3 {
+      margin: 10px 0;
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+    }
+    .explore-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .explore-btn:hover {
+      background-color: #0056b3;
+    }
