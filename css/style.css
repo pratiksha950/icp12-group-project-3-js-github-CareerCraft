@@ -876,6 +876,7 @@ body {
     color: transparent;
     -webkit-text-fill-color:transparent;
     margin-top: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
 }
 .footerPart2{
@@ -939,11 +940,20 @@ padding-left: 20px;
     .list2 img{
         margin-left: 20%;
     }
-    .list2 li{
+    .list2 li a{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+        /* align-items: start; */
+        /* justify-content: start; */
+        line-height: 20px;
+    }
+    .list2 li img{
         display: flex;
         align-items: start;
         justify-content: start;
-        line-height: 20px;
+      
     }
 }
 .footer hr {
