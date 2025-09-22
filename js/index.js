@@ -6,6 +6,20 @@ fetch(path)
   })
   .catch(err => console.error("Header load error:", err));
 
+  function showSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    if(sidebar){
+        sidebar.style.display = "flex";
+    }
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    if(sidebar){
+        sidebar.style.display = "none";
+    }
+}
+
 // image slider
 let nextBtn = document.querySelector(".next");
 let preBtn = document.querySelector(".pre");
