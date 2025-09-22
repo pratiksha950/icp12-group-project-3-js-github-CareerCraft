@@ -29,29 +29,6 @@ body {
     object-fit: contain;
     margin-left: 0px;
 }
-.location {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border: 2px solid black;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 10px;
-}
-.location-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.location-info {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.1;
-}
-.location-info h1 {
-    font-size: 10px;
-    margin: 0;
-}
 .overlay{
     background-color: rgba(0,0,0,0.5);
     position: fixed;
@@ -444,11 +421,11 @@ body {
 .numbers{
     height: 100px;
     width: 100%;
-    border: 2px solid #a29c9c;
+    border: none;
     border-radius: 15px;
     display: flex;
     justify-content: space-evenly;
-    background-color: #f3f3f3;
+    background-color: #efe4e4;
 }
 .num1{
     line-height: 40px;
@@ -583,6 +560,9 @@ body {
     }
     .menu-btn{
         display: block;
+    }
+    .Partners-info p,h1 {
+        display: none;
     }
     
 }
@@ -722,10 +702,11 @@ body {
     width:200px;
     overflow-x: hidden;
     }
+    
 
 }
 .steps{
-    height: 450px;
+    height: fit-content;
     width: 100%;
     border:none;
     margin-top: 35px;
@@ -789,7 +770,8 @@ body {
 }
 @media  (max-width: 640px) {
     .steps{
-    height: 1160px;
+    height:fit-content
+    ;
     width: 100%;
     background-color: #efe4e4;
     }
@@ -991,4 +973,75 @@ padding-left: 20px;
 }
 .footerPart2 .contact-info{
     font-size: 20px;
+}
+
+.review{
+    height: 270px;
+    width: 290px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-color: white;   
+}
+.review1{
+     height: 35px;
+    width: 100px;
+    border: 2px solid  white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+     background-color: white;
+}
+.review1 img{
+  width: 250px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -50px;
+  border: 2px solid gray;  
+}
+.name{
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+     background-color: white;
+}
+.name1{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+     background-color: white;
+}
+.star {
+  font-size: 30px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 0px;
+  background-color: white;
+}
+.text-review{
+     font-size: 15px;
+    font-weight:10px;
+    text-align: center;
+     background-color: white;
+     padding-left: 13px;
+     padding-right:13px;
+}
+.review-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:5px;
+}
+.our-scholer{
+    height: auto;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-evenly;
+
+
 }
