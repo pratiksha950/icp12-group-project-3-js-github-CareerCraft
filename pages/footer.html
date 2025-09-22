@@ -149,9 +149,9 @@
     margin-left: 15%;
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .footer {
-        height: 1200px;
+        height: fit-content;
         width: 100%;
     }
     .list1 li, .footerFont {
@@ -231,7 +231,40 @@
 }
 
     
-}
+} */
+ @media (max-width: 640px) {
+      .footerPart1{
+        display: none;
+      }
+      .footerPart2 .section1 ul{
+        margin-top: -19%;
+        
+      }
+        .footer {
+        height: 900px;
+        width: 100%;
+    }
+    .Copyright{
+      display: none;
+    }
+    hr{
+      display: none;
+    }
+    .footerPart2 .list2 .section2 ul li img{
+      padding-right: 20%;
+    }
+    .row{
+      position: absolute;
+      left: 18px;
+    }
+    .add{
+      position: absolute;
+      left: 17px;
+      bottom: 40%;
+    }
+
+
+ }
 @media (min-width: 700px) and (max-width: 1024px) {
     footer{
       height: 1000px;
@@ -254,7 +287,7 @@
       display: none;
     }
     .list2 .size{
-        border: 2px solid black;
+        border:none;
     }
     
 
@@ -325,33 +358,33 @@
 
      
       <div class="footerPart2">
-        <div class="list2">
+        <div class="list2 section1">
           <ul>
-            <li class="font2 adjust">Contact Information</li>
+            <li class="font2 ">Contact Information</li>
             <li>
               <div class="part"></div>
               <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA">
                 <img src="../images/location.png" height="30" width="30" class="hide3">
-                <span class="contact-info">123 Education Street, Knowledge City </span>
+                <span class="contact-info">&nbsp;123 Education Street, Knowledge City </span>
               </a>
             </li>
             <li>
               <a href="mailto:support@eduscholar.com">
                 <img src="../images/email.png" height="30" width="30">
-                <span class="contact-info">support@eduscholar.com</span>
+                <span class="contact-info">&nbsp;support@eduscholar.com</span>
               </a>
             </li>
             <li>
               <a href="tel:+919876543210">
                 <img src="../images/viber.png" height="30" width="30">
-                <span class="contact-info">+91 98765 43210</span>
+                <span class="contact-info">&nbsp;+91 98765 43210</span>
               </a><br>
                <span class="Copyright">Copyright © Career Craft 2025</span>
             </li>
           </ul>
         </div>
 
-        <div class="list2">
+        <div class="list2 search2">
           <ul>
             <li>
               <img src="../images/logo.png" height="60" width="200" class="add">
