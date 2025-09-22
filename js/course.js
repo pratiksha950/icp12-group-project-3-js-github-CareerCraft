@@ -92,6 +92,11 @@ window.onload=()=>{
    initDemoBtns();
 }
 
+const hideDemo=()=>{
+    let hideDemoContent=document.querySelector(".demo-con");
+    hideDemoContent.style.display="none";
+}
+
 
 
 
