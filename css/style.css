@@ -712,6 +712,7 @@ body {
     margin-top: 35px;
     background-color: #efe4e4;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .steps h1{
     align-items: center;
@@ -945,8 +946,6 @@ padding-left: 20px;
         flex-direction: column;
         align-items: flex-start;
         text-align: center;
-        /* align-items: start; */
-        /* justify-content: start; */
         line-height: 20px;
     }
     .list2 li img{
@@ -978,11 +977,19 @@ padding-left: 20px;
 .review{
     height: 270px;
     width: 290px;
-    border: 2px solid black;
+    border: none;
     border-radius: 10px;
     margin-top: 30px;
-    background-color: white;   
+    background-color: white;
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.2);
+   
 }
+.review:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+   
+
 .review1{
      height: 35px;
     width: 100px;
@@ -1011,15 +1018,18 @@ padding-left: 20px;
     font-weight: 500;
     text-align: center;
      background-color: white;
+     color: #e10e58;
+     font-weight: bold;
 }
-.star {
-  font-size: 30px;
-  color: black;
+.star { 
+  font-size: 25px;
+  color: rgb(19, 16, 21);
   display: flex;
   flex-direction: row;
   justify-content: center;
   padding-top: 0px;
   background-color: white;
+  font-weight: bolder;
 }
 .text-review{
      font-size: 15px;
@@ -1029,19 +1039,15 @@ padding-left: 20px;
      padding-left: 13px;
      padding-right:13px;
 }
-.review-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap:5px;
-}
 .our-scholer{
     height: auto;
     width: 100%;
-    border: 2px solid black;
+    border: none;
     display: flex;
     margin-top: 3%;
     justify-content: space-evenly;
-
-
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #efe4e4;
+    padding-bottom: 20px;
 }
