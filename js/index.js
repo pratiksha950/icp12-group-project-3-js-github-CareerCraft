@@ -19,6 +19,12 @@ function hideSidebar() {
         sidebar.style.display = "none";
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("./pages/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data)
+    .catch(err => console.error("Footer load error:", err));
+});
 
 // image slider
 let nextBtn = document.querySelector(".next");
