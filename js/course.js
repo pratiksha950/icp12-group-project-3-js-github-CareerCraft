@@ -19,7 +19,7 @@ let filterCards = () => {
 let setEnrolledState = (button) => {
     let enrolledCourses = JSON.parse(localStorage.getItem("enrolledCourses")) || [];
     const btns = document.querySelectorAll(".enroll-btn");
-    const courseId=button.dataset.id;
+    const courseId = button.dataset.id;
     button.style.backgroundColor = "#e6ffe6"
     button.style.color = "#003300"
     button.innerText = "Enrolled";
@@ -40,13 +40,57 @@ let initEnrollment = () => {
             btn.style.backgroundColor = "#e6ffe6"
             btn.style.color = "#003300"
             btn.innerText = "Enrolled";
-           btn.style.fontWeight = "550"
+            btn.style.fontWeight = "550"
         }
         btn.onclick = () => setEnrolledState(btn);
     });
 }
 
-window.onload = initEnrollment;
+
+
+let overlay = (courseId) => {
+     const overlayDiv = document.querySelector(".demo-con");
+     overlayDiv.style.display="block";
+    const videoContainer = document.getElementById("vedio");
+    let vedioURL= "";  
+    switch (courseId) {
+        case "React":
+            videoURL = "https://www.youtube.com/embed/Tn6-PIqc4UM?si=Ja_nLds_YhUY2VJ_";
+            break;
+        case "AdvJs":
+            videoURL = "https://www.youtube.com/embed/hQVTIJBZook?si=XnZ1sv1659BgyS8v";
+            break;
+        case "NodeJs":
+            videoURL = "https://www.youtube.com/embed/fBNz5xF-Kx4?si=ZzW4akyi79h5-aN2";
+            break;
+        case "Css":
+            videoURL = "https://www.youtube.com/embed/jV8B24rSN5o?si=T39YQ6pMiBZvxnZb";
+            break;
+        case "Python":
+            videoURL = "https://www.youtube.com/embed/r-uOLxNrNk8?si=qDxOPd_ktnD2A8CE";
+            break;
+        case "Ui-Ux":
+            videoURL = "https://www.youtube.com/embed/c9Wg6Cb_YlU?si=v9r_51bBXs_8GTMU";
+            break;
+    }
+       videoContainer.innerHTML = `
+        <iframe  src="${videoURL}" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `;
+}
+
+const initDemoBtns=()=>{
+    const demoBtns=document.querySelectorAll(".demo-btn");
+    demoBtns.forEach(btn=>{
+        const courseId=btn.dataset.id;
+        btn.onclick=()=>overlay(courseId);
+    })
+}   
+window.onload=()=>{
+   initEnrollment();
+   initDemoBtns();
+}
 
 
 
