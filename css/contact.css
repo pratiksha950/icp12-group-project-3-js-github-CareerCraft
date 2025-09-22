@@ -633,7 +633,9 @@ body.dark .contact-card {
     border-color: #555;
     border: 1px solid #e4dddd;
 }
-
+body.dark .contactinfo{
+    color: #fff;
+}
 body.dark .contact-card img {
     border: 1px solid #fff;
 }
