@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/course.css">
+    <title>courses</title>
+</head>
+
+<body>
+    <div class="hero-section">
+        <h2>Explore Our Courses</h2>
+        <p>Discover high-quality courses taught by industry experts. Start learning today and advance your career.</p>
+    </div>
+    <div class="search-container">
+
+        <div class="search">
+            <img src="../images/scholarship-page-imgs/search.png" alt="">
+            <input type="text" placeholder="Search scholarships..." class="search-input" id="search-input"
+                onkeyup="searchCard()">
+        </div>
+        <div class="level-container">
+            <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
+            <select name="categories" id="level" onchange="filterCards()">
+                <option value="All">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="course-cards-container">
+        <div class="course-card" data-level="Beginner">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/react.png" alt="react">
+
+                <span>Biginner</span>
+
+            </div>
+            <div class="course-info">
+                <h2>React Fundamentals</h2>
+                <p>Learn the basics of React including components, props, state, and hooks.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>8 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>1,250</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹1500</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="React" onclick="overlay(this)">Demo</button>
+                    <button class="enroll-btn" data-id="React">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Advanced">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/advjs.jpeg" alt="JavaScript">
+
+                <span>Advanced</span>
+            </div>
+            <div class="course-info">
+                <h2>Advanced JavaScript</h2>
+                <p>Master advanced JavaScript concepts including closures, prototypes, and async programming.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>12 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>890</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹2000</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="AdvJs">Demo</button>
+                    <button class="enroll-btn" data-id="AdvJs">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Intermediate">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/nodejs.jpeg" alt="nodejs">
+
+                <span>Intermediate</span>
+            </div>
+            <div class="course-info">
+                <h2>Node.js Backend Development</h2>
+                <p>Build scalable backend applications with Node.js, Express, and MongoDB.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>15 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>2100</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹1699</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="NodeJs">Demo</button>
+                    <button class="enroll-btn" data-id="NodeJs">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Beginner">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/css.jpeg" alt="react">
+
+                <span>Biginner</span>
+            </div>
+            <div class="course-info">
+                <h2>CSS Grid & Flexbox</h2>
+                <p>Master modern CSS layout techniques with Grid and Flexbox.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>6 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>1,800</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.6</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹999</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="Css">Demo</button>
+                    <button class="enroll-btn" data-id="Css">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Intermediate">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/python.jpeg" alt="react">
+
+                <span>Intermediate</span>
+            </div>
+            <div class="course-info">
+                <h2>Python Data Science</h2>
+                <p>Learn the basics of React including components, props, state, and hooks.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>20 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>950</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.9</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹1500</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="Python">Demo</button>
+                    <button class="enroll-btn" data-id="Python">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Beginner">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/ui-ux.jpeg" alt="react">
+
+                <span>Biginner</span>
+            </div>
+            <div class="course-info">
+                <h2>UI/UX Design Principles</h2>
+                <p>Learn the fundamentals of user interface and user experience design.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>10 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>1,400</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹2000</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="Ui-Ux">Demo</button>
+                    <button class="enroll-btn" data-id="Ui-Ux">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="demo-con" >
+        <div class="demo-vedio-container">
+            <div class="demo-heading">
+                <h2>Demo</h2>
+                <img src="../images/course-page-imgs/cross.png" alt="cross" class="cross-img" onclick="hideDemo()">
+            </div>
+            <div class="vedio-content" id="vedio"> 
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../js/course.js"></script>
+</body>
+
+</html>
