@@ -30,6 +30,15 @@
       { question: "Are you willing to learn new skills online and continuously?", options: ["Yes", "No"], values: ["Skill Development", "Other Streams"] }
     ];
 
+     let currentQuestion = 0;
+    let scores = {};
+
+    const container = document.getElementById("quiz-container");
+
+    function showQuestion() {
+      container.innerHTML = "";
+      const q = quizData[currentQuestion];
+
    </script>
 </body>
 </html>
