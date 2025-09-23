@@ -179,7 +179,7 @@ font-weight: bold;
     }
 }
 
-.search-container{
+.search-container2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +189,7 @@ font-weight: bold;
     border-radius: 8px; ;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
 }
-.search{
+.search2{
     display: flex;
     align-items: center;
     width: 70%;
@@ -200,7 +200,7 @@ font-weight: bold;
     outline: none;
     
 }
-.search-input{
+.search-input2{
     padding: 10px 15px;
    border: none;
     border-radius: 6px;
