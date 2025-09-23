@@ -50,3 +50,12 @@ function toggleTheme() {
         themeIcon.src = "../images/contact-us/moon.png"; 
     }
 }
+
+function showMessage() {
+    const msg = document.getElementById("message");
+
+    msg.style.display = "block"; 
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 2000);
+}
