@@ -65,7 +65,20 @@
       }
     }
 
-    
+     function showResult() {
+      container.innerHTML = "<h2 class='result'>Your Recommended Careers:</h2>";
+
+      // Sort careers by score
+      const sortedCareers = Object.keys(scores).sort((a,b) => scores[b] - scores[a]);
+      const careerCards = document.createElement("div");
+      careerCards.classList.add("career-cards");
+
+      sortedCareers.forEach(career => {
+        const card = document.createElement("div");
+        card.classList.add("career-card");
+
+
+
 
     
 
