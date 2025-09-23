@@ -13,6 +13,7 @@ body {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
+    margin-top: 7%;
   }
 
   /* Header */
@@ -145,3 +146,218 @@ body {
     padding: 15px;
     margin-top: 30px;
   }
+.footer {
+    height: 800px;
+    width: 100%;
+    border: none;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #f3f3f3;
+    list-style: none;
+    border: 2px solid #f3f3f3;;
+}
+
+.footerPart1 {
+    height: 300px;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.list00 {
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    border: none;
+    flex-wrap: wrap;
+    list-style: none;
+    flex: 1 1 200px;
+}
+.list00 li {
+    list-style: none;
+}
+.list00 li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    font-weight: bolder;
+    line-height: 40px;
+}
+.list00 li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: black;  
+    transition: width 0.3s ease;
+}
+.list00 li a:hover::after {
+    width: 100%;
+}
+.list00 .footerFont {
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.font2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.footerPart2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 30px;
+    display: flex;
+    
+}
+.list2 {
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    border: none;
+    flex-wrap: wrap;
+    list-style: none;
+    flex: 1 1 250px;
+    line-height: 50px;
+}
+.list2 li {
+    list-style: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.list2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.list2 .adjust {
+    padding-left: 18%;
+    font-size: 25px;
+}
+.list2 p {
+    font-size: 15px;
+}
+.footerPart2 .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row img {
+    margin-top: 20px;
+}
+.list2 .add {
+    margin-left: 20%;
+}
+.footerPart2 .contact-info {
+    font-size: 20px;
+}
+.footerPart2 .section1{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.footer hr {
+    border: none;
+    height: 3px;
+    background-color: #a9a1a1;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.footerPart3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -5%;
+    margin-left: 15%;
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+    footer{
+      height: 1000px;
+      width: 100%;
+      border: none;
+    }
+    .footerPart1{
+      height: 500px;
+      width: 100%;
+      border:none;
+    }
+      .footerPart2{
+      height: 500px;
+      width: 100%;
+      border: none;
+      background-color: #f3f3f3;
+      margin-top: -10%;
+    }
+    hr{
+      display: none;
+    }
+    .list2 .size1{
+        border:none;
+    }
+}
+.Copyright{
+  color: rgb(3, 20, 77);
+  font-weight: bolder ;
+  font-size:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: none;
+
+}
+.list2 .size{
+    font-size: 20px;
+    line-height: 30px;
+}
+@media  (max-width: 640px) {
+    .footerPart1{
+      display: none;
+    }
+     .footerPart1{
+      display: none;
+    }
+    .add{
+      display: none;
+    }
+    .Copyright{
+      display: none;
+    }
+    .size{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+.row li a img {
+  transition: transform 0.3s ease; 
+}
+
+.row li a img:hover {
+  transform: scale(1.2);
+}
+.size1{
+  color: black;
+}

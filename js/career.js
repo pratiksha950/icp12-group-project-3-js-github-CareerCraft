@@ -1,5 +1,3 @@
-// Hero Slider JS
-    let index = 0;
     const slides = document.getElementById("slides");
     const totalSlides = slides.children.length;
     const dotsContainer = document.getElementById("dots");
@@ -58,6 +56,3 @@
       document.getElementById("details").style.display = "none";
     }
 
-
-
-     

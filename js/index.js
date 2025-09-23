@@ -13,18 +13,27 @@ fetch(path)
     }
 }
 
-function hideSidebar() {
-    const sidebar = document.querySelector(".sidebar");
-    if(sidebar){
-        sidebar.style.display = "none";
-    }
+    function showSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="flex";
 }
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("./pages/footer.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("footer").innerHTML = data)
-    .catch(err => console.error("Footer load error:", err));
-});
+function hideSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="none";
+}
+ const placeholders = [
+    "Search for Scholarships",
+    "Search for Career Guidance",
+    "Search for E-learning",
+    "Search for Courses",
+    "Search for career-info"
+];
+let index = 0;
+const searchBox = document.getElementById("searchBox");
+    setInterval(() => {
+      searchBox.setAttribute("placeholder", placeholders[index]);
+      index = (index + 1) % placeholders.length;
+    }, 2000);
 
 // image slider
 let nextBtn = document.querySelector(".next");

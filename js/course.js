@@ -1,3 +1,4 @@
+
 let searchCard = () => {
     const searchInput = document.getElementById("search-input").value.toLowerCase();
     const cards = document.querySelectorAll('.course-card');
