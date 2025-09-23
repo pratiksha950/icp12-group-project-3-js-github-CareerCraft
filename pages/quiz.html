@@ -38,6 +38,34 @@
     function showQuestion() {
       container.innerHTML = "";
       const q = quizData[currentQuestion];
+      const questionEl = document.createElement("div");
+      questionEl.classList.add("question");
+      questionEl.textContent = q.question;
+      container.appendChild(questionEl);
+
+      const optionsEl = document.createElement("div");
+      optionsEl.classList.add("options");
+
+      q.options.forEach((opt, idx) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt;
+        btn.onclick = () => selectOption(q.values[idx]);
+        optionsEl.appendChild(btn);
+      });
+
+      container.appendChild(optionsEl);
+    }
+      function selectOption(value) {
+      scores[value] = (scores[value] || 0) + 1;
+      currentQuestion++;
+      if(currentQuestion < quizData.length) {
+        showQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    
 
    </script>
 </body>
