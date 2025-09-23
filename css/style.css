@@ -182,12 +182,6 @@ body {
         width: 80px;
         height: 120px;
     }
-    .arrows {
-        top: 80%;
-        left: 10%;
-        width: 80%;
-        gap: 5px;
-    }
     .arrows button {
         height: 50px;
         width: 50px;
@@ -254,7 +248,8 @@ body {
     }
     .arrows{
       position: absolute;
-      top: 410px;
+      top: 225px;
+      left: 130px;
     }
     .arrows button{
       background-color: rgb(95, 89, 89);
@@ -312,9 +307,7 @@ body {
     .Partners-info p,h1 {
         display: none;
     }
-    
 }
-
 .OppImg{
     height: 50px;
     width: 50px;
@@ -1037,7 +1030,7 @@ body {
       border: none;
     }
     .footerPart1{
-      height: 500px;
+      height: auto;
       width: 100%;
       border:none;
     }
@@ -1080,12 +1073,20 @@ body {
     .add{
       display: none;
     }
-    /* .Copyright{
-      display: none;
-    } */
+    .Copyright{
+      font-size: 20px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
     .size{
       padding-left: 20px;
       padding-right: 20px;
+    }
+    .footerPart2 .font2{
+        font-size: 30px;
+    }
+    .invisible{
+        display: none;
     }
 }
 .row li a img {
@@ -1094,4 +1095,14 @@ body {
 
 .row li a img:hover {
   transform: scale(1.2);
+}
+a {
+  display: flex;
+  align-items: center; 
+  text-decoration: none;
+  color: inherit;
+}
+
+a img {
+  margin-right:8px;
 }
