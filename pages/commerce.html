@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commerce-career</title>
+    <link rel="stylesheet" href="../css/career.css">
+</head>
+<body>
+     <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="../images/career-page-images/mba-1-img.jpg" alt="Commerce 1">
+        <h1>Commerce Careers</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/career-page-images/commerce-2-img.jpg" alt="Commerce 2">
+        <h1>Shape Your Future in Business</h1>
+      </div>
+       <div class="slide">
+        <img src="../images/career-page-images/commerece-3-img.jpg" alt="Commerce 3">
+        <h1>Explore Diverse Opportunities</h1>
+      </div>
+    </div>
+
+    <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+
+    <div class="dots" id="dots"></div>
+  </section>
+
+
+
+   <!-- Cards Section -->
+  <section class="cards-section">
+    <h2>Explore Commerce Careers</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../images/career-page-images/comerece-img.jpg" alt="B.Com">
+        <div class="card-content">
+          <h3>B.Com</h3>
+          <p>Graduate in Commerce & Accounting. Opens path for CA, MBA, Finance careers.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('bcom')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/career-page-images/ca-img.jpg" alt="Chartered Accountant">
+        <div class="card-content">
+            <h3>Chartered Accountant (CA)</h3>
+          <p>Specialized career in auditing, taxation & corporate finance.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('ca')">Read More</a>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="../images/career-page-images/mba.jpg" alt="MBA">
+        <div class="card-content">
+          <h3>MBA</h3>
+          <p>Management studies leading to roles in HR, Marketing, Finance, Operations.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('mba')">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Details Section -->
+  <section class="details" id="details">
+    <h2 id="details-title"></h2>
+    <ul id="details-content"></ul>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
+  </section>
+
+  <script>
+    // Details Section JS
+    const detailsData = {
+      bcom: {
+        title: "B.Com - Bachelor of Commerce",
+        content: [
+          "Eligibility: 12th Commerce/Arts/Science stream",
+          "Career Roles: Accountant, Analyst, Finance Executive",
+          "Salary: ₹20k-₹40k/month initially",
+          "Further Studies: M.Com, MBA, CA, CS",
+          "Skills: Accounting, Excel, Business Communication"
+        ]
+      },
+       ca: {
+        title: "Chartered Accountant (CA)",
+        content: [
+          "Eligibility: 12th Commerce with CA Foundation exam",
+          "Career Roles: Auditor, Tax Consultant, CFO, Corporate Finance",
+          "Salary: ₹6–10 LPA initially",
+          "Further Studies: CFA, CPA, Advanced Finance",
+          "Skills: Financial Analysis, Auditing, Law, Taxation"
+        ]
+      },
+      mba: {
+        title: "MBA - Master of Business Administration",
+        content: [
+          "Eligibility: Graduation in any stream + CAT/MAT/CMAT etc.",
+          "Career Roles: Manager (HR, Finance, Marketing, Operations)",
+          "Salary: ₹5–12 LPA depending on specialization",
+          "Further Studies: PhD in Management, Certifications",
+          "Skills: Leadership, Strategy, Communication, Analytics"
+        ]
+      }
+    };
+  </script>
+
+
+
+<script src="../js/career.js"></script>
+
+</body>
+</html>
