@@ -134,7 +134,7 @@ body{
         width: 100%;
         margin-left: 0;
     }
- 
+
 }
 .course-cards-container{
     display: flex;
@@ -593,10 +593,8 @@ body{
       margin-right: 0px;
     }
     .hero-section{
-    margin-top: 7%;
+    margin-top: 15%;
     }
-   
-
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .search-select{
