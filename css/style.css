@@ -244,7 +244,7 @@ body {
         width: 100%;
     }
     .thumbnail{
-            display: none;
+        display: none;
     }
     .arrows{
       position: absolute;
@@ -968,7 +968,7 @@ body {
     flex-wrap: wrap;
     list-style: none;
     flex: 1 1 250px;
-    line-height: 50px;
+    line-height: 45px;
 }
 .list2 li {
     list-style: none;
@@ -1087,6 +1087,13 @@ body {
     }
     .invisible{
         display: none;
+    }
+    .list2 {
+        line-height:40px;
+    }
+    .section1{
+        line-height: 50px;
+        font-size: 20px;
     }
 }
 .row li a img {

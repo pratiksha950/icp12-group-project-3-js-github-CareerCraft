@@ -16,27 +16,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
 }
-.nav-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;             
-    justify-content: space-between;   
-    width: 100%;
-    height: 75px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(30px);
-    z-index: 1000;
-    padding: 0 20px;
-    background-color: #f3f3f3;
-}
-.logo img {
-    height: 100px;
-    width: 200px;
-    object-fit: contain;
-    margin-left: 0px;
-}
 .nav-search {
     display: flex;
     align-items: center;
@@ -270,10 +249,254 @@ body {
     }
 }
 
+.footer {
+    height: auto;
+    width: 100%;
+    border: none;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #f3f3f3;
+    list-style: none;
+    border: 2px solid #f3f3f3;
+    margin: auto;
+}
+
+.footerPart1 {
+    height:auto;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.list00 {
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    border: none;
+    flex-wrap: wrap;
+    list-style: none;
+    flex: 1 1 200px;
+}
+.list00 li {
+    list-style: none;
+}
+.list00 li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    font-weight: bold;
+    line-height: 40px;
+}
+.list00 li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: black;  
+    transition: width 0.3s ease;
+}
+.list00 li a:hover::after {
+    width: 100%;
+}
+.list00 .footerFont {
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.font2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.footerPart2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 30px;
+    display: flex;
+    
+}
+.footerPart2 .section2{
+    padding-left: 20px;
+     padding-right: 20px;
+     height: auto;
+
+}
+.list2 {
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    border: none;
+    flex-wrap: wrap;
+    list-style: none;
+    flex: 1 1 250px;
+    line-height: 45px;
+}
+.list2 li {
+    list-style: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.list2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.list2 .adjust {
+    padding-left: 18%;
+    font-size: 25px;
+}
+.list2 p {
+    font-size: 15px;
+}
+.footerPart2 .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row img {
+    margin-top: 20px;
+}
+.list2 .add {
+    margin-left: 20%;
+}
+.footerPart2 .contact-info {
+    font-size: 20px;
+}
+.footerPart2 .section1{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.footer hr {
+    border: none;
+    height: 3px;
+    background-color: #a9a1a1;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.footerPart3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -5%;
+    margin-left: 15%;
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+    footer{
+      height:auto;
+      width: 100%;
+      border: none;
+    }
+    .footerPart1{
+      height: auto;
+      width: 100%;
+      border:none;
+    }
+      .footerPart2{
+      height:auto;
+      width: 100%;
+      border: none;
+      background-color: #f3f3f3;
+      margin-top: -10%;
+    }
+    hr{
+      display: none;
+    }
+    .list2 .size1{
+        border:none;
+    }
+}
+.Copyright{
+  color: rgb(3, 20, 77);
+  font-weight: 200;
+  font-size:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: none;
+
+}
+.list2 .size{
+    font-size: 20px;
+    line-height: 30px;
+}
+@media  (max-width: 640px) {
+    .footerPart1{
+      display: none;
+    }
+     .footerPart1{
+      display: none;
+    }
+    .add{
+      display: none;
+    }
+    .Copyright{
+      font-size: 20px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    .size{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .footerPart2 .font2{
+        font-size: 30px;
+    }
+    .invisible{
+        display: none;
+    }
+    .list2 {
+        line-height:40px;
+    }
+    .section1{
+        line-height: 50px;
+        font-size: 20px;
+    }
+}
+.row li a img {
+  transition: transform 0.3s ease; 
+}
+
+.row li a img:hover {
+  transform: scale(1.2);
+}
+a {
+  display: flex;
+  align-items: center; 
+  text-decoration: none;
+  color: inherit;
+}
+
+a img {
+  margin-right:8px;
+}
     </style>
 </head>
 
 <body>
+    <!-- header -->
         <header>
         <div class="nav-bar">
         <div class="logo">
@@ -315,13 +538,60 @@ body {
     </ul>
    </div>
  </header><hr>
- 
   <div  class="content3">
     <a href="/pages/course.html">Courses</a>   
     <a href="/pages/career.html">Career Guidance</a>
     <a href="/pages/learning.html">E-learning</a>
     <a href="/pages/scholarship.html">Scholarships</a>
         </div> 
+<!-- footer -->
+         <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
+
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+
+
+
+
+
+
 <script>
     function showSidebar(){
     const sidebar=document.querySelector(".sidebar");
