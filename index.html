@@ -9,7 +9,54 @@
 </head>
 <body>
 
-  <div id="header"></div>
+        <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
+
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a><li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+ 
+  <div  class="content3">
+    <a href="/pages/course.html">Courses</a>   
+    <a href="/pages/career.html">Career Guidance</a>
+    <a href="/pages/learning.html">E-learning</a>
+    <a href="/pages/scholarship.html">Scholarships</a>
+        </div> 
 
 <!-- image slider -->
   <div class="img-slider">
@@ -98,7 +145,7 @@
       </div>
     </div>
 
-    <div class="our-scholer">
+     <div class="our-scholer">
         <div class="review">
     <div class="review1">
         <img src="./images/scholer1.png"></div><br>
@@ -129,6 +176,10 @@
  </div>
 </div>
     </div>
+    
+  </div>
+
+   <footer>
      <div class="footer">
       <div class="footerPart1">
         <div class="list00">
@@ -177,7 +228,6 @@
       <br>
       <hr>
 
-     
       <div class="footerPart2">
         <div class="list2 section1">
           <ul>
@@ -227,15 +277,9 @@
         </div>
       </div>
        <span class="Copyright">Copyright © Career Craft 2025</span>
-      
-
     </div>
-
-
   </footer>
-  </div>
- 
+
     <script src="./js/index.js"></script>
-     <div id="footer"></div>
 </body>
 </html>

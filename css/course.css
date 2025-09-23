@@ -821,3 +821,6 @@ body{
 .row li a img:hover {
   transform: scale(1.2);
 }
+.footer{
+    margin-top: auto;
+}
