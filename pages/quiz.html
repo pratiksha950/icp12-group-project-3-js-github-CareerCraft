@@ -76,6 +76,46 @@
       sortedCareers.forEach(career => {
         const card = document.createElement("div");
         card.classList.add("career-card");
+         // Image & Title
+        let imgSrc = "";
+        let title = career;
+        let desc = "";
+
+         if(career.includes("Medical")) {
+          imgSrc = "../images/doctors-main-1.jpg";
+          title = "Medical Careers";
+          desc = "Explore MBBS, Nursing, Pharmacy and Healthcare careers.";
+          card.onclick = () => window.location.href = "./doctor.html";
+        } else if(career.includes("Engineering")) {
+          imgSrc = "../images/engineering.jpg";
+          title = "Engineering Careers";
+          desc = "Explore Engineering, IT and Technology careers.";
+          card.onclick = () => window.location.href = "./engineer.html";
+        } else if(career.includes("Commerce")) {
+          imgSrc = "../images/commerce.jpg";
+          title = "Commerce Careers";
+          desc = "Explore B.Com, CA, CS, BBA, Banking, MBA.";
+          card.onclick = () => window.location.href = "./comerce.html";
+        } else if(career.includes("Arts")) {
+          imgSrc = "../images/arts.jpg";
+          title = "Arts Careers";
+          desc = "Explore BA, Journalism, Law, Fine Arts, Fashion.";
+          card.onclick = () => window.location.href = "./arts.html";
+        } else if(career.includes("Skill Development")) {
+          imgSrc = "../images/skills.jpg";
+          title = "Skill Development";
+          desc = "Enhance Soft Skills, Coding, AI/ML, Cloud Computing.";
+          card.onclick = () => window.location.href = "./skill.html";
+        }
+
+        card.innerHTML = `<img src="${imgSrc}" alt="${title}"><h3>${title}</h3><p>${desc}</p>`;
+        careerCards.appendChild(card);
+      });
+
+      container.appendChild(careerCards);
+    }
+
+    showQuestion();
 
 
 
