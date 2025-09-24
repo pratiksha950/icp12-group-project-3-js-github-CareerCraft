@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+        <header>
         <div class="nav-bar">
         <div class="logo">
             <img src="../images/logo.png">
@@ -39,18 +39,18 @@
         </div>
         </div>
             
-        <div class="sidebar">
-        <ul>
-        <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a><li>
-        <li><a href="/pages/login.html">Login</a></li>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/pages/about.html">About Us</a></li>
-        <li><a href="/pages/learning.html">E-learning</a></li>
-        <li><a href="/pages/scholarship.html">Scholarships</a></li>
-        <li><a href="/pages/career.html">Career Guidance</a></li>
-        <li><a href="/pages/course.html">Courses</a></li>
-        <li><a href="/pages/contact.html">Contact</a></li>
-        </ul>
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
    </div>
  </header><hr>
    <div  class="content3">
@@ -94,10 +94,10 @@
             <div class="kp">
                 <h4>Keep in Touch</h4>
                 <div class="social-icons ">
-                    <a href="#"><i class="fa-brands fa-facebook-f modify-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter modify-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram modify-icon"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in modify-icon"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f modify-icon"></i></a>
+                    <a href="https://x.com/?lang=en"><i class="fa-brands fa-twitter modify-icon"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram modify-icon"></i></a>
+                    <a href="https://www.linkedin.com/jobs/"><i class="fa-brands fa-linkedin-in modify-icon"></i></a>
                 </div>
             </div>
 
@@ -110,10 +110,10 @@
         </div>
         <div class="contact-right">
             <h3>Have Questions?</h3>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Your Name" id="name">
+            <input type="email" placeholder="Your Email" id="email">
+            <textarea placeholder="Your Message" id="messageText"></textarea>
+            <button type="submit" onclick="saveMessage()">Send Message</button>
         </div>
     </div>
 
@@ -124,13 +124,14 @@
         <div class="contact-member-container" id="contact-card-container">
         </div>
     </div>
+     <div class="message-div" id="message">
+        message send successfully
+    </div>
 
-    <footer>
-    <div class="footer">
-
-   
+   <footer>
+     <div class="footer">
       <div class="footerPart1">
-        <div class="list1">
+        <div class="list00">
           <ul class="none">
             <li class="font2">EduScholar</li>
             <p class="footerFont">
@@ -141,51 +142,49 @@
           </ul>
         </div>
 
-        <div class="list1">
+        <div class="list00">
           <ul>
             <li class="font2">Quick Links</li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/career.html">Career Guidance</a></li>
-            <li><a href="./pages/scholarship.html">Scholarships</a></li>
-            <li><a href="./pages/learning.html">E-Learning</a></li>
-            <li><a href="./pages/login.html">Login</a></li>
-            <li><a href="./pages/about.html">About Us</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/career.html">Career Guidance</a></li>
+            <li><a href="../pages/scholarship.html">Scholarships</a></li>
+            <li><a href="../pages/learning.html">E-Learning</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/about.html">About Us</a></li>
           </ul>
         </div>
 
-        <div class="list1">
+        <div class="list00">
           <ul>
             <li class="font2">Scholarships</li>
-            <li><a href="./index.html">Available Scholarships</a></li>
-            <li><a href="./pages/career.html">Apply Now</a></li>
-            <li><a href="./pages/scholarship.html">Scholarship Guidelines</a></li>
-            <li><a href="./pages/learning.html">FAQs</a></li>
+            <li><a href="../pages/scholarship.html">Available Scholarships</a></li>
+            <li><a href="../pages/scholarship.html">Apply Now</a></li>
+            <li><a href="../pages/scholarship.html">Scholarship Guidelines</a></li>
+            <li><a href="../pages/scholarship.html">FAQs</a></li>
           </ul>
         </div>
 
-        <div class="list1">
+        <div class="list00">
           <ul>
             <li class="font2">Popular Courses</li>
-            <li><a href="./index.html">Web Development</a></li>
-            <li><a href="./pages/career.html">AI & Machine Learning</a></li>
-            <li><a href="./pages/scholarship.html">Data Sciences</a></li>
-            <li><a href="./pages/learning.html">UI/UX Design</a></li>
+            <li><a href="../pages/course.html">Web Development</a></li>
+            <li><a href="../pages/course.html">AI & Machine Learning</a></li>
+            <li><a href="../pages/course.html">Data Sciences</a></li>
+            <li><a href="../pages/course.html">UI/UX Design</a></li>
           </ul>
         </div>
       </div>
       <br>
       <hr>
 
-     
       <div class="footerPart2">
         <div class="list2 section1">
           <ul>
             <li class="font2 ">Contact Information</li>
             <li>
-              <div class="part"></div>
               <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA">
                 <img src="../images/location.png" height="30" width="30" class="hide3">
-                <span class="contact-info">&nbsp;123 Education Street, Knowledge City </span>
+                <span class="contact-info">&nbsp;<span class="invisible">123 Education Street,</span> Knowledge City </span>
               </a>
             </li>
             <li>
@@ -199,37 +198,37 @@
                 <img src="../images/viber.png" height="30" width="30">
                 <span class="contact-info">&nbsp;+91 98765 43210</span>
               </a><br>
-               <span class="Copyright">Copyright © Career Craft 2025</span>
+              
             </li>
           </ul>
         </div>
 
-        <div class="list2 search2">
+        <div class="list2 section2">
           <ul>
             <li>
               <img src="../images/logo.png" height="60" width="200" class="add">
             </li>
-            <p class="size">
+            <p class="size1">
              CareerCraft, since 2011, is endeavoring to bridge the gap between 
               scholarship providers and scholarship seekers. As India's largest 
               scholarship listing portal, we have aided over 9 million students 
               by linking them with the suitable scholarship programmes tailored to their needs.
             </p>
             <div class="row">
-              <li><a href="https://www.youtube.com/"><img src="../images/youtube.png" height="35" width="35"></a></li>
-              <li><a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
-              <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" height="35" width="35"></a></li>
-              <li><a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.png" height="35" width="35"></a></li>
-              <li><a href="https://www.instagram.com/"><img src="../images/insta.png" height="35" width="35"></a></li>
+              <li><a href="https://www.youtube.com/"  target="_blank"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/" target="_blank"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/" target="_blank"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" height="35" width="35"></a></li>
             </div>
           </ul>
         </div>
       </div>
-
-      
-
+       <span class="Copyright">Copyright © Career Craft 2025</span>
     </div>
-    </footer>
+  </footer>
+
+
 
     <script src="../js/contact.js"></script>
 </body>

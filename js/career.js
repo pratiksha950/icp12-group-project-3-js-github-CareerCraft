@@ -37,25 +37,3 @@
 
     setInterval(() => moveSlide(1), 4000);
 
-    // Show Details Function
-function showDetails(career) {
-  const details = detailsData[career];
-  document.getElementById("details-title").innerText = details.title;
-  
-  const list = document.getElementById("details-list");
-  list.innerHTML = "";
-  details.content.forEach(item => {
-    const li = document.createElement("li");
-    li.innerText = item;
-    list.appendChild(li);
-  });
-
-  document.querySelector(".cards-section").style.display = "none";
-  document.getElementById("details").style.display = "block";
-}
-
-// Hide Details
-function hideDetails() {
-  document.getElementById("details").style.display = "none";
-  document.querySelector(".cards-section").style.display = "block";
-}

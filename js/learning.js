@@ -1,30 +1,25 @@
-let path = location.pathname.includes("/pages/") ? "../pages/header.html" : "./pages/header.html";
-fetch(path)
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  })
-  .catch(err => console.error("Header load error:", err));
-
-  function showSidebar() {
-    const sidebar = document.querySelector(".sidebar");
-    if(sidebar){
-        sidebar.style.display = "flex";
-    }
+function showSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="flex";
 }
-
-function hideSidebar() {
-    const sidebar = document.querySelector(".sidebar");
-    if(sidebar){
-        sidebar.style.display = "none";
-    }
+function hideSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="none";
 }
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("../pages/footer.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("footer").innerHTML = data)
-    .catch(err => console.error("Footer load error:", err));
-});
+ const placeholders = [
+    "Search for Scholarships",
+    "Search for Career Guidance",
+    "Search for E-learning",
+    "Search for Courses",
+    "Search for career-info"
+];
+let index1 = 0;
+const searchBox = document.getElementById("searchBox");
+    setInterval(() => {
+      searchBox.setAttribute("placeholder", placeholders[index1]);
+      index = (index1 + 1) % placeholders.length;
+    }, 2000);
+
 
 
 const dialog = document.getElementById('courseDialog');
@@ -105,3 +100,39 @@ const dialog = document.getElementById('courseDialog');
       alert("✅ You have enrolled in " + courseTitle.textContent + "!");
       dialog.close();
     }
+  // Light buttons
+  document.getElementById('lightOn').addEventListener('click', () => {
+    document.body.style.backgroundColor = '#ffffff'; // white light
+  });
+
+  document.getElementById('lightOff').addEventListener('click', () => {
+    document.body.style.backgroundColor = '#2c3e50'; // dark/off
+  });
+
+    //slideshow
+
+  const images=["img/blue-black-peacock.jpg","img/peacock-1-jpg" ,"img/peacock-2-jpg","img/peacock-3-jpg" ,"img/peacock-4-jpg" ,"img/peacock-5-jpg"];
+        const slide=document.getElementById(`slide`);
+        let index=0;
+        function right(){
+          if(index<images.length -1){
+            index++;
+          } 
+          else{
+            index=0
+          }
+          slide.src=images[index]
+
+        }
+        
+        function left(){
+          if(index>0){
+            index--;
+          } 
+          else{
+            index=images.length -1;
+          }
+          slide.src=images[index]
+        }
+       
+    

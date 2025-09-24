@@ -5,27 +5,41 @@
     }
 
     /* Hero Section (Slider) */
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 70vh;
-      overflow: hidden;
-    }
-    .slides {
-      display: flex;
-      width: 300%; /* 3 images */
-      height: 100%;
-      transition: transform 1s ease-in-out;
-    
-    }
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+}
 
-    .slide {
-      
-      min-width: 100%;
-      height: 100%;
-      background-size: contain;
-      background-position: center;
-    }
+.slides {
+  display: flex;
+  width: 300%; /* 3 slides => 300% */
+  height: 100%;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* better than contain */
+}
+
+.slide h1 {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
 
     /* Text overlay */
     .hero-text {

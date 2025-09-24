@@ -5,20 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>E-Learning Platform</title>
   <link rel="stylesheet" href="../css/learning.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 </head>
 <body>
-  <div id="header"></div>
+    <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
 
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+ <div  class="content3">
+    <a href="/pages/course.html">Courses</a>   
+    <a href="/pages/career.html">Career Guidance</a>
+    <a href="/pages/learning.html">E-learning</a>
+    <a href="/pages/scholarship.html">Scholarships</a>
+        </div> 
   <!-- Navbar -->
-  <div class="navbar">
+  <div class="navbar8">
     📚 E-Learning Platform
+      <div class="icon-tube">
+    <a href="../pages/learning.html"class="slide" id="slide"></a>
+     </a>
+     <a href="../pages/youtube.html"><img src="../images/right2.png" class="icon-right  icon-action" onclick="right()"height="45px" width="45px"/></a>
   </div>
-
+  </div>
   <!-- Header -->
-  <div class="header">
+  <div class="header8">
     <h1>Welcome to Our E-Learning Platform</h1>
     <p>Explore top courses and boost your skills</p>
+    <div class="buttons">
+      <!--lightOn-off -->
+    <button id="lightOn"class="btn-card">Light On</button>
+    <button id="lightOff"class="btn-card">Light Off</button>
+  </div>
   </div>
 
   <!-- 8 Course Cards -->
@@ -27,56 +82,56 @@
       <img src="../images/html_17990178.png" alt="HTML & CSS">
       <h3>HTML & CSS Basics</h3>
       <p>Learn how to build static web pages with HTML and CSS.</p>
-      <button class="btn" onclick="openDialog('HTML & CSS Basics')">View Details</button>
+      <button class="btn-card" onclick="openDialog('HTML & CSS Basics')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/js-png.png" alt="JavaScript">
       <h3>JavaScript Essentials</h3>
       <p>Make your websites interactive with JavaScript.</p>
-      <button class="btn" onclick="openDialog('JavaScript Essentials')">View Details</button>
+      <button class="btn-card" onclick="openDialog('JavaScript Essentials')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/py-png.png" alt="Python">
       <h3>Python for Beginners</h3>
       <p>Start coding with one of the most popular languages.</p>
-      <button class="btn" onclick="openDialog('Python for Beginners')">View Details</button>
+      <button class="btn-card" onclick="openDialog('Python for Beginners')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/react-png.png" alt="React">
       <h3>React Fundamentals</h3>
       <p>Learn to build dynamic single-page applications.</p>
-      <button class="btn" onclick="openDialog('React Fundamentals')">View Details</button>
+      <button class="btn-card" onclick="openDialog('React Fundamentals')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/medical-research_2756778.png" alt="Data Science">
       <h3>Data Science with Python</h3>
       <p>Analyze and visualize data effectively with Python.</p>
-      <button class="btn" onclick="openDialog('Data Science with Python')">View Details</button>
+      <button class="btn-card" onclick="openDialog('Data Science with Python')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/sql_17544218.png" alt="SQL">
       <h3>SQL & Databases</h3>
       <p>Work with relational databases using SQL.</p>
-      <button class="btn" onclick="openDialog('SQL & Databases')">View Details</button>
+      <button class="btn-card" onclick="openDialog('SQL & Databases')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/digital-asset-management_18410995.png" alt="Machine Learning">
       <h3>Machine Learning</h3>
       <p>Understand ML concepts and build predictive models.</p>
-      <button class="btn" onclick="openDialog('Machine Learning')">View Details</button>
+      <button class="btn-card" onclick="openDialog('Machine Learning')">View Details</button>
     </div>
 
     <div class="course-card">
       <img src="../images/security-png.png" alt="Cyber Security">
       <h3>Cyber Security</h3>
       <p>Learn how to protect systems and networks from attacks.</p>
-      <button class="btn" onclick="openDialog('Cyber Security')">View Details</button>
+      <button class="btn-card" onclick="openDialog('Cyber Security')">View Details</button>
     </div>
   </div>
 
@@ -87,12 +142,10 @@
     <div id="courseDetails" class="course-detail"></div>
     <button class="enroll-btn" onclick="enrollCourse()">Enroll Now</button>
   </dialog>
-
+<br>
   <!-- Footer -->
-  <footer>
-    <div class="footer">
-
-   
+   <footer>
+     <div class="footer">
       <div class="footerPart1">
         <div class="list00">
           <ul class="none">
@@ -108,48 +161,46 @@
         <div class="list00">
           <ul>
             <li class="font2">Quick Links</li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./pages/career.html">Career Guidance</a></li>
-            <li><a href="./pages/scholarship.html">Scholarships</a></li>
-            <li><a href="./pages/learning.html">E-Learning</a></li>
-            <li><a href="./pages/login.html">Login</a></li>
-            <li><a href="./pages/about.html">About Us</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/career.html">Career Guidance</a></li>
+            <li><a href="../pages/scholarship.html">Scholarships</a></li>
+            <li><a href="../pages/learning.html">E-Learning</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/about.html">About Us</a></li>
           </ul>
         </div>
 
         <div class="list00">
           <ul>
             <li class="font2">Scholarships</li>
-            <li><a href="./index.html">Available Scholarships</a></li>
-            <li><a href="./pages/career.html">Apply Now</a></li>
-            <li><a href="./pages/scholarship.html">Scholarship Guidelines</a></li>
-            <li><a href="./pages/learning.html">FAQs</a></li>
+            <li><a href="../pages/scholarship.html">Available Scholarships</a></li>
+            <li><a href="../pages/scholarship.html">Apply Now</a></li>
+            <li><a href="../pages/scholarship.html">Scholarship Guidelines</a></li>
+            <li><a href="../pages/scholarship.html">FAQs</a></li>
           </ul>
         </div>
 
         <div class="list00">
           <ul>
             <li class="font2">Popular Courses</li>
-            <li><a href="./index.html">Web Development</a></li>
-            <li><a href="./pages/career.html">AI & Machine Learning</a></li>
-            <li><a href="./pages/scholarship.html">Data Sciences</a></li>
-            <li><a href="./pages/learning.html">UI/UX Design</a></li>
+            <li><a href="../pages/course.html">Web Development</a></li>
+            <li><a href="../pages/course.html">AI & Machine Learning</a></li>
+            <li><a href="../pages/course.html">Data Sciences</a></li>
+            <li><a href="../pages/course.html">UI/UX Design</a></li>
           </ul>
         </div>
       </div>
       <br>
       <hr>
 
-     
       <div class="footerPart2">
         <div class="list2 section1">
           <ul>
             <li class="font2 ">Contact Information</li>
             <li>
-              <div class="part"></div>
               <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA">
-                <img src="../images/location.png" height="30" width="30" class="hide3">
-                <span class="contact-info">&nbsp;123 Education Street, Knowledge City </span>
+                <img src="../images/location.png" height="30" width="30" class="hide3" >
+                <span class="contact-info">&nbsp;<span class="invisible">123 Education Street,</span> Knowledge City </span>
               </a>
             </li>
             <li>
@@ -180,21 +231,17 @@
               by linking them with the suitable scholarship programmes tailored to their needs.
             </p>
             <div class="row">
-              <li><a href="https://www.youtube.com/"><img src="../images/youtube.png" height="35" width="35"></a></li>
-              <li><a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
-              <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" height="35" width="35"></a></li>
-              <li><a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.png" height="35" width="35"></a></li>
-              <li><a href="https://www.instagram.com/"><img src="../images/insta.png" height="35" width="35"></a></li>
+              <li><a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/" target="_blank"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/"target="_blank"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" height="35" width="35"></a></li>
             </div>
           </ul>
         </div>
       </div>
        <span class="Copyright">Copyright © Career Craft 2025</span>
-      
-
     </div>
-
-
   </footer>
 
   <script src="../js/learning.js"></script>
