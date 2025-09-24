@@ -1,6 +1,13 @@
-body {
+body { 
+    font-family: Arial, sans-serif;
+     background-image: url("../images/login-img/login-background-img.jpg");
+      background-size: cover;
+       background-position: center; 
+       background-repeat: no-repeat; 
+       display: flex; 
+       flex-direction: column; min-height: 100vh;
+     }
 
-}
 .login-container {
     background: rgba(0, 0, 0, 0.6); 
     padding: 25px 30px;
