@@ -7,7 +7,7 @@ CareerCraft is a web platform designed to empower students with access to **scho
 
 ---
 ### 🏠 Homepage  
-![CareerCraft Homepage](./images/readme-img1.png)
+![CareerCraft Homepage](./images/home-img/readme-img1.png)
 
 ## ✨ Features  
 
@@ -31,7 +31,7 @@ CareerCraft is a web platform designed to empower students with access to **scho
 ---
 
 ## 📂 Project Structure  
-
+![CareerCraft Homepage](./images/home-img/readme-img2.png)
 
 ## 🔗 Deployment
 Can be deployed on
@@ -47,3 +47,6 @@ https://github.com/pratiksha950/icp12-group-project-3-js-github-CareerCraft
 2️⃣ **Open index.html in your browser.**
 
 ## Contributors
+<a href="https://github.com/pratiksha950/icp12-group-project-3-js-github-CareerCraft/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pratiksha950/icp12-group-project-3-js-github-CareerCraft" />
+</a>

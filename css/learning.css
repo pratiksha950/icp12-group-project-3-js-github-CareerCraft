@@ -280,6 +280,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
     padding-bottom: 4px;
+    
 }
 .content3 a:hover {
     color: rgb(186, 91, 32);
@@ -398,6 +399,17 @@ body {
     .hero-section{
     margin-top: 15%;
     }
+    .navbar8 {
+    margin-top: 18%;
+    margin-left: 7%;
+  }
+  .header8{
+        margin-left: 7%;
+  }
+  .footer{
+    margin-right: 0%;
+  }
+
 }
 @media (min-width: 768px) and (max-width: 1024px) {
     .search-select{
@@ -667,5 +679,7 @@ a img {
   margin-top: 20px;
   gap: 10px;
   color: white;
-  
+}
+.content3 a{
+  background: #ebe5e5;
 }
