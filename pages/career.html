@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Guidance</title>
+
     <link rel="stylesheet" href="../css/career.css"/>
+    
 </head>
 <body>
   <div id="header"></div>
@@ -88,23 +90,7 @@
 </div>
 <div id="footer"></div>
 <script>
-      let index = 0;
-      const slides = document.getElementById("slides");
-      const totalSlides = document.querySelectorAll(".slide").length;
-
-      function moveSlide(step) {
-        index = (index + step + totalSlides) % totalSlides;
-        slides.style.transform = `translateX(-${index * 100}%)`;
-      }
-
-      // Auto slide every 5 seconds
-      setInterval(() => {
-        moveSlide(1);
-      }, 5000);
-    </script>
-
-
- <script>
+      // Slider Functionality
       let index = 0;
       const slides = document.getElementById("slides");
       const totalSlides = document.querySelectorAll(".slide").length;
