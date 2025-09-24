@@ -162,7 +162,7 @@
 }
 
 .cards .card .readquiz {
-    display: flex;
+     display: flex;
 
       justify-content: center;
       align-items: center;
@@ -172,15 +172,23 @@
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      transition: background 0.3s;
+      transition: background 0.3s;           /* button width fits text */
 }
 
+
 .cards .card .readquiz:hover {
-    background: #007BFF;
+    background: #0056b3;
 }
-    .read:hover {
-      background: #0056b3;
+
+/* Optional: smaller button on mobile */
+@media (max-width: 480px) {
+    .cards .card .readquiz {
+        padding: 8px 16px;
+        font-size: 0.9rem;
     }
+}
+
+    
 
     /* Responsive */
     @media (max-width: 768px) {

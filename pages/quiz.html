@@ -42,15 +42,19 @@ h1 {
   margin-bottom: 20px;
 }
 .options button {
-  padding: 10px 15px;
+  padding: 10px 70px;        /* adjust height & inner spacing */
+  font-size: 0.9rem;        /* slightly smaller text */
+  width: fit-content;       /* button width fits text */
+  max-width: 100%;          /* prevent overflow on small screens */
   background: #007BFF;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
-  font-size: 1rem;
+  align-self: center;       /* center the button in the flex column */
 }
+
 .options button:hover {
   background: #0056b3;
 }
