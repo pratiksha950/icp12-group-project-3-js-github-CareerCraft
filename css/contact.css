@@ -3,12 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-
     font-family: Arial, Helvetica, sans-serif;
+        background-color: #efe4e4;
 }
-
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -31,7 +29,6 @@ body {
     object-fit: contain;
     margin-left: 0px;
 }
-
 .location {
     display: flex;
     align-items: center;
@@ -41,7 +38,6 @@ body {
     border-radius: 4px;
     font-size: 10px;
 }
-
 .location-logo {
     display: flex;
     align-items: center;
@@ -53,7 +49,6 @@ body {
     flex-direction: column;
     line-height: 1.1;
 }
-
 .location-info h1 {
     font-size: 10px;
     margin: 0;
@@ -63,8 +58,6 @@ body {
     height: 10px;
     width: 10px;
 }
-
-
 .heading-div {
     margin-top: 115px;
     padding: 30px;
@@ -75,6 +68,14 @@ body {
     text-align: center;
     font-size: 50px;
     margin-bottom: 17px;
+        font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .head-para {
@@ -82,7 +83,6 @@ body {
     font-size: 20px;
     margin-bottom: 17px;
 }
-
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -94,7 +94,6 @@ body {
     height: 400px;
 
 }
-
 .contact-left {
     flex: 1;
     display: flex;
@@ -108,7 +107,6 @@ body {
     display: flex;
 
 }
-
 .address {
     font-family: Arial, Helvetica, sans-serif;
     gap: 10px;
@@ -120,23 +118,19 @@ body {
     text-decoration: none;
     color: black;
 }
-
 .kp {
     display: flex;
     flex-direction: row;
     padding: 15px 0px;
     gap: 40px;
 }
-
 .social-icons {
     margin-left: 9px;
 }
-
 .modify-icon {
     color: rgb(228, 182, 97);
     margin-right: 10px;
 }
-
 .contact-right {
     flex: 1;
     display: flex;
@@ -146,7 +140,6 @@ body {
     background-color: #f3f3f3;
     border-radius: 3px;
 }
-
 .contact-right:hover {
     box-shadow: 1px 1px 1px 1px rgb(172, 171, 171);
     border-radius: 6px;
@@ -154,7 +147,6 @@ body {
     transition: 0.3 s;
     background-color: #dcd8d8;
 }
-
 .contact-right input,
 .contact-right textarea {
     padding: 10px;
@@ -162,7 +154,6 @@ body {
     border-radius: 6px;
     font-size: 14px;
 }
-
 .contact-right button {
     padding: 12px;
     background: #4CAF50;
@@ -173,20 +164,16 @@ body {
     cursor: pointer;
     transition: background 0.3s;
 }
-
 .contact-right button:hover {
     background: #45a049;
 }
-
 .support-team-div {
     margin-top: 70px;
 }
-
 .support-heading {
     text-align: center;
     padding: 10px 0px;
 }
-
 .contact-member-container {
     padding: 20px;
     display: flex;
@@ -194,7 +181,6 @@ body {
     gap: 20px;
     justify-content: center;
 }
-
 .contact-card {
     width: 220px;
     border: 1px solid #333;
@@ -206,11 +192,9 @@ body {
     transition: transform 0.3s ease;
     cursor: pointer;
 }
-
 .contact-card:hover {
     transform: translateY(-5px);
 }
-
 .contact-card img {
     width: 120px;
     height: 120px;
@@ -218,19 +202,16 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
 }
-
 .contact-card h4 {
     margin: 10px 0 5px;
     font-size: 18px;
     color: #333;
 }
-
 .contact-card p {
     margin: 3px 0;
     color: #666;
     font-size: 14px;
 }
-
 .theme-toggle {
     position: fixed;
     top: 68px;
@@ -238,7 +219,6 @@ body {
     z-index: 2000;
     cursor: pointer;
 }
-
 .theme-toggle img {
     width: 35px;
     height: 35px;
@@ -249,12 +229,10 @@ body {
 .theme-toggle img:hover {
     transform: rotate(20deg) scale(1.1);
 }
-
 body.light {
     background: #ffffff;
     color: #000000;
 }
-
 body.dark {
     background: #121212;
     color: #ffffff;
@@ -263,12 +241,10 @@ body.dark {
 body.dark .nav-bar {
     background-color: #FFF;
 }
-
 body.dark .contact-right {
     background-color: #1e1e1e;
     color: #fff;
 }
-
 body.dark .contact-card {
     background: #2c2c2c;
     border-color: #555;
@@ -309,7 +285,6 @@ body.dark .footer {
     transform: translateX(-50%);
     z-index: 9999;
 }
-
 /* Tablet view (768px to 1024px) */
 @media screen and (max-width: 1024px) {
     .contact-container {
@@ -337,7 +312,6 @@ body.dark .footer {
         gap: 20px;
     }
 }
-
 /* Mobile view (up to 767px) */
 @media screen and (max-width: 767px) {
     .heading-text {
@@ -355,7 +329,6 @@ body.dark .footer {
         height: auto;
         padding: 10px;
     }
-
     .contact-right input,
     .contact-right textarea {
         font-size: 13px;
@@ -377,7 +350,6 @@ body.dark .footer {
 
     }
 }
-
 .nav-bar {
     display: flex;
     flex-direction: row;
@@ -555,7 +527,6 @@ body.dark .footer {
 .sidebar li:first-child{
     margin-right: auto;
 }
-
 .sidebar li{
     width: 100%;
 }
@@ -631,7 +602,6 @@ body.dark .footer {
         display: block;
     }
 }
-
 .footer {
     height: auto;
     width: 100%;
@@ -644,7 +614,6 @@ body.dark .footer {
     border: 2px solid #f3f3f3;
     margin: auto;
 }
-
 .footerPart1 {
     height:auto;
     width: 100%;
@@ -652,7 +621,6 @@ body.dark .footer {
     display: flex;
     flex-direction: row;
 }
-
 .list00 {
     height:auto;
     display: flex;
@@ -693,7 +661,6 @@ body.dark .footer {
     line-height: 30px;
     font-weight: bold;
 }
-
 .font2 {
     font-size: 25px;
     font-weight: bold;
@@ -712,8 +679,7 @@ body.dark .footer {
     justify-content: space-evenly;
     flex-wrap: wrap;
     line-height: 30px;
-    display: flex;
-    
+    display: flex; 
 }
 .footerPart2 .section2{
     padding-left: 20px;
@@ -770,7 +736,6 @@ body.dark .footer {
   align-items: start;
   justify-content: start;
 }
-
 .footer hr {
     border: none;
     height: 3px;
@@ -778,7 +743,6 @@ body.dark .footer {
     margin: 20px 0;
     width: 100%;
 }
-
 .footerPart3 {
     font-size: 20px;
     font-weight: bolder;
@@ -854,7 +818,6 @@ body.dark .footer {
 .row li a img {
   transition: transform 0.3s ease; 
 }
-
 .row li a img:hover {
   transform: scale(1.2);
 }
@@ -864,7 +827,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 a img {
   margin-right:8px;
 }
