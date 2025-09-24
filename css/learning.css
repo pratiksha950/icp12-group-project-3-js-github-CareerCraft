@@ -309,6 +309,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     z-index: 299;
+    margin-top: 0;
+    margin-left: -20%;
 }
 .sidebar li{
     height: 50px;
