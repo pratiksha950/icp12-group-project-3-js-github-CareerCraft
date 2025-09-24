@@ -50,3 +50,34 @@ function toggleTheme() {
         themeIcon.src = "../images/contact-us/moon.png"; 
     }
 }
+
+function showMessage() {
+    const msg = document.getElementById("message");
+
+    msg.style.display = "block"; 
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 2000);
+}
+
+function saveMessage() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const messageText = document.getElementById("messageText").value.trim();
+
+    let messages = JSON.parse(localStorage.getItem("messages")) || [];
+    messages.push({
+        name: name,
+        email: email,
+        message: messageText
+        
+    });
+
+    localStorage.setItem("messages", JSON.stringify(messages));
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("messageText").value = "";
+
+    showMessage();
+}

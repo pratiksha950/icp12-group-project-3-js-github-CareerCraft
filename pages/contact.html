@@ -110,10 +110,10 @@
         </div>
         <div class="contact-right">
             <h3>Have Questions?</h3>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
+            <input type="text" placeholder="Your Name" id="name">
+            <input type="email" placeholder="Your Email" id="email">
+            <textarea placeholder="Your Message" id="messageText"></textarea>
+            <button type="submit" onclick="saveMessage()">Send Message</button>
         </div>
     </div>
 
@@ -123,6 +123,9 @@
             educational journey.</p>
         <div class="contact-member-container" id="contact-card-container">
         </div>
+    </div>
+     <div class="message-div" id="message">
+        message send successfully
     </div>
 
        <footer>
