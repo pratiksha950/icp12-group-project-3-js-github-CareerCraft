@@ -20,8 +20,14 @@
 }
 
 .slide {
-  flex: 1 0 100%;
+  
+  width: 100%;
+  
+  flex-shrink: 0;
   position: relative;
+  height: 100%;
+  background-size: contain;
+  object-fit: contain;
 }
 
 .slide img {
