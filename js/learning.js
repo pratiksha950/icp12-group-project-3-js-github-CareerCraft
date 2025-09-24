@@ -20,8 +20,6 @@ const searchBox = document.getElementById("searchBox");
       index = (index1 + 1) % placeholders.length;
     }, 2000);
 
-
-
 const dialog = document.getElementById('courseDialog');
     const courseTitle = document.getElementById('courseTitle');
     const courseDetails = document.getElementById('courseDetails');
