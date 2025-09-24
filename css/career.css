@@ -163,15 +163,16 @@
 
 .cards .card .readquiz {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 70px 15px;
-    padding: 10px 20px;
-    background: #007BFF; /* green for quiz to differentiate */
-    color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s;
+
+      justify-content: center;
+      align-items: center;
+      margin: 0 70px 15px;
+      padding: 10px 20px;
+      background: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
 }
 
 .cards .card .readquiz:hover {
