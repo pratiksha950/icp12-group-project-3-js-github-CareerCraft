@@ -7,6 +7,114 @@
     <link rel="stylesheet" href="../css/career.css">
 </head>
 <body>
+    <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="../images/arts-hero1.jpg" alt="Arts 1">
+        <h1>Arts Stream Careers</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/arts-hero2.jpg" alt="Arts 2">
+        <h1>Explore Your Creativity</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/arts-hero3.jpg" alt="Arts 3">
+        <h1>Build Your Future</h1>
+      </div>
+    </div>
+
+    <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards-section">
+    <h2>Explore Arts Careers</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../images/career-page-images/law-img.jpg" alt="Law">
+        <div class="card-content">
+          <h3>Law</h3>
+          <p>Become a lawyer, advocate, or legal consultant.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('law')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/career-page-images/journalism-img.jpg" alt="Journalism">
+        <div class="card-content">
+          <h3>Journalism</h3>
+          <p>Work as a reporter, editor, or media analyst.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('journalism')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/career-page-images/fashion-img.jpg" alt="Fashion">
+        <div class="card-content">
+          <h3>Fashion Designing</h3>
+          <p>Pursue creative careers in clothing and textile design.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('fashion')">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+  <section class="details" id="details">
+    <h2 id="details-title"></h2>
+    <ul id="details-content"></ul>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
+  </section>
+
+  <script>
+
+ 
+  
+
+    
+
+    // Details Section JS
+    const detailsData = {
+      law: {
+        title: "Law Careers",
+        content: [
+          "Eligibility: 12th Arts/Commerce + Entrance (CLAT, LSAT)",
+          "Career Roles: Lawyer, Advocate, Legal Consultant, Corporate Law Expert",
+          "Salary: Fresher ₹25k-₹40k, Experienced ₹80k+",
+          "Further Studies: LLM, Corporate Law, International Law",
+          "Skills: Analytical Thinking, Communication, Negotiation, Critical Reasoning"
+        ]
+      },
+      journalism: {
+        title: "Journalism Careers",
+        content: [
+          "Eligibility: 12th Arts/Commerce, Bachelor's in Journalism or Mass Communication",
+          "Career Roles: Reporter, Editor, Media Analyst, Content Creator",
+          "Salary: ₹20k-₹50k/month initially",
+          "Further Studies: MA Journalism, Specialized Media Courses",
+          "Skills: Writing, Communication, Creativity, Ethics"
+        ]
+      },
+      fashion: {
+        title: "Fashion Designing Careers",
+        content: [
+          "Eligibility: 12th Arts/Commerce, Diploma/Degree in Fashion Design",
+          "Career Roles: Fashion Designer, Stylist, Textile Designer",
+          "Salary: ₹15k-₹40k/month initially",
+          "Further Studies: Masters in Design, Specialized Fashion Courses",
+          "Skills: Creativity, Visualization, Technical Sewing, Trend Analysis"
+        ]
+      }
+    };
+
+
+
+    
+  </script>
+  <script src="../js/career.js"></script>
+
     
 </body>
 </html>
