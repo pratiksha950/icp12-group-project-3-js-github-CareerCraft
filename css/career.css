@@ -493,3 +493,49 @@
       .explore-btn:hover {
         background-color: #0056b3;
       }
+      /* Responsive for Tablets */
+@media (max-width: 768px) {
+  .details-box {
+    padding: 20px;
+  }
+
+  .details-box h2 {
+    font-size: 22px;
+  }
+
+  .details-content ul li {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .back-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+  .details {
+    padding: 15px;
+  }
+
+  .details-box {
+    padding: 15px;
+  }
+
+  .details-box h2 {
+    font-size: 20px;
+  }
+
+  .details-content ul li {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 8px 10px;
+  }
+
+  .back-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}

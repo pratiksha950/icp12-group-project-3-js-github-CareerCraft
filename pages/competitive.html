@@ -63,50 +63,68 @@
     </div>
   </section>
 
-   <!-- Details Section -->
-  <section class="details" id="details">
+    <!-- Details Section -->
+<section class="details" id="details">
+  <div class="details-box">
     <h2 id="details-title"></h2>
-    <ul id="details-content"></ul>
-    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
-  </section>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
+
 
 
   <script>
     
     // Details Section JS
-    const detailsData = {
-      jee: {
-        title: "JEE - Joint Entrance Exam",
-        content: [
-          "Eligibility: 12th Science with PCM, JEE Main & Advanced exams",
-          "Career Roles: Engineering at IITs, NITs, IIITs",
-          "Salary: ₹3-10 LPA starting for graduates",
-          "Further Studies: M.Tech, MS, Research, Higher Education",
-          "Skills: Problem-solving, Analytical thinking, Time management"
-        ]
-      },
-       neet: {
-        title: "NEET - National Eligibility cum Entrance Test",
-        content: [
-          "Eligibility: 12th Science with PCB, NEET exam",
-          "Career Roles: MBBS, BDS, BAMS, Healthcare roles",
-          "Salary: ₹25k-₹60k starting, Specialist ₹1L+",
-          "Further Studies: MD, MS, Postgraduate Specializations",
-          "Skills: Hard work, Focus, Patience, Memorization"
-        ]
-      },
+  const detailsData = {
+    jee: {
+      title: "JEE - Joint Entrance Examination",
+      content: [
+        "📌 Eligibility: 12th Science with PCM (Physics, Chemistry, Maths)",
+        "📝 Exams: JEE Main & JEE Advanced",
+        "🎯 Career Roles: Software Engineer, Mechanical Engineer, Civil Engineer (IITs/NITs)",
+        "🏫 Top Colleges: IITs, NITs, IIITs, Top Engineering Colleges",
+        "💰 Salary: ₹3L–₹10L per annum (freshers, depending on branch/college)",
+        "📚 Higher Studies: M.Tech, MBA, Research, Foreign MS",
+        "✅ Skills: Problem Solving, Logical Reasoning, Maths, Time Management",
+        "👍 Pros: Entry to India’s best engineering colleges, Global Opportunities",
+        "👎 Cons: Very High Competition, Stressful Preparation"
+      ]
+    },
 
-       upsc: {
-        title: "UPSC / MPSC - Civil Services",
-        content: [
-          "Eligibility: Graduation from any discipline, Age criteria apply",
-          "Career Roles: IAS, IPS, IRS, State Services",
-          "Salary: ₹56k-₹80k starting, higher after promotions",
-          "Further Studies: Optional subjects, Training at LBSNAA",
-          "Skills: General knowledge, Writing skills, Decision making, Leadership"
-        ]
-      }
-    };
+    neet: {
+      title: "NEET - National Eligibility cum Entrance Test",
+      content: [
+        "📌 Eligibility: 12th Science with PCB (Physics, Chemistry, Biology)",
+        "📝 Exams: NEET UG for MBBS/BDS, NEET PG for specialization",
+        "🎯 Career Roles: Doctor (MBBS), Dentist (BDS), Ayurveda (BAMS), Homeopathy (BHMS), Veterinary",
+        "🏫 Top Colleges: AIIMS, JIPMER, AFMC, Govt. Medical Colleges",
+        "💰 Salary: ₹25k–₹60k per month for freshers, Specialists ₹1L+",
+        "📚 Higher Studies: MD, MS, Super Specializations",
+        "✅ Skills: Patience, Memorization, Focus, Analytical Thinking",
+        "👍 Pros: Prestigious Career, High Demand",
+        "👎 Cons: Long Study Duration (5+ years), High Competition"
+      ]
+    },
+
+    upsc: {
+      title: "UPSC / MPSC - Civil Services Examination",
+      content: [
+        "📌 Eligibility: Graduation in any discipline, Age 21–32 (varies by category)",
+        "📝 Exams: UPSC (IAS, IPS, IRS, IFS), MPSC (State Services)",
+        "🎯 Career Roles: District Collector, IPS Officer, IRS Officer, State Administrative Services",
+        "🏫 Training: LBSNAA (IAS), State Academies for MPSC",
+        "💰 Salary: ₹56k–₹80k/month initially, Higher with promotions + perks",
+        "📚 Higher Studies: Public Administration, Political Science, Law, MBA (Optional)",
+        "✅ Skills: Leadership, Decision Making, Writing Skills, Current Affairs Knowledge",
+        "👍 Pros: High Respect, Authority, Social Impact",
+        "👎 Cons: Very Tough Exam (2–3 years prep), High Pressure, Low Selection Ratio"
+      ]
+    }
+  };
   </script>
 
 
