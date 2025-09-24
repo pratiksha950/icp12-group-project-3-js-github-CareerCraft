@@ -4,13 +4,10 @@
       box-sizing: border-box;
       font-family: 'Segoe UI', sans-serif;
     }
-
     body {
       background-color: #efe4e4;
       color: #333;
     }
-
-    /* ===== Hero Section ===== */
     .hero {
       background: url('./../images/about-page-img/background-image.jpeg') center/cover no-repeat;
       height: 60vh;
@@ -22,7 +19,6 @@
       position: relative;
       padding-bottom: 40px;
     }
-
     .hero::after {
       content: "";
       position: absolute;
@@ -32,13 +28,11 @@
       bottom: 0;
       background: rgba(0, 0, 0, 0.4);
     }
-
     .hero-content {
       position: relative;
       z-index: 2;
       animation: fadeIn 2s ease-in-out;
     }
-
     .hero-content h1 {
       font-size: 3rem;
       margin-bottom: 14px;
@@ -48,8 +42,6 @@
       from { opacity: 0; transform: translateY(30px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
-    /* ===== About Section ===== */
     .about-section {
       max-width: 1200px;
       margin: 50px auto;
@@ -84,42 +76,43 @@
       from { opacity: 0; transform: translateX(50px); }
       to { opacity: 1; transform: translateX(0); }
     }
-
-    /* ===== Team Section ===== */
     .team-section {
       text-align: center;
       padding: 50px 20px;
-      background: rgb(236, 244, 255);
+      background-color: #efe4e4;
       opacity: 0;
       transform: translateY(50px);
       transition: all 1s ease-in-out;
       
     }
-
     .team-section h2 {
       font-size: 2rem;
       margin-bottom: 20px;
-      color: rgb(3, 3, 83);
-    }
+          font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 
+    }
     .team-container {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
+      
     }
-
     .team-member {
-      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      background:white;
       padding: 15px;
       border-radius: 10px;
       width: 250px;
       text-align: center;
       transition: transform 0.3s ease;
     }
-
     .team-member:hover { transform: scale(1.05); }
-
     .team-member img {
   width: 120px;        
   height: 120px;       
@@ -127,18 +120,14 @@
   object-fit: cover;   
   margin-bottom: 10px;
 }
-
     .team-member h4 {
       font-size: 1.2rem;
       margin-bottom: 5px;
     }
-
     .team-member p {
       font-size: 0.9rem;
       color: #555;
     }
-
-    /* ===== Cards Section ===== */
     .cards {
       display: flex;
       justify-content: center;
@@ -149,15 +138,19 @@
       padding: 0 10px;
     }
     .genesis-section h2 {
-  font-size: 2rem;
-  color: rgb(3, 3, 83);
-  margin-bottom: 20px;
-  text-align: center; /* ✅ Centers the heading */
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    text-align: center; 
 }
-
-
     .card {
-      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      background: linear-gradient(135deg, #c0d2ee, #c2e9fb);
       text-align: center;
       padding: 20px;
       border-radius: 10px;
@@ -165,17 +158,14 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       width: 300px;
     }
-
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
-
     .card img {
       width: 80px;
       margin-bottom: 10px;
     }
-
     .card h3 {
       font-size: 1.3rem;
       color: black;
@@ -186,28 +176,29 @@
       font-size: 1.1rem;
       line-height: 1.4;
     }
-
-    /* ===== Scholars Section ===== */
     .scholars-section {
       text-align: center;
       margin: 50px auto;
       max-width: 1200px;
       padding: 20px;
     }
-
     .scholars-section h2 {
-      font-size: 2rem;
-      color: rgb(3, 3, 83);
-      margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
     }
-
     .scholar-cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1.5rem;
     }
-
     .scholar-card {
       background: linear-gradient(135deg, #a1c4fd, #c2e9fb);;
       border-radius: 12px;
@@ -220,12 +211,10 @@
       display: flex;
       flex-direction: column;
     }
-
     .scholar-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
-
     .scholar-card img {
       width: 100px;
       height: 100px;
@@ -233,13 +222,11 @@
       margin: 0 auto 1rem;
       object-fit: cover;
     }
-
     .scholar-card h3 {
       font-size: 1.1rem;
       color:black;
       margin-bottom: 0.3rem;
     }
-
     .scholar-card p {
       font-size: 0.9rem;
       color: #333;
@@ -252,7 +239,6 @@
       .cards { flex-direction: column; align-items: center; }
       .scholar-card { width: 100%; height: auto; }
     }
-
     .nav-bar {
     display: flex;
     flex-direction: row;
