@@ -1,17 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-image: url("../login-img/login-background-img.jpg"); 
-    background-size: cover;       
-    background-position: center;  
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
+}
 .login-container {
     background: rgba(0, 0, 0, 0.6); 
     padding: 25px 30px;
@@ -21,6 +10,9 @@ body {
     text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(0, 200, 255, 0.5); 
+    margin-top: 15%;
+    margin-bottom: 15%;
+    margin-left: 38%;
 }
 
 .container-heading {
@@ -136,7 +128,7 @@ body {
   padding: 10px;
   border-radius: 8px;
   font-weight: bold;
-  display: none; /* hidden by default */
+  display: none;
 }
 #message-box.error {
   background-color: #f8d7da;

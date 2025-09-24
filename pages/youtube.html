@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> YouTube Page </title>
+<link rel="stylesheet" href="../css/youtube.css">
+</head>
+<body>
+    <h1>🎓 eLearning - YouTube Page</h1>
+    <!-- slideshow -->
+<a href="../pages/youtube.html"class="slide" id="slide"></a>
+     <a href="../pages/learning.html"><img src="../images/left2.png" class="icon-left  icon-action" onclick="left()"/>
+     </a>
+     <a href="../pages/youtube.html"><img src="../images/right.png" class="icon-right  icon-action" onclick="right()"/></a>
+
+  <!-- Clock -->
+  <div id="clock">00:00:00</div>
+
+  <!-- Light buttons -->
+  <div class="buttons">
+    <button id="lightOn">Light On</button>
+    <button id="lightOff">Light Off</button>
+  </div>
+
+  <div class="container" id="grid"></div>
+
+  <!-- Video Modal -->
+  <dialog id="videoModal">
+    <div class="modal-header">
+      <h3 id="modalTitle">Video Title</h3>
+      <button class="close-btn" id="closeModal">Close</button>
+    </div>
+    <div class="video-wrap" id="videoContainer"></div>
+  </dialog>
+  
+<script src="../js/youtube.js"></script>
+</body>
+</html>

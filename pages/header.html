@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    width: 30%; 
+    overflow: hidden;
+}
+.search-select {
+    background-color: rgb(194, 188, 188);
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding: 0 8px;
+    background-color: pink;
+}
+.search-icon {
+    width: 45px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #febd68;
+    cursor: pointer;
+}
+.nav-search:hover {
+    border: 2px solid orange;
+}
+.content1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.content1 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    padding: 8px;
+    transition: color 0.2s;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+.content1 li{
+    list-style: none;
+}
+.content1 a:hover {
+    color: orange;
+}
+.icon {
+    height: 15px;
+    width: 15px;
+}
+.space {
+    line-height: 12px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content3 {
+    position: fixed;
+    top: 75px;  
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 69px;
+    padding: 10px;
+    background: #f3f3f3;
+    height: 35px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+.content3 a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(79, 10, 129);
+    font-weight: 700;
+    justify-content: space-evenly;
+    display: flex;
+    box-shadow: 0 2px 59px rgba(0,0,0,0.2);
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    padding-bottom: 4px;
+}
+.content3 a:hover {
+    color: rgb(186, 91, 32);
+}
+/* hamburger */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 200px;
+    z-index: 99999;
+    background-color: rgba(255,255,255,0.8);
+    box-shadow: -10px 0 10px rgb(101, 97, 97);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    display: none;  
+}
+.sidebar ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 299;
+}
+.sidebar li{
+    height: 50px;
+    list-style: none;
+    background-color: white; 
+    
+}
+.sidebar a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: blue;    
+}
+.sidebar a:hover{
+    background-color: rgb(218, 175, 34);
+}
+.sidebar li:first-child{
+    margin-right: auto;
+}
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-btn{
+    display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@media  (max-width: 640px) {
+    .item{
+        height: 80%;
+        width: 100%;
+    }
+    .nav-bar{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .logo img{
+        height: 60px;
+        width: 90px;
+    }
+    .hideOnMobile{
+       display:none; 
+    }
+    .menu-btn{
+        display: block;
+    }
+    .search-icon{
+        display: none;
+    }
+    .search-input{
+        width: 80px;
+    }
+    .search-select{
+         width: 20px;
+    }
+    .nav-search{
+        width: 100px;
+        border: none;
+    }
+    .content3{
+        display:none;
+    }
+    .list{
+        width: 100%;
+    }
+    .list .item{
+        width: 100%;
+        height: 300px; 
+    }
+    header{
+      width: 100%;
+    }
+    .nav-bar{
+      width: 100%;
+      overflow-x: hidden;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .search-select{
+        display: none;
+    }
+    .hideOnMobile{
+       display:none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
+
+.footer {
+    height: auto;
+    width: 100%;
+    border: none;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color: #f3f3f3;
+    list-style: none;
+    border: 2px solid #f3f3f3;
+    margin: auto;
+}
+
+.footerPart1 {
+    height:auto;
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.list00 {
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    border: none;
+    flex-wrap: wrap;
+    list-style: none;
+    flex: 1 1 200px;
+}
+.list00 li {
+    list-style: none;
+}
+.list00 li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    font-weight: bold;
+    line-height: 40px;
+}
+.list00 li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: black;  
+    transition: width 0.3s ease;
+}
+.list00 li a:hover::after {
+    width: 100%;
+}
+.list00 .footerFont {
+    color: black;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.font2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.footerPart2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    line-height: 30px;
+    display: flex;
+    
+}
+.footerPart2 .section2{
+    padding-left: 20px;
+     padding-right: 20px;
+     height: auto;
+
+}
+.list2 {
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 450px;
+    border: none;
+    flex-wrap: wrap;
+    list-style: none;
+    flex: 1 1 250px;
+    line-height: 45px;
+}
+.list2 li {
+    list-style: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+.list2 li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.list2 .adjust {
+    padding-left: 18%;
+    font-size: 25px;
+}
+.list2 p {
+    font-size: 15px;
+}
+.footerPart2 .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row img {
+    margin-top: 20px;
+}
+.list2 .add {
+    margin-left: 20%;
+}
+.footerPart2 .contact-info {
+    font-size: 20px;
+}
+.footerPart2 .section1{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.footer hr {
+    border: none;
+    height: 3px;
+    background-color: #a9a1a1;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.footerPart3 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: -5%;
+    margin-left: 15%;
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+    footer{
+      height:auto;
+      width: 100%;
+      border: none;
+    }
+    .footerPart1{
+      height: auto;
+      width: 100%;
+      border:none;
+    }
+      .footerPart2{
+      height:auto;
+      width: 100%;
+      border: none;
+      background-color: #f3f3f3;
+      margin-top: -10%;
+    }
+    hr{
+      display: none;
+    }
+    .list2 .size1{
+        border:none;
+    }
+}
+.Copyright{
+  color: rgb(3, 20, 77);
+  font-weight: 200;
+  font-size:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: none;
+
+}
+.list2 .size{
+    font-size: 20px;
+    line-height: 30px;
+}
+@media  (max-width: 640px) {
+    .footerPart1{
+      display: none;
+    }
+     .footerPart1{
+      display: none;
+    }
+    .add{
+      display: none;
+    }
+    .Copyright{
+      font-size: 20px;
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    .size{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .footerPart2 .font2{
+        font-size: 30px;
+    }
+    .invisible{
+        display: none;
+    }
+    .list2 {
+        line-height:40px;
+    }
+    .section1{
+        line-height: 50px;
+        font-size: 20px;
+    }
+}
+.row li a img {
+  transition: transform 0.3s ease; 
+}
+
+.row li a img:hover {
+  transform: scale(1.2);
+}
+a {
+  display: flex;
+  align-items: center; 
+  text-decoration: none;
+  color: inherit;
+}
+
+a img {
+  margin-right:8px;
+}
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+        <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
+
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a><li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+  <div  class="content3">
+    <a href="/pages/course.html">Courses</a>   
+    <a href="/pages/career.html">Career Guidance</a>
+    <a href="/pages/learning.html">E-learning</a>
+    <a href="/pages/scholarship.html">Scholarships</a>
+        </div> 
+<!-- footer -->
+   <footer>
+     <div class="footer">
+      <div class="footerPart1">
+        <div class="list00">
+          <ul class="none">
+            <li class="font2">EduScholar</li>
+            <p class="footerFont">
+              Transform your career with our comprehensive online courses, 
+              scholarship opportunities, and professional development programs 
+              designed to accelerate your growth.
+            </p>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Quick Links</li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/career.html">Career Guidance</a></li>
+            <li><a href="./pages/scholarship.html">Scholarships</a></li>
+            <li><a href="./pages/learning.html">E-Learning</a></li>
+            <li><a href="./pages/login.html">Login</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Scholarships</li>
+            <li><a href="./pages/scholarship.html">Available Scholarships</a></li>
+            <li><a href="./pages/scholarship.html">Apply Now</a></li>
+            <li><a href="./pages/scholarship.html">Scholarship Guidelines</a></li>
+            <li><a href="./pages/scholarship.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Popular Courses</li>
+            <li><a href="./pages/course.html">Web Development</a></li>
+            <li><a href="./pages/course.html">AI & Machine Learning</a></li>
+            <li><a href="./pages/course.html">Data Sciences</a></li>
+            <li><a href="./pages/course.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+      <div class="footerPart2">
+        <div class="list2 section1">
+          <ul>
+            <li class="font2 ">Contact Information</li>
+            <li>
+              <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA">
+                <img src="../images/location.png" height="30" width="30" class="hide3">
+                <span class="contact-info">&nbsp;<span class="invisible">123 Education Street,</span> Knowledge City </span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@eduscholar.com">
+                <img src="../images/email.png" height="30" width="30">
+                <span class="contact-info">&nbsp;support@eduscholar.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919876543210">
+                <img src="../images/viber.png" height="30" width="30">
+                <span class="contact-info">&nbsp;+91 98765 43210</span>
+              </a><br>
+              
+            </li>
+          </ul>
+        </div>
+
+        <div class="list2 section2">
+          <ul>
+            <li>
+              <img src="../images/logo.png" height="60" width="200" class="add">
+            </li>
+            <p class="size1">
+             CareerCraft, since 2011, is endeavoring to bridge the gap between 
+              scholarship providers and scholarship seekers. As India's largest 
+              scholarship listing portal, we have aided over 9 million students 
+              by linking them with the suitable scholarship programmes tailored to their needs.
+            </p>
+            <div class="row">
+              <li><a href="https://www.youtube.com/"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/"><img src="../images/insta.png" height="35" width="35"></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+       <span class="Copyright">Copyright © Career Craft 2025</span>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+<script>
+    function showSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="flex";
+}
+function hideSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="none";
+}
+ const placeholders = [
+    "Search for Scholarships",
+    "Search for Career Guidance",
+    "Search for E-learning",
+    "Search for Courses",
+    "Search for career-info"
+];
+let index = 0;
+const searchBox = document.getElementById("searchBox");
+    setInterval(() => {
+      searchBox.setAttribute("placeholder", placeholders[index]);
+      index = (index + 1) % placeholders.length;
+    }, 2000);
+</script>
+</body>
+</html>

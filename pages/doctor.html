@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/career.css">
+    
+    
+</head>
+<body>
+      <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="../images/career-page-images/doctors-3-img.jpg" alt="Doctor 1">
+         <h1>Medical Careers</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/career-page-images/doctors-img.jpg" alt="Doctor 2">
+        <h1>Join Healthcare Industry</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/career-page-images/science.jpg" alt="Doctor 3">
+        <h1>Explore Opportunities</h1>
+      </div>
+    </div>
+
+
+       <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+     <div class="dots" id="dots"></div>
+  </section>
+
+
+   <!-- Cards Section -->
+  <section class="cards-section">
+    <h2>Explore Medical Careers</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../images/career-page-images/mbbs-img.jpg" alt="MBBS">
+        <div class="card-content">
+          <h3>MBBS</h3>
+          <p>Become a General Doctor or Surgeon in hospitals and clinics.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('mbbs')">Read More</a>
+        </div>
+      </div>
+    
+
+      <div class="card">
+        <img src="../images/career-page-images/tablet-img.jpg" alt="Pharmacy">
+        <div class="card-content">
+             <h3>Pharmacy</h3>
+          <p>Work as Pharmacist or in pharmaceutical research.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('pharmacy')">Read More</a>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="../images/career-page-images/nurse-img.jpg" alt="Nursing">
+        <div class="card-content">
+            <h3>Nursing</h3>
+          <p>Join hospitals and healthcare centers as a professional nurse.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('nursing')">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+<section class="details" id="details">
+  <div class="details-box">
+    <h2 id="details-title"></h2>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
+
+  <script>
+     // Details Section Data
+const detailsData = {
+  mbbs: {
+    title: "MBBS - Bachelor of Medicine & Surgery",
+    content: [
+      "📌 Eligibility: 12th Science with PCB + NEET Exam",
+      "🎯 Career Roles: General Doctor, Surgeon, Resident Doctor, Specialist",
+      "🏥 Top Colleges: AIIMS, JIPMER, AFMC, Government Medical Colleges",
+      "🧾 Entrance Exams: NEET-UG, State CETs (few states)",
+      "💰 Salary: Fresher ₹25k-₹40k, Specialist ₹1L+",
+      "📚 Higher Studies: MD, MS, Super-specialization",
+      "✅ Skills Needed: Analytical Thinking, Patience, Problem-solving, Communication",
+      "👍 Pros: High Respect, Stable Career, Huge Demand",
+      "👎 Cons: Long Study Duration, High Competition, Stressful"
+    ]
+  },
+  pharmacy: {
+    title: "Pharmacy Careers",
+    content: [
+      "📌 Eligibility: 12th Science / Diploma in Pharmacy",
+      "🎯 Career Roles: Pharmacist, Pharmaceutical Researcher, Lab Technician, Drug Inspector",
+      "🏥 Top Colleges: BITS Pilani, Jamia Hamdard, Manipal College of Pharmacy",
+      "🧾 Entrance Exams: GPAT, State CETs, University Exams",
+      "💰 Salary: ₹20k-₹50k/month depending on role",
+      "📚 Higher Studies: M.Pharm, Clinical Research, Pharma MBA",
+      "✅ Skills Needed: Attention to Detail, Analytical Skills, Communication",
+      "👍 Pros: Wide Industry Scope, Less Study Years than MBBS",
+      "👎 Cons: Average Pay Initially, Limited Clinical Role"
+    ]
+  },
+  nursing: {
+    title: "Nursing Careers",
+    content: [
+      "📌 Eligibility: 12th Science with PCB + Nursing Entrance",
+      "🎯 Career Roles: Staff Nurse, ICU Nurse, Healthcare Supervisor, Midwife",
+      "🏥 Top Colleges: AIIMS, CMC Vellore, Armed Forces Nursing College",
+      "🧾 Entrance Exams: AIIMS Nursing, State Nursing CETs",
+      "💰 Salary: ₹18k-₹35k/month initially",
+      "📚 Higher Studies: B.Sc Nursing, M.Sc Nursing, Specialized Nursing",
+      "✅ Skills Needed: Compassion, Patience, Teamwork, Communication",
+      "👍 Pros: High Demand Worldwide, Job Security, Migration Scope",
+      "👎 Cons: Physically Demanding, Stressful Shifts"
+    ]
+  }
+};
+
+
+  </script>
+  <script src="../js/career.js"></script>
+
+
+
+
+    
+</body>
+</html>

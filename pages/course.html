@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/course.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>courses</title>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
+
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+ <div  class="content3">
+    <a href="/pages/course.html">Courses</a>   
+    <a href="/pages/career.html">Career Guidance</a>
+    <a href="/pages/learning.html">E-learning</a>
+    <a href="/pages/scholarship.html">Scholarships</a>
+        </div> 
+
+    <div class="hero-section">
+        <h2>Explore Our Courses</h2>
+        <p>Discover high-quality courses taught by industry experts. Start learning today and advance your career.</p>
+    </div>
+    <div class="search-container">
+
+        <div class="search">
+            <img src="../images/scholarship-page-imgs/search.png" alt="">
+            <input type="text" placeholder="Search scholarships..." class="search-input1" id="search-input"
+                onkeyup="searchCard()">
+        </div>
+        <div class="level-container">
+            <img src="../images/scholarship-page-imgs/filter.png" alt="filter">
+            <select name="categories" id="level" onchange="filterCards()">
+                <option value="All">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+
+            </select>
+        </div>
+    </div>
+    <div class="course-cards-container">
+        <div class="course-card" data-level="Beginner">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/react.png" alt="react">
+
+                <span>Biginner</span>
+
+            </div>
+            <div class="course-info">
+                <h2>React Fundamentals</h2>
+                <p>Learn the basics of React including components, props, state, and hooks.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>8 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>1,250</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹1500</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="React" onclick="overlay(this)">Demo</button>
+                    <button class="enroll-btn" data-id="React">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Advanced">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/advjs.jpeg" alt="JavaScript">
+
+                <span>Advanced</span>
+            </div>
+            <div class="course-info">
+                <h2>Advanced JavaScript</h2>
+                <p>Master advanced JavaScript concepts including closures, prototypes, and async programming.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>12 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>890</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹2000</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="AdvJs">Demo</button>
+                    <button class="enroll-btn" data-id="AdvJs">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Intermediate">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/nodejs.jpeg" alt="nodejs">
+
+                <span>Intermediate</span>
+            </div>
+            <div class="course-info">
+                <h2>Node.js Backend Development</h2>
+                <p>Build scalable backend applications with Node.js, Express, and MongoDB.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>15 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>2100</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹1699</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="NodeJs">Demo</button>
+                    <button class="enroll-btn" data-id="NodeJs">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Beginner">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/css.jpeg" alt="react">
+
+                <span>Biginner</span>
+            </div>
+            <div class="course-info">
+                <h2>CSS Grid & Flexbox</h2>
+                <p>Master modern CSS layout techniques with Grid and Flexbox.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>6 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>1,800</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.6</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹999</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="Css">Demo</button>
+                    <button class="enroll-btn" data-id="Css">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Intermediate">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/python.jpeg" alt="react">
+
+                <span>Intermediate</span>
+            </div>
+            <div class="course-info">
+                <h2>Python Data Science</h2>
+                <p>Learn the basics of React including components, props, state, and hooks.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>20 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>950</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.9</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹1500</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="Python">Demo</button>
+                    <button class="enroll-btn" data-id="Python">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card" data-level="Beginner">
+            <div class="img-container">
+                <img src="../images/course-page-imgs/ui-ux.jpeg" alt="react">
+
+                <span>Biginner</span>
+            </div>
+            <div class="course-info">
+                <h2>UI/UX Design Principles</h2>
+                <p>Learn the fundamentals of user interface and user experience design.</p>
+                <div class="rating-con">
+                    <div class="rating"><img src="../images/course-page-imgs/clock.png" alt="people" height="16px">
+                        <span>10 hours</span>
+                    </div>
+                    <div class="rating"> <img src="../images/course-page-imgs/people.png" alt="clock" height="19px">
+                        <span>1,400</span>
+                    </div>
+                    <div class="rating"><img src="../images/course-page-imgs/star.png" alt="star" height="16px">
+                        <span>4.8</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-btn-container">
+                <div class="price">
+                    <span> ₹2000</span>
+                </div>
+                <div class="btn-container">
+                    <button class="demo-btn" data-id="Ui-Ux">Demo</button>
+                    <button class="enroll-btn" data-id="Ui-Ux">
+                        Enroll
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="demo-con" >
+        <div class="demo-vedio-container">
+            <div class="demo-heading">
+                <h2>Demo</h2>
+                <img src="../images/course-page-imgs/cross.png" alt="cross" class="cross-img" onclick="hideDemo()">
+            </div>
+            <div class="vedio-content" id="vedio"> 
+            </div>
+        </div>
+    </div>
+
+   <footer>
+     <div class="footer">
+      <div class="footerPart1">
+        <div class="list00">
+          <ul class="none">
+            <li class="font2">EduScholar</li>
+            <p class="footerFont">
+              Transform your career with our comprehensive online courses, 
+              scholarship opportunities, and professional development programs 
+              designed to accelerate your growth.
+            </p>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Quick Links</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/career.html">Career Guidance</a></li>
+            <li><a href="../pages/scholarship.html">Scholarships</a></li>
+            <li><a href="../pages/learning.html">E-Learning</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Scholarships</li>
+            <li><a href="../pages/scholarship.html">Available Scholarships</a></li>
+            <li><a href="../pages/scholarship.html">Apply Now</a></li>
+            <li><a href="../pages/scholarship.html">Scholarship Guidelines</a></li>
+            <li><a href="../pages/scholarship.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Popular Courses</li>
+            <li><a href="../pages/course.html">Web Development</a></li>
+            <li><a href="../pages/course.html">AI & Machine Learning</a></li>
+            <li><a href="../pages/course.html">Data Sciences</a></li>
+            <li><a href="../pages/course.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+      <div class="footerPart2">
+        <div class="list2 section1">
+          <ul>
+            <li class="font2 ">Contact Information</li>
+            <li>
+              <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA" target="_blank">
+                <img src="../images/location.png" height="30" width="30" class="hide3">
+                <span class="contact-info">&nbsp;<span class="invisible">123 Education Street,</span> Knowledge City </span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@eduscholar.com" target="_blank">
+                <img src="../images/email.png" height="30" width="30">
+                <span class="contact-info">&nbsp;support@eduscholar.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919876543210" target="_blank">
+                <img src="../images/viber.png" height="30" width="30">
+                <span class="contact-info">&nbsp;+91 98765 43210</span>
+              </a><br>
+              
+            </li>
+          </ul>
+        </div>
+
+        <div class="list2 section2">
+          <ul>
+            <li>
+              <img src="../images/logo.png" height="60" width="200" class="add">
+            </li>
+            <p class="size1">
+             CareerCraft, since 2011, is endeavoring to bridge the gap between 
+              scholarship providers and scholarship seekers. As India's largest 
+              scholarship listing portal, we have aided over 9 million students 
+              by linking them with the suitable scholarship programmes tailored to their needs.
+            </p>
+            <div class="row">
+              <li><a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/" target="_blank"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/" target="_blank"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" height="35" width="35"></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+       <span class="Copyright">Copyright © Career Craft 2025</span>
+    </div>
+  </footer>
+    <script src="../js/course.js"></script>
+</body>
+
+</html>

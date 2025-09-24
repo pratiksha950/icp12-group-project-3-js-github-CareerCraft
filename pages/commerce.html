@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commerce-career</title>
+    <link rel="stylesheet" href="../css/career.css">
+</head>
+<body>
+     <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="../images/career-page-images/mba-1-img.jpg" alt="Commerce 1">
+        <h1>Commerce Careers</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/career-page-images/commerce-2-img.jpg" alt="Commerce 2">
+        <h1>Shape Your Future in Business</h1>
+      </div>
+       <div class="slide">
+        <img src="../images/career-page-images/commerece-3-img.jpg" alt="Commerce 3">
+        <h1>Explore Diverse Opportunities</h1>
+      </div>
+    </div>
+
+    <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+
+    <div class="dots" id="dots"></div>
+  </section>
+
+
+
+   <!-- Cards Section -->
+  <section class="cards-section">
+    <h2>Explore Commerce Careers</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../images/career-page-images/comerece-img.jpg" alt="B.Com">
+        <div class="card-content">
+          <h3>B.Com</h3>
+          <p>Graduate in Commerce & Accounting. Opens path for CA, MBA, Finance careers.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('bcom')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/career-page-images/ca-2-img.jpg" alt="Chartered Accountant">
+        <div class="card-content">
+            <h3>Chartered Accountant (CA)</h3>
+          <p>Specialized career in auditing, taxation & corporate finance.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('ca')">Read More</a>
+        </div>
+      </div>
+
+       <div class="card">
+        <img src="../images/career-page-images/mba.jpg" alt="MBA">
+        <div class="card-content">
+          <h3>MBA</h3>
+          <p>Management studies leading to roles in HR, Marketing, Finance, Operations.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('mba')">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Details Section -->
+<section class="details" id="details">
+  <div class="details-box">
+    <h2 id="details-title"></h2>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
+
+  <script>
+    const detailsData = {
+  bcom: {
+    title: "B.Com - Bachelor of Commerce",
+    content: [
+      "📌 Eligibility: 12th Commerce / Science with Maths",
+      "🎯 Career Roles: Accountant, Auditor, Tax Consultant, Analyst",
+      "🏫 Top Colleges: SRCC, Christ University, NMIMS, Symbiosis",
+      "🧾 Entrance Exams: DUET, Christ Entrance, SET",
+      "💰 Salary: ₹2L–₹5L per annum (fresher)",
+      "📚 Higher Studies: M.Com, MBA, CA, CS",
+      "✅ Skills: Accounting, Taxation, Excel, Communication",
+      "👍 Pros: Wide scope in all industries",
+      "👎 Cons: Needs higher studies for high-paying jobs"
+    ]
+  },
+  ca: {
+    title: "Chartered Accountancy (CA)",
+    content: [
+      "📌 Eligibility: 12th Commerce / Any Stream (CPT/CA Foundation)",
+      "🎯 Career Roles: Chartered Accountant, Auditor, CFO, Tax Consultant",
+      "🏫 Governing Body: ICAI (Institute of Chartered Accountants of India)",
+      "🧾 Entrance Exams: CA Foundation, CA Intermediate, CA Final",
+      "💰 Salary: ₹6L–₹25L per annum (depending on experience)",
+      "📚 Higher Studies: CPA, ACCA (Global Certifications)",
+      "✅ Skills: Accounting, Auditing, Taxation, Business Law",
+      "👍 Pros: High Demand, Prestigious Career",
+      "👎 Cons: Tough Exams, Long Duration"
+    ]
+  },
+  mba: {
+    title: "MBA - Master of Business Administration",
+    content: [
+      "📌 Eligibility: Graduation in any stream + Entrance Exams (CAT, XAT, MAT, GMAT)",
+      "🎯 Career Roles: Manager, HR Executive, Marketing Specialist, Entrepreneur",
+      "🏫 Top Colleges: IIMs, XLRI, Symbiosis, NMIMS, FMS Delhi",
+      "🧾 Entrance Exams: CAT, XAT, SNAP, GMAT, MAT",
+      "💰 Salary: ₹6L–₹20L per annum",
+      "📚 Higher Studies: PhD in Management, Executive MBA",
+      "✅ Skills: Leadership, Teamwork, Communication, Strategy",
+      "👍 Pros: High Career Growth, Corporate Jobs",
+      "👎 Cons: Expensive, Competitive"
+    ]
+  }
+};
+  </script>
+
+
+
+<script src="../js/career.js"></script>
+
+</body>
+</html>
