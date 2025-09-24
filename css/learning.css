@@ -13,7 +13,7 @@ body {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 8%;
+    margin-top: 7%;
   }
 
   /* Header */
@@ -265,7 +265,7 @@ body {
     gap: 69px;
     padding: 10px;
     background: #f3f3f3;
-    height: 35px;
+    height: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     z-index: 999;
 }
@@ -423,7 +423,10 @@ body {
     }
     .hero-section{
     margin-top: 13%;
-}
+    }
+    .navbar8 {
+    margin-top: 12%;
+  }
 
 }
 

@@ -1,3 +1,25 @@
+function showSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="flex";
+}
+function hideSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="none";
+}
+ const placeholders = [
+    "Search for Scholarships",
+    "Search for Career Guidance",
+    "Search for E-learning",
+    "Search for Courses",
+    "Search for career-info"
+];
+let index1 = 0;
+const searchBox = document.getElementById("searchBox");
+    setInterval(() => {
+      searchBox.setAttribute("placeholder", placeholders[index1]);
+      index1 = (index1 + 1) % placeholders.length;
+    }, 2000);
+
 // Hero Slider JS
     let index = 0;
     const slides = document.getElementById("slides");
