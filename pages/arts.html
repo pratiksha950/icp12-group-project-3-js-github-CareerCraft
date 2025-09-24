@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arts-career</title>
+    <link rel="stylesheet" href="../css/career.css">
+</head>
+<body>
+    <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="../images/career-page-images/arts-1-img.jpg" alt="Arts 1">
+        <h1>Arts Stream Careers</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/career-page-images/arts-2-img.jpg" alt="Arts 2">
+        <h1>Explore Your Creativity</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/arts-hero3.jpg" alt="Arts 3">
+        <h1>Build Your Future</h1>
+      </div>
+    </div>
+
+    <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards-section">
+    <h2>Explore Arts Careers</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../images/career-page-images/law-img.jpg" alt="Law">
+        <div class="card-content">
+          <h3>Law</h3>
+          <p>Become a lawyer, advocate, or legal consultant.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('law')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/career-page-images/journalism-img.jpg" alt="Journalism">
+        <div class="card-content">
+          <h3>Journalism</h3>
+          <p>Work as a reporter, editor, or media analyst.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('journalism')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/career-page-images/fashion-img.jpg" alt="Fashion">
+        <div class="card-content">
+          <h3>Fashion Designing</h3>
+          <p>Pursue creative careers in clothing and textile design.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('fashion')">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+<section class="details" id="details">
+  <div class="details-box">
+    <h2 id="details-title"></h2>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
+
+  <script>
+
+ 
+  
+
+    
+
+    // Details Section JS for Arts Careers
+  const detailsData = {
+    law: {
+      title: "Law Careers",
+      content: [
+        "📌 Eligibility: 12th Arts/Commerce + Entrance Exams (CLAT, LSAT, AILET)",
+        "🎯 Career Roles: Lawyer, Advocate, Legal Consultant, Corporate Law Expert, Public Prosecutor",
+        "💰 Salary: Fresher ₹25k–₹40k/month, Experienced ₹80k+",
+        "📚 Further Studies: LLM, Corporate Law, International Law, Judiciary Preparation",
+        "✅ Skills: Analytical Thinking, Communication, Negotiation, Critical Reasoning",
+        "👍 Pros: Prestigious Career, Social Impact, Diverse Roles",
+        "👎 Cons: Long Study Duration, Competitive Exams"
+      ]
+    },
+    journalism: {
+      title: "Journalism Careers",
+      content: [
+        "📌 Eligibility: 12th Arts/Commerce + Bachelor's in Journalism/Mass Communication",
+        "🎯 Career Roles: Reporter, Editor, Media Analyst, Content Creator, News Anchor",
+        "💰 Salary: ₹20k–₹50k/month initially, Experienced ₹1L+",
+        "📚 Further Studies: MA Journalism, Specialized Media Courses, PR & Digital Media",
+        "✅ Skills: Writing, Communication, Creativity, Ethics, Critical Thinking",
+        "👍 Pros: Creative Career, Media Exposure, Dynamic Work Environment",
+        "👎 Cons: Irregular Hours, High Pressure, Entry Level Pay Low"
+      ]
+    },
+    fashion: {
+      title: "Fashion Designing Careers",
+      content: [
+        "📌 Eligibility: 12th Arts/Commerce + Diploma/Degree in Fashion Design",
+        "🎯 Career Roles: Fashion Designer, Stylist, Textile Designer, Fashion Consultant",
+        "💰 Salary: ₹15k–₹40k/month initially, Experienced ₹1L+",
+        "📚 Further Studies: Masters in Design, Specialized Fashion Courses, International Programs",
+        "✅ Skills: Creativity, Visualization, Technical Sewing, Trend Analysis, Communication",
+        "👍 Pros: Creative & Dynamic Field, Freelance Opportunities",
+        "👎 Cons: Competitive, Unstable at Entry Level, Requires Networking"
+      ]
+    }
+  };
+
+    
+  </script>
+  <script src="../js/career.js"></script>
+
+    
+</body>
+</html>

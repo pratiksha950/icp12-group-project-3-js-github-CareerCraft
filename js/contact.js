@@ -1,3 +1,24 @@
+function showSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="flex";
+}
+function hideSidebar(){
+    const sidebar=document.querySelector(".sidebar");
+    sidebar.style.display="none";
+}
+ const placeholders = [
+    "Search for Scholarships",
+    "Search for Career Guidance",
+    "Search for E-learning",
+    "Search for Courses",
+    "Search for career-info"
+];
+let index = 0;
+const searchBox = document.getElementById("searchBox");
+    setInterval(() => {
+      searchBox.setAttribute("placeholder", placeholders[index]);
+      index = (index + 1) % placeholders.length;
+    }, 2000);
 const contactCard = [
     {
         imgUrl: "../images/contact-us/m2.jpg",
@@ -18,7 +39,7 @@ const contactCard = [
         sector: "Course guidance & e-learning"
     },
     {
-        imgUrl: "../images/contact-us/m3.jpg",
+        imgUrl: "../images/invester2.png",
         memberName: "David Thompson",
         role: "Scholarship Specialist",
         sector: "Financial aid & scholarships"

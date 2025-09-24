@@ -5,9 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us - Incredible India Tours</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-   <link rel="stylesheet" href="./../css/about.css">
+  <link rel="stylesheet" href="./../css/about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
+          <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+  <div  class="content3">
+    <a href="/pages/course.html">Courses</a>   
+    <a href="/pages/career.html">Career Guidance</a>
+    <a href="/pages/learning.html">E-learning</a>
+    <a href="/pages/scholarship.html">Scholarships</a>
+        </div> 
+
 
   <!-- Hero Section -->
   <section class="hero">
@@ -19,7 +68,7 @@
   <!-- About Section -->
   <section class="about-section">
     <div class="about-content">
-      <h2>About Buddy4Study</h2>
+      <h2>About "CareerCraft"</h2>
       <p>A large segment of India’s potential workforce is unemployable. With 76.04% literacy rate and an increasing number of dropouts failing to enrol or complete any form of higher education, the situation is worrying. Financial constraints, lack of know-how about education funding schemes are some of the key contributors to this effect.
         Buddy4Study, since 2011, is endeavoring to bridge the gap between scholarship providers and scholarship seekers. As India’s largest scholarship listing portal, we help more than 1 million students by connecting the right scholarships with the right students. Backed by its robust scholarship search engine, it is the only platform in the country that allows both seekers and scholarship providers to access curated scholarship information across the globe.</p>
     </div>
@@ -50,12 +99,12 @@
       <p>Chief Strategy & Growth Officer</p>
     </div>
      <div class="team-member">
-      <img src="./../images/woman (2).png" alt="Team Member">
+      <img src="../images/team-member00.jpg" alt="Team Member">
       <h4>Sharavn Bhoyar</h4>
       <p>Chief Content Strategist</p>
     </div>
      <div class="team-member">
-      <img src="./../images/woman (2).png" alt="Team Member">
+      <img src="../images/team-member3.jpg" alt="Team Member">
       <h4>Nikita Chormle</h4>
       <p>Deputy General Manager</p>
     </div> 
@@ -136,6 +185,106 @@
     </form>
   </div>
 </div>
+   <footer>
+     <div class="footer">
+      <div class="footerPart1">
+        <div class="list00">
+          <ul class="none">
+            <li class="font2">EduScholar</li>
+            <p class="footerFont">
+              Transform your career with our comprehensive online courses, 
+              scholarship opportunities, and professional development programs 
+              designed to accelerate your growth.
+            </p>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Quick Links</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/career.html">Career Guidance</a></li>
+            <li><a href="../pages/scholarship.html">Scholarships</a></li>
+            <li><a href="../pages/learning.html">E-Learning</a></li>
+            <li><a href="../pages/login.html">Login</a></li>
+            <li><a href="../pages/about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Scholarships</li>
+            <li><a href="../pages/scholarship.html">Available Scholarships</a></li>
+            <li><a href="../pages/scholarship.html">Apply Now</a></li>
+            <li><a href="../pages/scholarship.html">Scholarship Guidelines</a></li>
+            <li><a href="../pages/scholarship.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Popular Courses</li>
+            <li><a href="../pages/course.html">Web Development</a></li>
+            <li><a href="../pages/course.html">AI & Machine Learning</a></li>
+            <li><a href="../pages/course.html">Data Sciences</a></li>
+            <li><a href="../pages/course.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+      <div class="footerPart2">
+        <div class="list2 section1">
+          <ul>
+            <li class="font2 ">Contact Information</li>
+            <li>
+              <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA">
+                <img src="../images/location.png" height="30" width="30" class="hide3" >
+                <span class="contact-info">&nbsp;<span class="invisible">123 Education Street,</span> Knowledge City </span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@eduscholar.com">
+                <img src="../images/email.png" height="30" width="30">
+                <span class="contact-info">&nbsp;support@eduscholar.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919876543210">
+                <img src="../images/viber.png" height="30" width="30">
+                <span class="contact-info">&nbsp;+91 98765 43210</span>
+              </a><br>
+              
+            </li>
+          </ul>
+        </div>
+
+        <div class="list2 section2">
+          <ul>
+            <li>
+              <img src="../images/logo.png" height="60" width="200" class="add">
+            </li>
+            <p class="size1">
+             CareerCraft, since 2011, is endeavoring to bridge the gap between 
+              scholarship providers and scholarship seekers. As India's largest 
+              scholarship listing portal, we have aided over 9 million students 
+              by linking them with the suitable scholarship programmes tailored to their needs.
+            </p>
+            <div class="row">
+              <li><a href="https://www.youtube.com/" target="_blank"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/" target="_blank"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/"target="_blank"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img src="../images/insta.png" height="35" width="35"></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+       <span class="Copyright">Copyright © Career Craft 2025</span>
+    </div>
+  </footer>
+
 <script src="./../js/about.js"></script>
 </body>
 </html>

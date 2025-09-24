@@ -197,7 +197,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #858383; 
+      background: white; 
     }
 }
 .parag{
@@ -438,6 +438,15 @@ body {
     width:200px;
     overflow-x: hidden;
     }
+    .arrows button{
+        
+    background-color: rgb(38, 38, 38);
+    }
+    .arrows button:hover{
+    background-color: rgba(143, 139, 139, 0.267);
+   
+    }
+
 }
 .steps{
     height: fit-content;

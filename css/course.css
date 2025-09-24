@@ -5,7 +5,7 @@
      font-family: "Poppins", sans-serif;
 }
 body{
-    background-color: #f2f2f2;
+    background-color: #efe4e4;
 }
 .hero-section{
     display: flex;
@@ -21,6 +21,14 @@ body{
     margin-bottom: 20px;
     font-weight: 700;
     text-align: center;
+        font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(90deg, blue, purple, red, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color:transparent;
+
 }
 .hero-section p{
     font-size: 18px;
@@ -35,8 +43,7 @@ body{
     }
     .hero-section{
         padding: 30px 10px;
-    }
-    
+    } 
 }
 .search-container{
     display: flex;

@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f6f9;
     color: #333;
+    background-color: #efe4e4;
+    box-sizing: border-box;
   }
 
   /* Navbar */
@@ -13,7 +14,7 @@ body {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    margin-top: 8%;
+    margin-top: 7%;
   }
 
   /* Header */
@@ -175,30 +176,3 @@ body {
     height: 100%;
     text-align: center;
 }
-
-
-
-    .icon-action{
-                height:20px;
-               transition: 0.56;
-               position: absolute;
-                cursor: pointer;
-                 top: 300px;
-            }
-            .icon-right{
-                
-                right: 0;
-                
-               margin-top: 150px;
-            }
-            .icon-right:hover{
-                transform: scale(0.8) translatex(-10px);
-            }
-            .icon-left{
-                left: 0;
-                
-                margin-top: 150px;
-            }
-            .icon-left:hover{
-                transform: scale(0.8) translatex(10px);
-            }
