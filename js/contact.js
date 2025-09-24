@@ -39,7 +39,7 @@ const contactCard = [
         sector: "Course guidance & e-learning"
     },
     {
-        imgUrl: "../images/contact-us/m3.jpg",
+        imgUrl: "../images/invester2.png",
         memberName: "David Thompson",
         role: "Scholarship Specialist",
         sector: "Financial aid & scholarships"
