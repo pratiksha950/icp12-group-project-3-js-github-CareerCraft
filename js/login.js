@@ -1,10 +1,3 @@
-let path = location.pathname.includes("/pages/") ? "../pages/header.html" : "./pages/header.html";
-fetch(path)
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  })
-  .catch(err => console.error("Header load error:", err));
 
 const passwordInput = document.getElementById("password");
 const toggleImg = document.getElementById("toggle-icon");

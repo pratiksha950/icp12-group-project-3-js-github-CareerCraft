@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitive - career</title>
+    <link rel="stylesheet" href="../css/career.css">
+</head>
+<body>
+     <!-- Hero Slider -->
+  <section class="hero">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="../images/competitive1.jpg" alt="Competitive 1">
+        <h1>Competitive Exams</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/competitive2.jpg" alt="Competitive 2">
+        <h1>Prepare for Success</h1>
+      </div>
+      <div class="slide">
+        <img src="../images/competitive3.jpg" alt="Competitive 3">
+        <h1>Achieve Your Goals</h1>
+      </div>
+    </div>
+
+
+    <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+     <div class="dots" id="dots"></div>
+  </section>
+
+
+  <!-- Cards Section -->
+  <section class="cards-section">
+    <h2>Explore Competitive Exams</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../images/jee.jpg" alt="JEE">
+         <div class="card-content">
+          <h3>JEE</h3>
+          <p>Engineering entrance exams for top colleges like IITs and NITs.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('jee')">Read More</a>
+        </div>
+        </div>
+
+ <div class="card">
+        <img src="../images/neet.jpg" alt="NEET">
+        <div class="card-content">
+          <h3>NEET</h3>
+          <p>Medical entrance exam for MBBS, BDS, and other health courses.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('neet')">Read More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../images/upsc.jpg" alt="UPSC">
+        <div class="card-content">
+          <h3>UPSC / MPSC</h3>
+          <p>Government exams for IAS, IPS, State services and administration roles.</p>
+          <a href="#" class="explore-btn" onclick="showDetails('upsc')">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Details Section -->
+  <section class="details" id="details">
+    <h2 id="details-title"></h2>
+    <ul id="details-content"></ul>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
+  </section>
+
+
+  <script>
+    
+    // Details Section JS
+    const detailsData = {
+      jee: {
+        title: "JEE - Joint Entrance Exam",
+        content: [
+          "Eligibility: 12th Science with PCM, JEE Main & Advanced exams",
+          "Career Roles: Engineering at IITs, NITs, IIITs",
+          "Salary: ₹3-10 LPA starting for graduates",
+          "Further Studies: M.Tech, MS, Research, Higher Education",
+          "Skills: Problem-solving, Analytical thinking, Time management"
+        ]
+      },
+       neet: {
+        title: "NEET - National Eligibility cum Entrance Test",
+        content: [
+          "Eligibility: 12th Science with PCB, NEET exam",
+          "Career Roles: MBBS, BDS, BAMS, Healthcare roles",
+          "Salary: ₹25k-₹60k starting, Specialist ₹1L+",
+          "Further Studies: MD, MS, Postgraduate Specializations",
+          "Skills: Hard work, Focus, Patience, Memorization"
+        ]
+      },
+
+       upsc: {
+        title: "UPSC / MPSC - Civil Services",
+        content: [
+          "Eligibility: Graduation from any discipline, Age criteria apply",
+          "Career Roles: IAS, IPS, IRS, State Services",
+          "Salary: ₹56k-₹80k starting, higher after promotions",
+          "Further Studies: Optional subjects, Training at LBSNAA",
+          "Skills: General knowledge, Writing skills, Decision making, Leadership"
+        ]
+      }
+    };
+  </script>
+
+
+
+
+
+
+
+<script src="../js/career.js"></script>
+
+</body>
+</html>
