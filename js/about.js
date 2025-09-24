@@ -20,7 +20,6 @@ const searchBox = document.getElementById("searchBox");
       index = (index + 1) % placeholders.length;
     }, 2000);
 
-
   const feedbackBtn = document.getElementById('feedbackBtn');
   const feedbackModal = document.getElementById('feedbackModal');
   const closeModal = document.getElementById('closeModal');

@@ -13,11 +13,11 @@ function hideSidebar(){
     "Search for Courses",
     "Search for career-info"
 ];
-let index = 0;
+let index1 = 0;
 const searchBox = document.getElementById("searchBox");
     setInterval(() => {
-      searchBox.setAttribute("placeholder", placeholders[index]);
-      index = (index + 1) % placeholders.length;
+      searchBox.setAttribute("placeholder", placeholders[index1]);
+      index = (index1 + 1) % placeholders.length;
     }, 2000);
 
 

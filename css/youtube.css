@@ -1,12 +1,12 @@
  body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f9f9f9;
+      background-color: #efe4e4;
       transition: background-color 0.3s;
     }
 
     h1 {
-      background-color: #ff0000;
+      background-color: rgb(19, 118, 150);
       color: #fff;
       padding: 12px 24px;
       font-size: 20px;
@@ -107,18 +107,18 @@
                  top: 300px;
             }
             .icon-right{
-                
-                right: 0;
-                
-               margin-top: 150px;
+                display: none;
             }
             .icon-right:hover{
                 transform: scale(0.8) translatex(-10px);
+                height: 50px;
+                width: 100px;
             }
             .icon-left{
                 left: 0;
-                
-                margin-top: 150px;
+                height: 50px;
+                width: 50px;
+                margin-top:-14%;
             }
             .icon-left:hover{
                 transform: scale(0.8) translatex(10px);
