@@ -46,7 +46,7 @@
     </div>
 
     <div class="card">
-      <img src="../images/career-page-images/commerce-main-img.jpg" alt="Commerce">
+      <img src="../images/career-page-images/commerce-1-img.jpg" alt="Commerce">
       <h3>Commerce</h3>
       <p>Options: B.Com, CA, CS, BBA, Banking, Economics, MBA, etc.</p>
       <a href="./commerce.html" class="read">Read More</a>
@@ -87,6 +87,21 @@
   </div>
 </div>
 <div id="footer"></div>
+<script>
+      let index = 0;
+      const slides = document.getElementById("slides");
+      const totalSlides = document.querySelectorAll(".slide").length;
+
+      function moveSlide(step) {
+        index = (index + step + totalSlides) % totalSlides;
+        slides.style.transform = `translateX(-${index * 100}%)`;
+      }
+
+      // Auto slide every 5 seconds
+      setInterval(() => {
+        moveSlide(1);
+      }, 5000);
+    </script>
 
 
  <script>

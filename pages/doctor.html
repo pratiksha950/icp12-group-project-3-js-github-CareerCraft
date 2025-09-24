@@ -67,47 +67,63 @@
     </div>
   </section>
 
-   <!-- Details Section -->
-  <section class="details" id="details">
+  <!-- Details Section -->
+<section class="details" id="details">
+  <div class="details-box">
     <h2 id="details-title"></h2>
-    <ul id="details-content"></ul>
-    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
-  </section>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
 
   <script>
-     // Details Section JS
-    const detailsData = {
-      mbbs: {
-        title: "MBBS - Bachelor of Medicine & Surgery",
-        content: [
-          "Eligibility: 12th Science with PCB, NEET exam",
-          "Career Roles: General Doctor, Surgeon, Resident Doctor",
-          "Salary: Fresher ₹25k-₹40k, Specialist ₹1L+",
-          "Further Studies: MD, MS, Postgraduate Specializations",
-          "Skills: Analytical Thinking, Patience, Problem-solving, Communication"
-        ]
-      },
-       pharmacy: {
-        title: "Pharmacy Careers",
-        content: [
-          "Eligibility: 12th Science / Diploma in Pharmacy, Entrance exams vary",
-          "Career Roles: Pharmacist, Pharmaceutical Researcher, Lab Technician",
-          "Salary: ₹20k-₹50k/month depending on role",
-          "Further Studies: M.Pharm, Clinical Research Courses",
-          "Skills: Attention to Detail, Analytical Skills, Communication"
-        ]
-      },
-       nursing: {
-        title: "Nursing Careers",
-        content: [
-          "Eligibility: 12th Science with PCB, Nursing Entrance exams",
-          "Career Roles: Staff Nurse, ICU Nurse, Healthcare Supervisor",
-          "Salary: ₹18k-₹35k/month initially",
-          "Further Studies: B.Sc Nursing, M.Sc Nursing",
-          "Skills: Compassion, Patience, Teamwork, Communication"
-        ]
-      }
-    };
+     // Details Section Data
+const detailsData = {
+  mbbs: {
+    title: "MBBS - Bachelor of Medicine & Surgery",
+    content: [
+      "📌 Eligibility: 12th Science with PCB + NEET Exam",
+      "🎯 Career Roles: General Doctor, Surgeon, Resident Doctor, Specialist",
+      "🏥 Top Colleges: AIIMS, JIPMER, AFMC, Government Medical Colleges",
+      "🧾 Entrance Exams: NEET-UG, State CETs (few states)",
+      "💰 Salary: Fresher ₹25k-₹40k, Specialist ₹1L+",
+      "📚 Higher Studies: MD, MS, Super-specialization",
+      "✅ Skills Needed: Analytical Thinking, Patience, Problem-solving, Communication",
+      "👍 Pros: High Respect, Stable Career, Huge Demand",
+      "👎 Cons: Long Study Duration, High Competition, Stressful"
+    ]
+  },
+  pharmacy: {
+    title: "Pharmacy Careers",
+    content: [
+      "📌 Eligibility: 12th Science / Diploma in Pharmacy",
+      "🎯 Career Roles: Pharmacist, Pharmaceutical Researcher, Lab Technician, Drug Inspector",
+      "🏥 Top Colleges: BITS Pilani, Jamia Hamdard, Manipal College of Pharmacy",
+      "🧾 Entrance Exams: GPAT, State CETs, University Exams",
+      "💰 Salary: ₹20k-₹50k/month depending on role",
+      "📚 Higher Studies: M.Pharm, Clinical Research, Pharma MBA",
+      "✅ Skills Needed: Attention to Detail, Analytical Skills, Communication",
+      "👍 Pros: Wide Industry Scope, Less Study Years than MBBS",
+      "👎 Cons: Average Pay Initially, Limited Clinical Role"
+    ]
+  },
+  nursing: {
+    title: "Nursing Careers",
+    content: [
+      "📌 Eligibility: 12th Science with PCB + Nursing Entrance",
+      "🎯 Career Roles: Staff Nurse, ICU Nurse, Healthcare Supervisor, Midwife",
+      "🏥 Top Colleges: AIIMS, CMC Vellore, Armed Forces Nursing College",
+      "🧾 Entrance Exams: AIIMS Nursing, State Nursing CETs",
+      "💰 Salary: ₹18k-₹35k/month initially",
+      "📚 Higher Studies: B.Sc Nursing, M.Sc Nursing, Specialized Nursing",
+      "✅ Skills Needed: Compassion, Patience, Teamwork, Communication",
+      "👍 Pros: High Demand Worldwide, Job Security, Migration Scope",
+      "👎 Cons: Physically Demanding, Stressful Shifts"
+    ]
+  }
+};
 
 
   </script>
