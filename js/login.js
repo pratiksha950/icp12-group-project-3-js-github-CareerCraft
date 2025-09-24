@@ -1,10 +1,3 @@
-let path = location.pathname.includes("/pages/") ? "../pages/header.html" : "./pages/header.html";
-fetch(path)
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById("header").innerHTML = data;
-  })
-  .catch(err => console.error("Header load error:", err));
 
 const passwordInput = document.getElementById("password");
 const toggleImg = document.getElementById("toggle-icon");
@@ -13,11 +6,11 @@ const passwordDiv = document.getElementById("password-div");
 function toggleImgView() {
     if (passwordInput.type == "password") {
         passwordInput.type = "text";
-        toggleImg.src = '../login-img/closed.png';
+        toggleImg.src = '../images/login-img/closed.png';
     }
     else {
         passwordInput.type = "password";
-        toggleImg.src = '../login-img/open.png';
+        toggleImg.src = '../images/login-img/open.png';
     }
 }
 

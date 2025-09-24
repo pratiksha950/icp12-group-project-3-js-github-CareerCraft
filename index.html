@@ -8,35 +8,76 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <div id="header"></div>
-    
+        <header>
+        <div class="nav-bar">
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+        <div class="nav-search">
+            <select class="search-select">
+              <option>All</option>
+              <option>Scholarship</option>
+              <option>Career Guidance</option>
+              <option>E-learning</option>
+            </select>  
+            <input placeholder="Search for Career" class="search-input" id="searchBox">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        <div  class="content1">
+        <li class="hideOnMobile"><a href="/index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="/pages/about.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="/pages/contact.html">Contact</a></li>
+        <li class="hideOnMobile"><a href="/pages/login.html">Login</a></li>
+        <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="../images/hamburger.png" height="20px" width="20px"></a></li>
+        </div>
+        </div>
+            
+   <div class="sidebar">
+    <ul>
+    <li onclick="hideSidebar()"><a href="#"><img src="../images/cross.png" height="20px" width="20px"></a></li>
+    <li><a href="/pages/login.html">Login</a></li>
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/pages/about.html">About Us</a></li>
+    <li><a href="/pages/learning.html">E-learning</a></li>
+    <li><a href="/pages/scholarship.html">Scholarships</a></li>
+    <li><a href="/pages/career.html">Career Guidance</a></li>
+    <li><a href="/pages/course.html">Courses</a></li>
+    <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+   </div>
+ </header><hr>
+  <div  class="content3">
+    <a href="/pages/course.html">Courses</a>   
+    <a href="/pages/career.html">Career Guidance</a>
+    <a href="/pages/learning.html">E-learning</a>
+    <a href="/pages/scholarship.html">Scholarships</a>
+        </div> 
+
 <!-- image slider -->
   <div class="img-slider">
     <div class="list">
       <div class="item"><img src="./Images/scholership_1.webp"></div>
       <div class="item"><img src="./Images/scholership_2.png"></div>
       <div class="item"><img src="./Images/scholership_3.webp"></div>
-      <div class="item"><img src="./Images/scholership_4.png"></div>
+      <div class="item"><img src="./images/homepage.png"></div>
     </div>
   </div>
-
   <!-- thumbnails -->
   <div class="thumbnail">
     <div class="item"><img src="./Images/thumbnail2.png"></div>
     <div class="item hidden"><img src="./Images/thumbnail3.png"></div>
-    <div class="item hidden"><img src="./Images/thumbnail4.png"></div>
+    <div class="item hidden"><img src="./images/homepage1.png"></div>
     <div class="item hidden"><img src="./Images/thumbnail1.png"></div>
   </div>
-
   <!-- arrows -->
   <div class="arrows">
     <button class="pre"><</button>
     <button class="next">></button>
   </div>
-
   <!-- timer -->
   <div class="time"></div>  </div>    <hr><hr>
-  
   
   <div class="parag">
     <div class="numbers">
@@ -45,7 +86,6 @@
       <div class="num1 SC3">Helped<br><p class="start" data-target="128306">0</p></div>
       <div class="num1 SC4">Fund Managed<br><p class="start" data-target="600">0</p></div>
     </div>
-
     <div class="Opportunities">
       <h1> More Opportunities</h1>
       <div class="section3">
@@ -102,13 +142,139 @@
       </div>
     </div>
 
+     <div class="our-scholer">
+        <div class="review">
+    <div class="review1">
+        <img src="./images/scholer1.png"></div><br>
+        <p class="name1">Sejal Tambe<br><span class="star">&#8377;30,000</span></p>
+        <p class="text-review">HDFC Bank Parivartan's ECSS Programme helped Muskan from Madhya Pradesh pursue her dream of becoming, a heartbreaking turn. Her father, a hardworking pan shop owner, passed away suddenly due to a heart attack. His untimely demise not only left the family emotionally</p>
+ </div>
 
+  <div class="review">
+    <div class="review1">
+        <img src="./images/scholer2.png"></div><br>
+        <p class="name1">Komal Jarhad<br><span class="star">&#8377;75,000</span></p>
+        <p class="text-review">I came from a farmers home, armed only with dreams. U-Go didn’t just fund my education—it gave wings to my aspirations.Born into a farmers family, I grew up watching my father work tirelessly to provide for us.  </p>
+ </div>
 
+ <div class="review">
+    <div class="review1">
+        <img src="./images/scholer3.png"></div><br>
+        <p class="name1">Pratik Salunke<br><span class="star">&#8377;10,000</span></p>
+        <p class="text-review">ursuing His Dream of Becoming a Company Secretary with the Support of the Alstom India Scholarship 2023-25
+      family of four grappling with various financial hurdles. My father, a cashier at the Hind Rubber Factory, tirelessly supported my elder brother's and my education through his limited</p>
+ </div>
 
+  <div class="review">
+    <div class="review1">
+        <img src="./images/scholer4.png"></div><br>
+        <p class="name1">Divya Satpute<br><span class="star">&#8377;50,000</span></p>
+        <p class="text-review">Scoring a commendable 98.9th percentile in the JEE felt like a dream come true, but it also brought along a myriad of financial worries. Stepping onto the grounds of IIT-Delhi was exhilarating, yet the joy</p>
+ </div>
+</div>
+    </div>
+    
   </div>
-<div id="footer"></div>
 
+   <footer>
+     <div class="footer">
+      <div class="footerPart1">
+        <div class="list00">
+          <ul class="none">
+            <li class="font2">EduScholar</li>
+            <p class="footerFont">
+              Transform your career with our comprehensive online courses, 
+              scholarship opportunities, and professional development programs 
+              designed to accelerate your growth.
+            </p>
+          </ul>
+        </div>
 
+        <div class="list00">
+          <ul>
+            <li class="font2">Quick Links</li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./pages/career.html">Career Guidance</a></li>
+            <li><a href="./pages/scholarship.html">Scholarships</a></li>
+            <li><a href="./pages/learning.html">E-Learning</a></li>
+            <li><a href="./pages/login.html">Login</a></li>
+            <li><a href="./pages/about.html">About Us</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Scholarships</li>
+            <li><a href="./pages/scholarship.html">Available Scholarships</a></li>
+            <li><a href="./pages/scholarship.html">Apply Now</a></li>
+            <li><a href="./pages/scholarship.html">Scholarship Guidelines</a></li>
+            <li><a href="./pages/scholarship.html">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="list00">
+          <ul>
+            <li class="font2">Popular Courses</li>
+            <li><a href="./pages/course.html">Web Development</a></li>
+            <li><a href="./pages/course.html">AI & Machine Learning</a></li>
+            <li><a href="./pages/course.html">Data Sciences</a></li>
+            <li><a href="./pages/course.html">UI/UX Design</a></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <hr>
+
+      <div class="footerPart2">
+        <div class="list2 section1">
+          <ul>
+            <li class="font2 ">Contact Information</li>
+            <li>
+              <a href="https://maps.app.goo.gl/QRjjcRzimRAN8DfSA">
+                <img src="../images/location.png" height="30" width="30" class="hide3">
+                <span class="contact-info">&nbsp;<span class="invisible">123 Education Street,</span> Knowledge City </span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@eduscholar.com">
+                <img src="../images/email.png" height="30" width="30">
+                <span class="contact-info">&nbsp;support@eduscholar.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+919876543210">
+                <img src="../images/viber.png" height="30" width="30">
+                <span class="contact-info">&nbsp;+91 98765 43210</span>
+              </a><br>
+              
+            </li>
+          </ul>
+        </div>
+
+        <div class="list2 section2">
+          <ul>
+            <li>
+              <img src="../images/logo.png" height="60" width="200" class="add">
+            </li>
+            <p class="size1">
+             CareerCraft, since 2011, is endeavoring to bridge the gap between 
+              scholarship providers and scholarship seekers. As India's largest 
+              scholarship listing portal, we have aided over 9 million students 
+              by linking them with the suitable scholarship programmes tailored to their needs.
+            </p>
+            <div class="row">
+              <li><a href="https://www.youtube.com/"><img src="../images/youtube.png" height="35" width="35"></a></li>
+              <li><a href="https://www.whatsapp.com/"><img src="../images/whatsapp.png" height="35" width="35"></a></li>
+              <li><a href="https://www.facebook.com/"><img src="../images/facebook.png" height="35" width="35"></a></li>
+              <li><a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.png" height="35" width="35"></a></li>
+              <li><a href="https://www.instagram.com/"><img src="../images/insta.png" height="35" width="35"></a></li>
+            </div>
+          </ul>
+        </div>
+      </div>
+       <span class="Copyright">Copyright © Career Craft 2025</span>
+    </div>
+  </footer>
 
     <script src="./js/index.js"></script>
 </body>

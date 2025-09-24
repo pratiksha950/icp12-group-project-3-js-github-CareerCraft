@@ -6,27 +6,28 @@ body {
   }
 
   /* Navbar */
-  .navbar {
+  .navbar8 {
     background: #2c3e50;
     padding: 15px;
     color: white;
     text-align: center;
     font-size: 22px;
     font-weight: bold;
+    margin-top: 8%;
   }
 
   /* Header */
-  .header {
+  .header8 {
     text-align: center;
     padding: 40px 20px;
     background:#84bbe0;
     color:black;
    
   }
-  .header h1 {
+  .header8 h1 {
     margin: 0 0 10px;
   }
-  .header p {
+  .header8 p {
     margin: 0;
     font-size: 18px;
   }
@@ -137,38 +138,39 @@ body {
     background: #219150;
   }
 
-  /* Footer */
-  .footer {
-    background: #2c3e50;
-    color: white;
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;             
+    justify-content: space-around;   
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(30px);
+    z-index: 1000;
+    padding: 0 20px;
+    background-color: #f3f3f3;
+}
+.logo img {
+    height: 100px;
+    width: 200px;
+    object-fit: contain;
+    margin-left: 0px;
+}
+.nav-search {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    height: 36px;
+    border-radius: 4px;
+    border: none;
+    width: 30%; 
+    overflow: hidden;
+}
+.search-select {
+    background-color: rgb(194, 188, 188);
+    width: 60px;
+    height: 100%;
     text-align: center;
-    padding: 15px;
-    margin-top: 30px;
-  }
-
-
-  .icon-action{
-                height:20px;
-               transition: 0.56;
-               position: absolute;
-                cursor: pointer;
-                 top: 300px;
-            }
-            .icon-right{
-                
-                right: 0;
-                
-               margin-top: 150px;
-            }
-            .icon-right:hover{
-                transform: scale(0.8) translatex(-10px);
-            }
-            .icon-left{
-                left: 0;
-                
-                margin-top: 150px;
-            }
-            .icon-left:hover{
-                transform: scale(0.8) translatex(10px);
-            }
-            
