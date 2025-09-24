@@ -147,3 +147,51 @@ body {
   color: #0f5132;
   border: 1px solid #badbcc;
 }
+
+@media (max-width: 1024px) {
+  .login-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    width: 50%;
+    margin-top: 30%;
+    margin-bottom: 10%;
+    padding: 20px;
+  }
+  .container-heading {
+    font-size: 20px;
+  }
+  .user-input, .input-div {
+    font-size: 13px;
+    padding: 8px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 60%;
+    margin-top: 60%;
+    margin-bottom: 10%;
+    padding: 15px;
+  }
+  .container-heading {
+    font-size: 18px;
+  }
+  .toggle-img {
+    height: 24px;
+  }
+  .para {
+    font-size: 12px;
+  }
+}
