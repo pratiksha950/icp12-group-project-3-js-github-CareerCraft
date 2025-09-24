@@ -68,50 +68,59 @@
 
 
 
-  <!-- Details Section -->
-  <section class="details" id="details">
+   <!-- Details Section -->
+<section class="details" id="details">
+  <div class="details-box">
     <h2 id="details-title"></h2>
-    <ul id="details-content"></ul>
-    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
-  </section>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
 
 
   <script>
 
-     // Details Section JS
-    const detailsData = {
-      coding: {
-        title: "Coding Skills",
-        content: [
-          "Learn languages: Python, Java, C++, JavaScript",
-          "Build mini projects and applications",
-          "Develop problem-solving and logical thinking",
-          "Participate in coding competitions and hackathons",
-          "Use Git, GitHub, and version control effectively"
-        ]
-      },
-       ai: {
-        title: "AI / ML Skills",
-        content: [
-          "Understand Machine Learning algorithms and concepts",
-          "Hands-on projects: Predictive models, Chatbots, Recommendation systems",
-          "Learn Python libraries: scikit-learn, TensorFlow, PyTorch",
-          "Data preprocessing, analysis, and visualization",
-          "Participate in Kaggle competitions for experience"
-        ]
-      },
-
-       cloud: {
-        title: "Cloud Computing Skills",
-        content: [
-          "Learn AWS, Azure, Google Cloud fundamentals",
-          "Understand cloud services: Compute, Storage, Databases, Networking",
-          "Deploy applications in cloud environments",
-          "Hands-on labs and certification preparation",
-          "Develop DevOps understanding for cloud deployment"
-        ]
-      }
-    };
+     // Details Section JS for Skill Development Careers
+  const detailsData = {
+    coding: {
+      title: "Coding Skills",
+      content: [
+        "📌 Eligibility: Anyone interested in programming (12th/Graduates/Professionals)",
+        "🎯 Career Roles: Software Developer, Web Developer, App Developer, Backend Engineer",
+        "💰 Salary: ₹3L–₹12L per annum (depending on skill & experience)",
+        "📚 Learning Paths: Python, Java, C++, JavaScript, Full Stack Development",
+        "✅ Skills: Problem-solving, Logical Thinking, Algorithms & DSA, Version Control",
+        "👍 Pros: High Demand, Project-based learning, Remote Opportunities",
+        "👎 Cons: Continuous learning required, Can be competitive"
+      ]
+    },
+    ai: {
+      title: "AI / ML Skills",
+      content: [
+        "📌 Eligibility: Basics of programming and math knowledge",
+        "🎯 Career Roles: AI Engineer, ML Engineer, Data Scientist, Researcher",
+        "💰 Salary: ₹4L–₹15L per annum (entry to mid-level)",
+        "📚 Learning Paths: Python, scikit-learn, TensorFlow, PyTorch, Data Analysis",
+        "✅ Skills: Machine Learning Algorithms, Data Preprocessing, Model Deployment",
+        "👍 Pros: Cutting-edge field, High Salary, Diverse Applications",
+        "👎 Cons: Requires strong math & coding skills, Continuous updates"
+      ]
+    },
+    cloud: {
+      title: "Cloud Computing Skills",
+      content: [
+        "📌 Eligibility: Basic programming and networking knowledge",
+        "🎯 Career Roles: Cloud Engineer, DevOps Engineer, Cloud Consultant",
+        "💰 Salary: ₹4L–₹14L per annum (entry to mid-level)",
+        "📚 Learning Paths: AWS, Azure, Google Cloud, Kubernetes, Docker",
+        "✅ Skills: Cloud Deployment, Networking, Security, DevOps practices",
+        "👍 Pros: High Demand, Certification Value, Global Opportunities",
+        "👎 Cons: Need certifications, Rapidly changing technology"
+      ]
+    }
+  };
   </script>
 
 
