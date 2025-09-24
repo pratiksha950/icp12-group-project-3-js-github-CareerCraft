@@ -37,27 +37,25 @@
 
     setInterval(() => moveSlide(1), 4000);
 
-    function showDetails(key) {
-      const details = document.getElementById("details");
-      const title = document.getElementById("details-title");
-      const content = document.getElementById("details-content");
+    // Show Details Function
+function showDetails(career) {
+  const details = detailsData[career];
+  document.getElementById("details-title").innerText = details.title;
+  
+  const list = document.getElementById("details-list");
+  list.innerHTML = "";
+  details.content.forEach(item => {
+    const li = document.createElement("li");
+    li.innerText = item;
+    list.appendChild(li);
+  });
 
-      title.textContent = detailsData[key].title;
-      content.innerHTML = "";
-      detailsData[key].content.forEach(item => {
-        const li = document.createElement("li");
-        li.textContent = item;
-        content.appendChild(li);
-      });
+  document.querySelector(".cards-section").style.display = "none";
+  document.getElementById("details").style.display = "block";
+}
 
-      details.style.display = "block";
-      window.scrollTo({ top: details.offsetTop, behavior: 'smooth' });
-    }
-
-    function hideDetails() {
-      document.getElementById("details").style.display = "none";
-    }
-
-
-
-     
+// Hide Details
+function hideDetails() {
+  document.getElementById("details").style.display = "none";
+  document.querySelector(".cards-section").style.display = "block";
+}
