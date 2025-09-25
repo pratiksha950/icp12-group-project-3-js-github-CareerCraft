@@ -2,6 +2,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f6f9;
+      overflow-x: hidden;
     }
 
     /* Hero Section (Slider) */
@@ -953,7 +954,6 @@
     flex-wrap: wrap;
     line-height: 30px;
     display: flex;
-    
 }
 .footerPart2 .section2{
     padding-left: 20px;
@@ -1101,6 +1101,15 @@
       margin-top: 20%;
       padding-left: 10px;
     }
+    .career-header{
+    width: 100%;
+    height: 100px;
+    }
+    .career-header h1{
+    font-size: 30px;
+
+}
+
 }
 .row li a img {
   transition: transform 0.3s ease; 
@@ -1122,4 +1131,15 @@ a img {
 
 .content3 a {
      background:rgb(240, 239, 239);
+}
+.career-header{
+ margin-top: 7%;
+}
+@media  (max-width: 640px) {
+  .career-header{
+   display: none;
+  }
+  .footerPart2{
+    margin-left: -10%;
+  }
 }

@@ -42,14 +42,14 @@
     .buttons button:hover {
       background-color: #333;
     }
-
+    
     .container {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, auto);
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
       padding: 20px;
     }
+
 
     .card {
       background: #fff;
