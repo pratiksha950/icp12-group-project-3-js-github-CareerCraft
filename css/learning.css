@@ -438,6 +438,9 @@ body {
   .footer{
     margin-right: 0%;
   }
+  .footerPart2{
+  margin-left: -20%;
+}
 
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -722,4 +725,14 @@ a img {
 }
 .footerPart2{
   margin-left: -20%;
+}
+.footerPart2{
+  margin-left: 10px ;
+}
+
+@media  (max-width: 640px) {
+  .footerPart2{
+  margin-left: -20% ;
+}
+
 }
