@@ -13,14 +13,12 @@ function hideSidebar(){
     "Search for Courses",
     "Search for career-info"
 ];
-let index = 0;
+let index1 = 0;
 const searchBox = document.getElementById("searchBox");
     setInterval(() => {
-      searchBox.setAttribute("placeholder", placeholders[index]);
-      index = (index + 1) % placeholders.length;
+      searchBox.setAttribute("placeholder", placeholders[index1]);
+      index = (index1 + 1) % placeholders.length;
     }, 2000);
-
-
 
 const dialog = document.getElementById('courseDialog');
     const courseTitle = document.getElementById('courseTitle');
@@ -100,39 +98,12 @@ const dialog = document.getElementById('courseDialog');
       alert("✅ You have enrolled in " + courseTitle.textContent + "!");
       dialog.close();
     }
-  // Light buttons
+  // Light On/Off
   document.getElementById('lightOn').addEventListener('click', () => {
-    document.body.style.backgroundColor = '#ffffff'; // white light
+    document.body.style.backgroundColor = '#ffffff';
   });
-
   document.getElementById('lightOff').addEventListener('click', () => {
-    document.body.style.backgroundColor = '#2c3e50'; // dark/off
+    document.body.style.backgroundColor = '#2c3e50';
   });
 
-    //slideshow
-
-  const images=["img/blue-black-peacock.jpg","img/peacock-1-jpg" ,"img/peacock-2-jpg","img/peacock-3-jpg" ,"img/peacock-4-jpg" ,"img/peacock-5-jpg"];
-        const slide=document.getElementById(`slide`);
-        let index=0;
-        function right(){
-          if(index<images.length -1){
-            index++;
-          } 
-          else{
-            index=0
-          }
-          slide.src=images[index]
-
-        }
-        
-        function left(){
-          if(index>0){
-            index--;
-          } 
-          else{
-            index=images.length -1;
-          }
-          slide.src=images[index]
-        }
-       
-    
+  

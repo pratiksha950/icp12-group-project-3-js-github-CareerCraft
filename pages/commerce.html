@@ -45,7 +45,7 @@
         </div>
       </div>
       <div class="card">
-        <img src="../images/career-page-images/ca-img.jpg" alt="Chartered Accountant">
+        <img src="../images/career-page-images/ca-2-img.jpg" alt="Chartered Accountant">
         <div class="card-content">
             <h3>Chartered Accountant (CA)</h3>
           <p>Specialized career in auditing, taxation & corporate finance.</p>
@@ -65,46 +65,61 @@
   </section>
 
 <!-- Details Section -->
-  <section class="details" id="details">
+<section class="details" id="details">
+  <div class="details-box">
     <h2 id="details-title"></h2>
-    <ul id="details-content"></ul>
-    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Cards</a>
-  </section>
+    <div class="details-content">
+      <ul id="details-list"></ul>
+    </div>
+    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
+  </div>
+</section>
 
   <script>
-    // Details Section JS
     const detailsData = {
-      bcom: {
-        title: "B.Com - Bachelor of Commerce",
-        content: [
-          "Eligibility: 12th Commerce/Arts/Science stream",
-          "Career Roles: Accountant, Analyst, Finance Executive",
-          "Salary: ₹20k-₹40k/month initially",
-          "Further Studies: M.Com, MBA, CA, CS",
-          "Skills: Accounting, Excel, Business Communication"
-        ]
-      },
-       ca: {
-        title: "Chartered Accountant (CA)",
-        content: [
-          "Eligibility: 12th Commerce with CA Foundation exam",
-          "Career Roles: Auditor, Tax Consultant, CFO, Corporate Finance",
-          "Salary: ₹6–10 LPA initially",
-          "Further Studies: CFA, CPA, Advanced Finance",
-          "Skills: Financial Analysis, Auditing, Law, Taxation"
-        ]
-      },
-      mba: {
-        title: "MBA - Master of Business Administration",
-        content: [
-          "Eligibility: Graduation in any stream + CAT/MAT/CMAT etc.",
-          "Career Roles: Manager (HR, Finance, Marketing, Operations)",
-          "Salary: ₹5–12 LPA depending on specialization",
-          "Further Studies: PhD in Management, Certifications",
-          "Skills: Leadership, Strategy, Communication, Analytics"
-        ]
-      }
-    };
+  bcom: {
+    title: "B.Com - Bachelor of Commerce",
+    content: [
+      "📌 Eligibility: 12th Commerce / Science with Maths",
+      "🎯 Career Roles: Accountant, Auditor, Tax Consultant, Analyst",
+      "🏫 Top Colleges: SRCC, Christ University, NMIMS, Symbiosis",
+      "🧾 Entrance Exams: DUET, Christ Entrance, SET",
+      "💰 Salary: ₹2L–₹5L per annum (fresher)",
+      "📚 Higher Studies: M.Com, MBA, CA, CS",
+      "✅ Skills: Accounting, Taxation, Excel, Communication",
+      "👍 Pros: Wide scope in all industries",
+      "👎 Cons: Needs higher studies for high-paying jobs"
+    ]
+  },
+  ca: {
+    title: "Chartered Accountancy (CA)",
+    content: [
+      "📌 Eligibility: 12th Commerce / Any Stream (CPT/CA Foundation)",
+      "🎯 Career Roles: Chartered Accountant, Auditor, CFO, Tax Consultant",
+      "🏫 Governing Body: ICAI (Institute of Chartered Accountants of India)",
+      "🧾 Entrance Exams: CA Foundation, CA Intermediate, CA Final",
+      "💰 Salary: ₹6L–₹25L per annum (depending on experience)",
+      "📚 Higher Studies: CPA, ACCA (Global Certifications)",
+      "✅ Skills: Accounting, Auditing, Taxation, Business Law",
+      "👍 Pros: High Demand, Prestigious Career",
+      "👎 Cons: Tough Exams, Long Duration"
+    ]
+  },
+  mba: {
+    title: "MBA - Master of Business Administration",
+    content: [
+      "📌 Eligibility: Graduation in any stream + Entrance Exams (CAT, XAT, MAT, GMAT)",
+      "🎯 Career Roles: Manager, HR Executive, Marketing Specialist, Entrepreneur",
+      "🏫 Top Colleges: IIMs, XLRI, Symbiosis, NMIMS, FMS Delhi",
+      "🧾 Entrance Exams: CAT, XAT, SNAP, GMAT, MAT",
+      "💰 Salary: ₹6L–₹20L per annum",
+      "📚 Higher Studies: PhD in Management, Executive MBA",
+      "✅ Skills: Leadership, Teamwork, Communication, Strategy",
+      "👍 Pros: High Career Growth, Corporate Jobs",
+      "👎 Cons: Expensive, Competitive"
+    ]
+  }
+};
   </script>
 
 
