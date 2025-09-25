@@ -1,238 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Guidance Quiz</title>
     <style>
-
-         body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f6f9;
-      text-align: center;
-      padding: 20px;
-      background-image: url('../images/career-page-images/quize-1-img.jpg');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      min-height: 100vh;
-      color: #333;
-
-    }
-
-    h1 {
-      color: whitesmoke;
-      margin-bottom: 20px;
-  
-    }
-
-    .quiz-container {
-      max-width: 700px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .question {
-      font-size: 1.2rem;
-      margin: 20px 0 10px;
-    }
-
-    .options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .options button {
-      padding: 10px 15px;
-      background: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-      font-size: 1rem;
-    }
-
-    .options button:hover {
-      background: #0056b3;
-    }
-
-     .result {
-      margin-top: 20px;
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #28a745;
-    }
-
-
-    /* Recommended Career Cards */
-    .career-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .career-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: 0.3s;
-      cursor: pointer;
-    }
-    .career-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .career-card h3 {
-      margin: 15px;
-      font-size: 1.4rem;
-      color: #007BFF;
-    }
-
-    .career-card p {
-      margin: 0 15px 15px;
-      font-size: 1rem;
-      color: #555;
-    }
-
-     .back-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #007BFF;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-
-
-    </style>
-</head>
-<body>
-     <h1>Career Guidance Quiz</h1>
-      <div class="quiz-container" id="quiz-container">
-    <!-- Questions will appear here dynamically -->
-  </div>
-
-  <a href="../index.html" class="back-btn">← Back to Home</a>
-
-   <script>
-     const quizData = [
-      { question: "Do you enjoy solving numerical problems?", options: ["Yes", "No"], values: ["Engineering", "Arts/Commerce"] },
-      { question: "Do you like working with people directly?", options: ["Yes", "No"], values: ["Medical", "Engineering/IT"] },
-      { question: "Are you interested in financial & business topics?", options: ["Yes", "No"], values: ["Commerce", "Science/Engineering"] },
-      { question: "Do you enjoy creativity and arts?", options: ["Yes", "No"], values: ["Arts", "Science/Commerce"] },
-      { question: "Are you passionate about technology & coding?", options: ["Yes", "No"], values: ["Engineering", "Medical/Arts"] },
-      { question: "Do you want to help others and save lives?", options: ["Yes", "No"], values: ["Medical", "Engineering/Commerce"] },
-      { question: "Do you like leadership and management roles?", options: ["Yes", "No"], values: ["Commerce/Skill Development", "Science/Arts"] },
-      { question: "Are you interested in innovative problem-solving?", options: ["Yes", "No"], values: ["Engineering/Skill Development", "Medical/Arts"] },
-      { question: "Do you enjoy research and experiments?", options: ["Yes", "No"], values: ["Science/Medical", "Commerce/Arts"] },
-      { question: "Are you willing to learn new skills online and continuously?", options: ["Yes", "No"], values: ["Skill Development", "Other Streams"] }
-    ];
-
-     let currentQuestion = 0;
-    let scores = {};
-
-    const container = document.getElementById("quiz-container");
-
-    function showQuestion() {
-      container.innerHTML = "";
-      const q = quizData[currentQuestion];
-      const questionEl = document.createElement("div");
-      questionEl.classList.add("question");
-      questionEl.textContent = q.question;
-      container.appendChild(questionEl);
-
-      const optionsEl = document.createElement("div");
-      optionsEl.classList.add("options");
-
-      q.options.forEach((opt, idx) => {
-        const btn = document.createElement("button");
-        btn.textContent = opt;
-        btn.onclick = () => selectOption(q.values[idx]);
-        optionsEl.appendChild(btn);
-      });
-
-      container.appendChild(optionsEl);
-    }
-      function selectOption(value) {
-      scores[value] = (scores[value] || 0) + 1;
-      currentQuestion++;
-      if(currentQuestion < quizData.length) {
-        showQuestion();
-      } else {
-        showResult();
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #f4f6f9;
+        text-align: center;
+        padding: 20px;
+        background-image: url("../images/career-page-images/quize-1-img.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        min-height: 100vh;
+        color: #333;
       }
-    }
+      h1 {
+       font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #007bff;
+      }
+      .quiz-container {
+        max-width: 700px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .question {
+        font-size: 1.2rem;
+        margin: 20px 0 10px;
+      }
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      .options button {
+        padding: 10px 70px;
+        font-size: 0.9rem;
+        width: fit-content;
+        max-width: 100%;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        align-self: center;
+      }
+      .options button:hover {
+        background: #0056b3;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #28a745;
+      }
+      .career-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .career-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      .career-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .career-card h3 {
+        margin: 15px;
+        font-size: 1.4rem;
+        color: #007bff;
+      }
+      .career-card p {
+        margin: 0 15px 15px;
+        font-size: 1rem;
+        color: #555;
+      }
+      .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .back-btn:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Career Guidance Quiz</h1>
+    <div class="quiz-container" id="quiz-container">
+      <!-- Questions will appear here dynamically -->
+    </div>
 
-     function showResult() {
-      container.innerHTML = "<h2 class='result'>Your Recommended Careers:</h2>";
+    <a href="../index.html" class="back-btn">← Back to Home</a>
 
-      // Sort careers by score
-      const sortedCareers = Object.keys(scores).sort((a,b) => scores[b] - scores[a]);
-      const careerCards = document.createElement("div");
-      careerCards.classList.add("career-cards");
+    <script>
+      const quizData = [
+        {
+          question: "Do you enjoy solving numerical problems?",
+          options: ["Yes", "No"],
+          values: ["Engineering", "Arts/Commerce"],
+        },
+        {
+          question: "Do you like working with people directly?",
+          options: ["Yes", "No"],
+          values: ["Medical", "Engineering/IT"],
+        },
+        {
+          question: "Are you interested in financial & business topics?",
+          options: ["Yes", "No"],
+          values: ["Commerce", "Science/Engineering"],
+        },
+        {
+          question: "Do you enjoy creativity and arts?",
+          options: ["Yes", "No"],
+          values: ["Arts", "Science/Commerce"],
+        },
+        {
+          question: "Are you passionate about technology & coding?",
+          options: ["Yes", "No"],
+          values: ["Engineering", "Medical/Arts"],
+        },
+        {
+          question: "Do you want to help others and save lives?",
+          options: ["Yes", "No"],
+          values: ["Medical", "Engineering/Commerce"],
+        },
+        {
+          question: "Do you like leadership and management roles?",
+          options: ["Yes", "No"],
+          values: ["Commerce/Skill Development", "Science/Arts"],
+        },
+        {
+          question: "Are you interested in innovative problem-solving?",
+          options: ["Yes", "No"],
+          values: ["Engineering/Skill Development", "Medical/Arts"],
+        },
+        {
+          question: "Do you enjoy research and experiments?",
+          options: ["Yes", "No"],
+          values: ["Science/Medical", "Commerce/Arts"],
+        },
+        // ✅ Other Streams removed, only Skill Development
+        {
+          question:
+            "Are you willing to learn new skills online and continuously?",
+          options: ["Yes", "No"],
+          values: ["Skill Development", "Skill Development"],
+        },
+      ];
 
-      sortedCareers.forEach(career => {
+      let currentQuestion = 0;
+      let scores = {};
+      const container = document.getElementById("quiz-container");
+
+      function showQuestion() {
+        container.innerHTML = "";
+        const q = quizData[currentQuestion];
+        const questionEl = document.createElement("div");
+        questionEl.classList.add("question");
+        questionEl.textContent = q.question;
+        container.appendChild(questionEl);
+
+        const optionsEl = document.createElement("div");
+        optionsEl.classList.add("options");
+
+        q.options.forEach((opt, idx) => {
+          const btn = document.createElement("button");
+          btn.textContent = opt;
+          btn.onclick = () => selectOption(q.values[idx]);
+          optionsEl.appendChild(btn);
+        });
+
+        container.appendChild(optionsEl);
+      }
+
+      function selectOption(value) {
+        scores[value] = (scores[value] || 0) + 1;
+        currentQuestion++;
+        if (currentQuestion < quizData.length) {
+          showQuestion();
+        } else {
+          showResult();
+        }
+      }
+
+      function showResult() {
+        container.innerHTML =
+          "<h2 class='result'>Your Recommended Careers:</h2>";
+
+        const sortedCareers = Object.keys(scores)
+          .filter((career) => career !== "Other Streams") // 🚫 Filter unwanted
+          .sort((a, b) => scores[b] - scores[a]);
+
+        localStorage.setItem("careerResults", JSON.stringify(sortedCareers));
+
+        const careerCards = document.createElement("div");
+        careerCards.classList.add("career-cards");
+
+        sortedCareers.forEach((career) => {
+          const card = createCareerCard(career);
+          careerCards.appendChild(card);
+        });
+
+        container.appendChild(careerCards);
+
+        const retakeBtn = document.createElement("a");
+        retakeBtn.textContent = "Retake Quiz";
+        retakeBtn.href = "#";
+        retakeBtn.classList.add("back-btn");
+        retakeBtn.onclick = (e) => {
+          e.preventDefault();
+          resetQuiz();
+        };
+        container.appendChild(retakeBtn);
+      }
+
+      function createCareerCard(career) {
         const card = document.createElement("div");
         card.classList.add("career-card");
-         // Image & Title
-        let imgSrc = "";
-        let title = career;
-        let desc = "";
+        let imgSrc = "",
+          title = career,
+          desc = "";
 
-         if(career.includes("Medical")) {
+        if (career.includes("Medical")) {
           imgSrc = "../images/career-page-images/doctors-main-1.jpg";
           title = "Medical Careers";
           desc = "Explore MBBS, Nursing, Pharmacy and Healthcare careers.";
-          card.onclick = () => window.location.href = "./doctor.html";
-        } else if(career.includes("Engineering")) {
+          card.onclick = () => (window.location.href = "./doctor.html");
+        } else if (career.includes("Engineering")) {
           imgSrc = "../images/career-page-images/engineering.jpg";
           title = "Engineering Careers";
           desc = "Explore Engineering, IT and Technology careers.";
-          card.onclick = () => window.location.href = "./engineer.html";
-        } else if(career.includes("Commerce")) {
+          card.onclick = () => (window.location.href = "./engineer.html");
+        } else if (career.includes("Commerce")) {
           imgSrc = "../images/career-page-images/commerce-main-img.jpg";
           title = "Commerce Careers";
           desc = "Explore B.Com, CA, CS, BBA, Banking, MBA.";
-          card.onclick = () => window.location.href = "./comerce.html";
-        } else if(career.includes("Arts")) {
+          card.onclick = () => (window.location.href = "./comerce.html");
+        } else if (career.includes("Arts")) {
           imgSrc = "../images/career-page-images/arts-img.avif";
           title = "Arts Careers";
           desc = "Explore BA, Journalism, Law, Fine Arts, Fashion.";
-          card.onclick = () => window.location.href = "./arts.html";
-        } else if(career.includes("Skill Development")) {
+          card.onclick = () => (window.location.href = "./arts.html");
+        } else if (career.includes("Skill Development")) {
           imgSrc = "../images/career-page-images/skills.img";
           title = "Skill Development";
           desc = "Enhance Soft Skills, Coding, AI/ML, Cloud Computing.";
-          card.onclick = () => window.location.href = "./skill.html";
+          card.onclick = () => (window.location.href = "./skill.html");
         }
 
         card.innerHTML = `<img src="${imgSrc}" alt="${title}"><h3>${title}</h3><p>${desc}</p>`;
-        careerCards.appendChild(card);
-      });
+        return card;
+      }
 
-      container.appendChild(careerCards);
-    }
+      function resetQuiz() {
+        currentQuestion = 0;
+        scores = {};
+        showQuestion();
+      }
 
-    showQuestion();
+      window.onload = () => {
+        const savedResults = localStorage.getItem("careerResults");
+        if (savedResults) {
+          const careers = JSON.parse(savedResults).filter(
+            (c) => c !== "Other Streams"
+          ); // 🚫 Filter old results
+          container.innerHTML =
+            "<h2 class='result'>Your Last Saved Careers:</h2>";
+          const careerCards = document.createElement("div");
+          careerCards.classList.add("career-cards");
 
+          careers.forEach((career) => {
+            const card = createCareerCard(career);
+            careerCards.appendChild(card);
+          });
+          container.appendChild(careerCards);
 
-
-
-    
-
-   </script>
-</body>
+          const retakeBtn = document.createElement("a");
+          retakeBtn.textContent = "Retake Quiz";
+          retakeBtn.href = "#";
+          retakeBtn.classList.add("back-btn");
+          retakeBtn.onclick = (e) => {
+            e.preventDefault();
+            resetQuiz();
+          };
+          container.appendChild(retakeBtn);
+        } else {
+          showQuestion();
+        }
+      };
+    </script>
+  </body>
 </html>

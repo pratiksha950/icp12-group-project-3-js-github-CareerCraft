@@ -1,158 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Engineer-career</title>
-    <link rel="stylesheet" href="../css/career.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/career.css" />
+  </head>
+  <body>
     <!-- Hero Slider -->
-  <section class="hero">
-    <div class="slides" id="slides">
-      <div class="slide">
-        <img src="../images/career-page-images/computer-main-img.jpg" alt="Engineering">
-        <h1>Engineering Careers</h1>
-      </div>
-      <div class="slide">
-        <img src="../images/career-page-images/mechanical-3-img.jpg" alt="Tech">
-        <h1>Shape the Future with Technology</h1>
-      </div>
-      <div class="slide">
-        <img src="../images/career-page-images/civil-3-img.jpg" alt="Innovation">
-        <h1>Innovate. Build. Lead.</h1>
-      </div>
-    </div>
-
-     <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
-    <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
-    <div class="dots" id="dots"></div>
-  </section>
-
-   <!-- Cards Section -->
-  <section class="cards-section">
-    <h2>Explore Engineering Branches</h2>
-    <div class="card-container">
-      <div class="card">
-        <img src="../images/career-page-images/computer-img.jpg" alt="Computer Science">
-        <div class="card-content">
-          <h3>Computer Science</h3>
-          <p>Software Development, AI/ML, Data Science, Web Development.</p>
-          <a href="#" class="explore-btn" onclick="showDetails('cse')">Read More</a>
+    <section class="hero">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img
+            src="../images/career-page-images/computer-main-img.jpg"
+            alt="Engineering"
+          />
+          <h1>Engineering Careers</h1>
+        </div>
+        <div class="slide">
+          <img
+            src="../images/career-page-images/mechanical-3-img.jpg"
+            alt="Tech"
+          />
+          <h1>Shape the Future with Technology</h1>
+        </div>
+        <div class="slide">
+          <img
+            src="../images/career-page-images/civil-3-img.jpg"
+            alt="Innovation"
+          />
+          <h1>Innovate. Build. Lead.</h1>
         </div>
       </div>
 
-       <div class="card">
-        <img src="../images/career-page-images/mechanical-3-img.jpg" alt="Mechanical">
-        <div class="card-content">
-             <h3>Mechanical</h3>
-          <p>Design, Manufacturing, Robotics, Thermal & Automotive.</p>
-          <a href="#" class="explore-btn" onclick="showDetails('mechanical')">Read More</a>
+      <button class="nav-btn prev" onclick="moveSlide(-1)">❮</button>
+      <button class="nav-btn next" onclick="moveSlide(1)">❯</button>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <h2>Explore Engineering Branches</h2>
+      <div class="card-container">
+        <div class="card">
+          <img
+            src="../images/career-page-images/computer-img.jpg"
+            alt="Computer Science"
+          />
+          <div class="card-content">
+            <h3>Computer Science</h3>
+            <p>Software Development, AI/ML, Data Science, Web Development.</p>
+            <a href="#" class="explore-btn" onclick="showDetails('cse')"
+              >Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/career-page-images/mechanical-3-img.jpg"
+            alt="Mechanical"
+          />
+          <div class="card-content">
+            <h3>Mechanical</h3>
+            <p>Design, Manufacturing, Robotics, Thermal & Automotive.</p>
+            <a href="#" class="explore-btn" onclick="showDetails('mechanical')"
+              >Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/career-page-images/civil-engineering-img.jpg"
+            alt="Civil"
+          />
+          <div class="card-content">
+            <h3>Civil</h3>
+            <p>Construction, Infrastructure, Structural Design, Surveying.</p>
+            <a href="#" class="explore-btn" onclick="showDetails('civil')"
+              >Read More</a
+            >
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="../images/career-page-images/elctric-img.jpg"
+            alt="Electrical"
+          />
+          <div class="card-content">
+            <h3>Electrical</h3>
+            <p>
+              Power Systems, Electronics, Control Systems, Telecommunications.
+            </p>
+            <a href="#" class="explore-btn" onclick="showDetails('electrical')"
+              >Read More</a
+            >
+          </div>
         </div>
       </div>
-
-      <div class="card">
-        <img src="../images/career-page-images/civil-engineering-img.jpg" alt="Civil">
-        <div class="card-content">
-          <h3>Civil</h3>
-          <p>Construction, Infrastructure, Structural Design, Surveying.</p>
-          <a href="#" class="explore-btn" onclick="showDetails('civil')">Read More</a>
+    </section>
+    <!-- Details Section -->
+    <section class="details" id="details">
+      <div class="details-box">
+        <h2 id="details-title"></h2>
+        <div class="details-content">
+          <ul id="details-list"></ul>
         </div>
+        <a href="#" class="back-btn" onclick="hideDetails()"
+          >← Back to Careers</a
+        >
       </div>
+    </section>
 
-       <div class="card">
-        <img src="../images/career-page-images/elctric-img.jpg" alt="Electrical">
-        <div class="card-content">
-          <h3>Electrical</h3>
-          <p>Power Systems, Electronics, Control Systems, Telecommunications.</p>
-          <a href="#" class="explore-btn" onclick="showDetails('electrical')">Read More</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Details Section -->
-<section class="details" id="details">
-  <div class="details-box">
-    <h2 id="details-title"></h2>
-    <div class="details-content">
-      <ul id="details-list"></ul>
-    </div>
-    <a href="#" class="back-btn" onclick="hideDetails()">← Back to Careers</a>
-  </div>
-</section>
-
-
-   
-  <script>
-   // Details Section JS
-    const detailsData = {
-      cse: {
-        title: "Computer Science Engineering (CSE)",
-        content: [
-          "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
-          "🎯 Career Roles: Software Engineer, Data Scientist, AI Engineer, Web Developer",
-          "🏫 Top Colleges: IITs, NITs, BITS, IIITs, State Colleges",
-          "🧾 Entrance Exams: JEE Main/Advanced, CET, Private University Exams",
-          "💰 Salary: ₹4L–₹12L per annum (entry to mid-level)",
-          "📚 Higher Studies: M.Tech, MBA, MS Abroad, Certifications (Cloud, AI/ML)",
-          "✅ Skills Needed: Programming, DSA, Databases, Problem-Solving",
-          "👍 Pros: High Demand, Global Jobs, Freelance Options",
-          "👎 Cons: High Competition, Continuous Learning Needed"
-        ]
-      },
-      mechanical: {
-        title: "Mechanical Engineering",
-        content: [
-          "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
-          "🎯 Career Roles: Design Engineer, Robotics Engineer, Thermal Engineer, Automotive Engineer",
-          "🏫 Top Colleges: IITs, NITs, COEP, VIT, BITS Pilani",
-          "🧾 Entrance Exams: JEE Main/Advanced, CET, GATE (for PG)",
-          "💰 Salary: ₹3L–₹8L per annum (entry to mid-level)",
-          "📚 Higher Studies: M.Tech, CAD/CAM, Robotics, MBA",
-          "✅ Skills Needed: CAD, Robotics, Manufacturing, Thermal Systems",
-          "👍 Pros: Core Industry Demand, Opportunities Abroad",
-          "👎 Cons: Slower Salary Growth compared to IT"
-        ]
-      },
-      civil: {
-        title: "Civil Engineering",
-        content: [
-          "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
-          "🎯 Career Roles: Site Engineer, Structural Engineer, Project Manager, Surveyor",
-          "🏫 Top Colleges: IIT Roorkee, NIT Trichy, Government Engineering Colleges",
-          "🧾 Entrance Exams: JEE Main/Advanced, CET, GATE (for PG)",
-          "💰 Salary: ₹3L–₹7L per annum (entry to mid-level)",
-          "📚 Higher Studies: M.Tech, Environmental Engineering, Construction Management",
-          "✅ Skills Needed: Surveying, Project Planning, Structural Analysis",
-          "👍 Pros: Evergreen Field, Government Job Opportunities",
-          "👎 Cons: On-field Work, Project-based Pressure"
-        ]
-      },
-      electrical: {
-        title: "Electrical Engineering",
-        content: [
-          "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
-          "🎯 Career Roles: Electrical Engineer, Power Systems Engineer, Control Systems Engineer, Telecom Engineer",
-          "🏫 Top Colleges: IITs, NITs, VIT, BITS, State Colleges",
-          "🧾 Entrance Exams: JEE Main/Advanced, CET, GATE (for PG)",
-          "💰 Salary: ₹3L–₹9L per annum (entry to mid-level)",
-          "📚 Higher Studies: M.Tech, Power Systems, Embedded Systems, Renewable Energy",
-          "✅ Skills Needed: Circuit Design, Control Systems, Power Distribution",
-          "👍 Pros: Core + IT Opportunities, Scope in Renewable Energy",
-          "👎 Cons: Field Work, Risk with High Voltage Jobs"
-        ]
-      }
-    };
-
-  </script>
-  <script src="../js/career.js"></script>
-
-
-
-
-
-
-
-
-</body>
+    <script>
+      // Details Section JS
+      const detailsData = {
+        cse: {
+          title: "Computer Science Engineering (CSE)",
+          content: [
+            "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
+            "🎯 Career Roles: Software Engineer, Data Scientist, AI Engineer, Web Developer",
+            "🏫 Top Colleges: IITs, NITs, BITS, IIITs, State Colleges",
+            "🧾 Entrance Exams: JEE Main/Advanced, CET, Private University Exams",
+            "💰 Salary: ₹4L–₹12L per annum (entry to mid-level)",
+            "📚 Higher Studies: M.Tech, MBA, MS Abroad, Certifications (Cloud, AI/ML)",
+            "✅ Skills Needed: Programming, DSA, Databases, Problem-Solving",
+            "👍 Pros: High Demand, Global Jobs, Freelance Options",
+            "👎 Cons: High Competition, Continuous Learning Needed",
+          ],
+        },
+        mechanical: {
+          title: "Mechanical Engineering",
+          content: [
+            "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
+            "🎯 Career Roles: Design Engineer, Robotics Engineer, Thermal Engineer, Automotive Engineer",
+            "🏫 Top Colleges: IITs, NITs, COEP, VIT, BITS Pilani",
+            "🧾 Entrance Exams: JEE Main/Advanced, CET, GATE (for PG)",
+            "💰 Salary: ₹3L–₹8L per annum (entry to mid-level)",
+            "📚 Higher Studies: M.Tech, CAD/CAM, Robotics, MBA",
+            "✅ Skills Needed: CAD, Robotics, Manufacturing, Thermal Systems",
+            "👍 Pros: Core Industry Demand, Opportunities Abroad",
+            "👎 Cons: Slower Salary Growth compared to IT",
+          ],
+        },
+        civil: {
+          title: "Civil Engineering",
+          content: [
+            "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
+            "🎯 Career Roles: Site Engineer, Structural Engineer, Project Manager, Surveyor",
+            "🏫 Top Colleges: IIT Roorkee, NIT Trichy, Government Engineering Colleges",
+            "🧾 Entrance Exams: JEE Main/Advanced, CET, GATE (for PG)",
+            "💰 Salary: ₹3L–₹7L per annum (entry to mid-level)",
+            "📚 Higher Studies: M.Tech, Environmental Engineering, Construction Management",
+            "✅ Skills Needed: Surveying, Project Planning, Structural Analysis",
+            "👍 Pros: Evergreen Field, Government Job Opportunities",
+            "👎 Cons: On-field Work, Project-based Pressure",
+          ],
+        },
+        electrical: {
+          title: "Electrical Engineering",
+          content: [
+            "📌 Eligibility: 12th PCM + Entrance Exams (JEE/CET)",
+            "🎯 Career Roles: Electrical Engineer, Power Systems Engineer, Control Systems Engineer, Telecom Engineer",
+            "🏫 Top Colleges: IITs, NITs, VIT, BITS, State Colleges",
+            "🧾 Entrance Exams: JEE Main/Advanced, CET, GATE (for PG)",
+            "💰 Salary: ₹3L–₹9L per annum (entry to mid-level)",
+            "📚 Higher Studies: M.Tech, Power Systems, Embedded Systems, Renewable Energy",
+            "✅ Skills Needed: Circuit Design, Control Systems, Power Distribution",
+            "👍 Pros: Core + IT Opportunities, Scope in Renewable Energy",
+            "👎 Cons: Field Work, Risk with High Voltage Jobs",
+          ],
+        },
+      };
+    </script>
+    <script src="../js/career.js"></script>
+  </body>
 </html>
