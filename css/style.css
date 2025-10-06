@@ -140,7 +140,7 @@ body {
 .img-slider.pre .thumbnail .item:nth-child(1){
     width: 0;
     overflow: hidden;
-     animation: showThumbnail 0.5s linear 1 forwards;
+     /* animation: showThumbnail 0.5s linear 1 forwards; */
 }
 @keyframes contentOut{
     to{

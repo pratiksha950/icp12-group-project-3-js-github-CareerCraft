@@ -18,13 +18,13 @@ const searchBox = document.getElementById("searchBox");
     setInterval(() => {
       searchBox.setAttribute("placeholder", placeholders[index]);
       index = (index + 1) % placeholders.length;
-    }, 2000);
+}, 2000);
 
 // image slider
 let nextBtn = document.querySelector(".next");
 let preBtn = document.querySelector(".pre");
 let imgSlider = document.querySelector(".img-slider");
-let listItem = document.querySelector(".img-slider .list");
+let listItem = document.querySelector(".list");
 let thumbnail = document.querySelector(".thumbnail");
 
 let timeRunning = 3000;
